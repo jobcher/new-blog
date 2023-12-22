@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/jobcher"
 description = "keep simple, keep stupid"
 homepage = "https://github.com/jobcher"
-demosite = "https://test.jobcher.com/"
+demosite = "https://www.jobcher.com/"
 tags = [
     "archive",
     "blog",
@@ -21,4 +21,4 @@ tags = [
 features = ["search", "flexible", "modular"]
 [author]
 name = "jobcher"
-homepage = "https://test.jobcher.com/"
+homepage = "https://www.jobcher.com/"
