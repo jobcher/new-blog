@@ -8,7 +8,7 @@ require (
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
 	github.com/hbstack/back-to-top v0.1.2 // indirect
-	github.com/hbstack/base v0.4.1 // indirect
+	// github.com/hbstack/base v0.4.1 // indirect
 	github.com/hbstack/bigger-picture v0.9.2 // indirect
 	github.com/hbstack/blog v0.24.0 // indirect
 	github.com/hbstack/blog/modules/breadcrumb v0.1.22 // indirect
@@ -37,8 +37,8 @@ require (
 	github.com/hbstack/docs/modules/heading-sign v0.1.9 // indirect
 	github.com/hbstack/docs/modules/toc-scrollspy v0.1.7 // indirect
 	github.com/hbstack/featured-image v0.1.2 // indirect
-	github.com/hbstack/footer v0.2.9 // indirect
-	github.com/hbstack/footer/modules/socials v0.2.5 // indirect
+	// github.com/hbstack/footer v0.2.9 // indirect
+	// github.com/hbstack/footer/modules/socials v0.2.5 // indirect
 	github.com/hbstack/gallery v0.8.0 // indirect
 	github.com/hbstack/gallery/modules/breadcrumb v0.1.0 // indirect
 	github.com/hbstack/giscus v0.1.1 // indirect
