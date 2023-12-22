@@ -460,7 +460,7 @@ func downloadBingWallpaper() {
 	dateString := currentTime.Format("2006-01-02")
 
 	// 指定保存目录
-	saveDirectory := "static/images/input/"
+	saveDirectory := "assets/images/input/"
 
 	// 构建保存文件路径
 	savePath := filepath.Join(saveDirectory, dateString+".jpg")
@@ -580,8 +580,8 @@ func translateString(queryString string) (string, error) {
 
 func tran_webp() {
 	// Specify input and output directories
-	inputDir := "static/images/input/"
-	outputDir := "static/images/wallpaper/"
+	inputDir := "assets/images/input/"
+	outputDir := "assets/images/wallpaper/"
 
 	// Walk input directory to process files
 	err := filepath.Walk(inputDir, func(path string, info os.FileInfo, err error) error {
