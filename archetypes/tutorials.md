@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 # linkTitle:
 date: {{ .Date }}
-draft: true
+draft: false
 description: 
 noindex: false
 # comments: false

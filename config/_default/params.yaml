@@ -9,22 +9,22 @@ hb:
   # css_bundle_name: main # the CSS bundle name.
 
   header:
-    brand: HB # the brand name, leave it empty to use site's title.
+    brand: 打工人日志 # the brand name, leave it empty to use site's title.
     logo_bg: '#712cf9' # logo background color, used by logo with transparent background.
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: hbstack
-      # twitter: razonyang
+      github: jobcher
+      twitter: jobcher1
       rss: true
-      mastodon: https://techhub.social/@hbstack
+      # mastodon: https://techhub.social/@hbstack
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       _color: true # when false, remove the color of social icons.
-      github: hbstack
-      twitter: razonyang
+      github: jobcher
+      twitter: jobcher1
       rss: true
-      mastodon: https://techhub.social/@hbstack
+      # mastodon: https://techhub.social/@hbstack
   terms:
     # the paginate for categories, tags, series list pages.
     paginate: 12
@@ -37,8 +37,8 @@ hb:
         company: COMPANY
         location: Earth
         socials:
-          github: hbstack
-          mastodon: https://techhub.social/@hbstack
+          github: jobcher
+          # mastodon: https://techhub.social/@hbstack
           rss: true
       posts:
         recent_count: 5 # the number of recent posts.
@@ -47,7 +47,7 @@ hb:
         count: true # whether to show the number of posts associated to the item.
         limit: 10 # the maximum number of the item.
     paginate: 12 # paginate.
-    post_thumbnail_placeholder: HB THEME # the text of thumbnail placeholder, default to site title.
+    post_thumbnail_placeholder: JOBCHER BLOG # the text of thumbnail placeholder, default to site title.
     # post_thumbnail: false # whether to show the thumbnails.
     # post_date_format: ":date_long" # see https://gohugo.io/functions/dateformat/#datetime-formatting-layouts.
     home: # homepage settings.
