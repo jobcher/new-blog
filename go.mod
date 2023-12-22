@@ -2,9 +2,13 @@ module github.com/jobcher/new-blog
 
 go 1.19
 
+require github.com/PuerkitoBio/goquery v1.8.1
+
 require (
 	github.com/GoogleChrome/workbox v7.0.0+incompatible // indirect
 	github.com/KaTeX/KaTeX v0.16.9 // indirect
+	github.com/andybalholm/cascadia v1.3.1 // indirect
+	github.com/chai2010/webp v1.1.1
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
 	github.com/hbstack/back-to-top v0.1.2 // indirect
@@ -98,4 +102,5 @@ require (
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.2+incompatible // indirect
 	github.com/twbs/icons v1.11.2 // indirect
+	golang.org/x/net v0.7.0 // indirect
 )
