@@ -5,6 +5,15 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+  # github_trend 执行完后
+  workflow_run:
+    workflows: ["github_trend"]
+    branches: ["main"]
+    types:
+      - completed
 
   # allow deploying manually.
   workflow_dispatch:
