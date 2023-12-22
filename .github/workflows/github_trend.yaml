@@ -31,6 +31,6 @@ jobs:
           git config --local user.name "jobcher"
           git add .
           git commit -m "update github trend"
-          git push origin master
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
