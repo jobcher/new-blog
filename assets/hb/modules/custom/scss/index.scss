@@ -3,6 +3,10 @@
 /*! purgecss start ignore */
 
 /*! PUT YOU STYLE HERE TO AVOID GETTING REMOVING BY PURGECSS. */
+//设置所有img格式图片宽度为100%
+img {
+    max-width: 100%;
+}
 .hb-footer-site-info {
     display: none;
 }
