@@ -1,0 +1,36 @@
+# 定时任务执行go程序并提交到github
+name: github_trend
+
+on:
+  schedule:
+    # 每天，执行一次
+    - cron: "0 1 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  github_trend:
+    runs-on: ubuntu-latest
+    env:
+      BAIDU_TRANSLATE_API_KEY: ${{ secrets.BAIDU_TRANSLATE_API_KEY }}
+      BAIDU_TRANSLATE_API_ID: ${{ secrets.BAIDU_TRANSLATE_API_ID }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.19.1
+      - name: Run Go program
+        run: |
+          go version
+          go run main.go
+      - name: Commit files
+        run: |
+          git config --local user.email "13028911306@163.com"
+          git config --local user.name "jobcher"
+          git add .
+          git commit -m "update github trend"
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
