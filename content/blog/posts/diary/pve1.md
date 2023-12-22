@@ -2,7 +2,7 @@
 title: "Proxmox VE 在线扩容磁盘分区"
 date: 2022-01-19
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["扩容磁盘", "pve"]
 categories: ["日常"]
 series: ["日常系列"]

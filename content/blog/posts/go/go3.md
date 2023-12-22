@@ -2,7 +2,7 @@
 title: "go Struct 结构体"
 date: 2022-04-26
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["golang"]
 categories: ["go"]
 series: ["go系列"]

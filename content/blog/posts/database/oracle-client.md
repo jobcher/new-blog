@@ -4,7 +4,7 @@ date: 2022-11-15
 draft: false
 featuredImage: "/images/oracle.png"
 featuredImagePreview: "/images/oracle.png"
-author: "jobcher"
+authors: "jobcher"
 tags: ["oracle"]
 categories: ["数据库"]
 series: ["oracle系列"]

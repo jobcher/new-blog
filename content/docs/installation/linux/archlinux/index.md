@@ -2,6 +2,7 @@
 date: 2022-09-04T22:42:23+08:00
 title: Install on Arch Linux
 linkTitle: Arch Linux
+draft: true
 series:
   - Guide
 categories:

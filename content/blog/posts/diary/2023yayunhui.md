@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/LOL.jpeg"
 featuredImagePreview: "/images/LOL.jpeg"
 images: ["/images/LOL.jpeg"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["福利"]
 series: ["福利系列"]

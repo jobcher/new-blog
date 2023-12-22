@@ -2,7 +2,7 @@
 title: "Linux crontab 命令"
 date: 2022-02-22
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 categories: ["基础"]
 series: ["基础知识系列"]

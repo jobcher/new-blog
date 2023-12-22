@@ -2,7 +2,7 @@
 title: "Kubernetes 创建nfs存储类"
 date: 2021-12-13
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

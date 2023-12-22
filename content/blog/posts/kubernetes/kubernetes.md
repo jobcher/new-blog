@@ -2,7 +2,7 @@
 title: "Kubernetes k8s 组件"
 date: 2021-12-09
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

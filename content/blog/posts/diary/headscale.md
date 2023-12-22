@@ -2,7 +2,7 @@
 title: "headscale 部署使用"
 date: 2022-09-21
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["日常"]
 series: ["日常系列"]

@@ -2,7 +2,7 @@
 title: "docker 问题处理"
 date: 2022-08-04
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["error"]
 categories: ["问题库"]
 series: ["问题库系列"]

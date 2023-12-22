@@ -4,7 +4,7 @@ date: 2022-10-31
 draft: false
 featuredImage: "/images/macOS_13.jpg"
 featuredImagePreview: "/images/macOS_13.jpg"
-author: "jobcher"
+authors: "jobcher"
 tags: ["brew"]
 categories: ["Mac"]
 series: ["Mac系列"]

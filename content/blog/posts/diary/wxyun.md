@@ -2,7 +2,7 @@
 title: "网心云挂机教程 | 轻松实现睡后收入~"
 date: 2022-02-11
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["网心云", "外快"]
 categories: ["日常"]
 series: ["日常系列"]

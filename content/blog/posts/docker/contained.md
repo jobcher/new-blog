@@ -2,7 +2,7 @@
 title: "contained 安装及使用"
 date: 2022-08-17
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]

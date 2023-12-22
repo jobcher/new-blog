@@ -2,7 +2,7 @@
 title: "运维知识图谱"
 date: 2021-12-01
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 categories: ["基础"]
 series: ["基础知识系列"]

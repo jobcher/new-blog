@@ -2,7 +2,7 @@
 title: "Gitlab批量导出用户"
 date: 2022-01-14
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["自动化"]
 categories: ["gitlab"]
 series: ["git入门系列"]

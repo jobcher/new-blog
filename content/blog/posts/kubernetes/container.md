@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/containerd-horizontal-color.png"
 featuredImagePreview: "/images/containerd-horizontal-color.png"
 images: ["/images/containerd-horizontal-color.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s系列"]

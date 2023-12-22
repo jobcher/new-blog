@@ -2,7 +2,7 @@
 title: "git使用方法"
 date: 2022-02-17
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

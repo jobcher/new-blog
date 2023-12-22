@@ -2,7 +2,7 @@
 title: "centos7.9 网络配置"
 date: 2022-01-11
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["linux"]
 categories: ["日常"]
 series: ["日常系列"]

@@ -2,7 +2,7 @@
 title: "ansible 命令"
 date: 2022-04-14
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["ansible"]
 categories: ["gitlab"]
 series: ["git入门系列"]

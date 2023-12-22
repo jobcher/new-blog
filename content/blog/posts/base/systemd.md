@@ -2,7 +2,7 @@
 title: "systemd 守护命令"
 date: 2022-08-08
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 categories: ["基础"]
 series: ["基础知识系列"]

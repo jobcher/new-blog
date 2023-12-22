@@ -2,7 +2,7 @@
 title: "shell 脚本（1）"
 date: 2022-03-20
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["work"]
 categories: ["work"]
 series: ["问题库系列"]

@@ -2,7 +2,7 @@
 title: "mysql数据库备份迁移"
 date: 2021-12-24
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["mysql"]
 categories: ["数据库"]
 series: ["mysql系列"]

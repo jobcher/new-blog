@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/junit.png"
 featuredImagePreview: "/images/junit.png"
 images: ['/images/junit.png']
-author: "jobcher"
+authors: "jobcher"
 tags: ["测试"]
 categories: ["测试"]
 series: ["测试"]

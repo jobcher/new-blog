@@ -2,7 +2,7 @@
 title: "解决Elasticsearch索引只读（read-only）"
 date: 2023-09-20
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: '/images/elasticsearch.png'
 featuredImagePreview: '/images/elasticsearch.png'
 images: ['/images/elasticsearch.png']

@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/nvidia-docker.png"
 featuredImagePreview: "/images/nvidia-docker.png"
 images: ['/images/nvidia-docker.png']
-author: "jobcher"
+authors: "jobcher"
 tags: ["ChatGPT"]
 categories: ["人工智能"]
 series: ["人工智能系列"]

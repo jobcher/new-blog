@@ -2,7 +2,7 @@
 title: "Navicat 查看导出连接的密码 | navicat查看密码方案"
 date: 2022-02-08
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["mysql"]
 categories: ["数据库"]
 series: ["mysql系列"]

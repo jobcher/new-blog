@@ -4,7 +4,7 @@ date: 2022-11-10
 draft: false
 featuredImage: "/images/linux.webp"
 featuredImagePreview: "/images/linux.webp"
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["日常"]
 series: ["日常系列"]

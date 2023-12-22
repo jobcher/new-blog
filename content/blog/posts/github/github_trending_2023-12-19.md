@@ -2,7 +2,7 @@
 title: 2023-12-19 打工人日报
 date: 2023-12-19
 draft: false
-author: 'jobcher'
+authors: 'jobcher'
 featuredImage: '/images/wallpaper/2023-12-19.jpg.webp'
 featuredImagePreview: '/images/wallpaper/2023-12-19.jpg.webp'
 images: ['/images/wallpaper/2023-12-19.jpg.webp']

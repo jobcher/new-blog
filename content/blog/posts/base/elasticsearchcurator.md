@@ -2,7 +2,7 @@
 title: "使用 ElasticSearch Curator 7天定期删除日志"
 date: 2023-11-06
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 featuredImage: "/images/elasticsearch.png"
 featuredImagePreview: "/images/elasticsearch.png"

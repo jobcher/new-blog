@@ -2,7 +2,7 @@
 title: "Vue3 + vite + nginx项目部署后404问题"
 date: 2023-08-10
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: '/images/nginx.png'
 featuredImagePreview: '/images/nginx.png'
 images: ['/images/nginx.png']

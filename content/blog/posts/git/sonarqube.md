@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/sonarqube.png"
 featuredImagePreview: "/images/sonarqube.png"
 images: ["/images/sonarqube.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

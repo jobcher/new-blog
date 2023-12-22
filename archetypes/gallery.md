@@ -7,6 +7,6 @@ resources:
   - src: foo.jpg
     title: Foo
     params:
-      author:
+      authors:
       source:
 ---

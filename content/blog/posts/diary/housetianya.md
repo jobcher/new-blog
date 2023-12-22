@@ -2,7 +2,7 @@
 title: "2010年的天涯神贴聊房价"
 date: 2023-06-05
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: "/images/fangjia.jpg"
 featuredImagePreview: "/images/fangjia.jpg"
 tags: ["daliy"]

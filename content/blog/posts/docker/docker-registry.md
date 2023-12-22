@@ -2,7 +2,7 @@
 title: "搭建docker registry 镜像仓库"
 date: 2021-12-22
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]

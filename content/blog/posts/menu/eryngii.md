@@ -2,7 +2,7 @@
 title: "孜然杏鲍菇-素食"
 date: 2021-12-26
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["美食"]
 categories: ["美食"]
 series: ["美食家常菜系列"]

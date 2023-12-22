@@ -2,7 +2,7 @@
 title: "关系数据库 索引操作"
 date: 2022-08-16
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["mysql"]
 categories: ["数据库"]
 series: ["mysql系列"]

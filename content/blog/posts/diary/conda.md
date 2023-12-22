@@ -4,7 +4,7 @@ date: 2022-12-14
 draft: false
 featuredImage: "/images/python-conda.png"
 featuredImagePreview: "/images/python-conda.png"
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["日常"]
 series: ["日常系列"]

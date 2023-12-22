@@ -2,7 +2,7 @@
 title: "docker进阶使用"
 date: 2021-12-09
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker", "dockerfile", "DockerCompose"]
 categories: ["docker"]
 series: ["docker进阶系列"]

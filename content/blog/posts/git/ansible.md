@@ -2,7 +2,7 @@
 title: "ansible 安装和部署"
 date: 2021-12-30
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["ansible"]
 categories: ["gitlab"]
 series: ["git入门系列"]

@@ -2,7 +2,7 @@
 title: 2023-10-01 打工人日报
 date: 2023-10-01
 draft: false
-author: 'jobcher'
+authors: 'jobcher'
 featuredImage: '/images/wallpaper/2023-10-01.jpg.webp'
 featuredImagePreview: '/images/wallpaper/2023-10-01.jpg.webp'
 images: ['/images/wallpaper/2023-10-01.jpg.webp']

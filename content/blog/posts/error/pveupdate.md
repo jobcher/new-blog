@@ -2,7 +2,7 @@
 title: "ProXmoX VE升级 apt-get update 报错"
 date: 2022-01-30
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["error"]
 categories: ["问题库"]
 series: ["问题库系列"]

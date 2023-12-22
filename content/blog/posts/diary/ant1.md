@@ -2,7 +2,7 @@
 title: "ant build.xml 编写"
 date: 2022-04-21
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["java"]
 categories: ["日常"]
 series: ["日常系列"]

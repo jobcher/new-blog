@@ -2,7 +2,7 @@
 title: "Nexus3 使用和部署"
 date: 2022-10-31
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["work"]
 categories: ["work"]
 series: ["问题库系列"]

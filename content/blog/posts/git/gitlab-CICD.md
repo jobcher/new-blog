@@ -2,7 +2,7 @@
 title: "gitlab CI/CD 的使用"
 date: 2021-12-03
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

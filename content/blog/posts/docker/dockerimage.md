@@ -2,7 +2,7 @@
 title: "docker image镜像上传"
 date: 2021-12-09
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]

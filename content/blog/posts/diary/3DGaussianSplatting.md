@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/graphdeco_logo.png"
 featuredImagePreview: "/images/graphdeco_logo.png"
 images: ["/images/graphdeco_logo.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["福利"]
 series: ["福利系列"]

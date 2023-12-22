@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/ChatGPT-Plus/homeelegance_controllercolorfultranslucent_body_designed_bydiet_261aaa05-08ad-4fb5-b8a9-5961e85a50a1.png.webp"
 featuredImagePreview: "/images/ChatGPT-Plus/homeelegance_controllercolorfultranslucent_body_designed_bydiet_261aaa05-08ad-4fb5-b8a9-5961e85a50a1.png.webp"
 images: ["/images/ChatGPT-Plus.webp/homeelegance_controllercolorfultranslucent_body_designed_bydiet_261aaa05-08ad-4fb5-b8a9-5961e85a50a1.png.webp"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["ChatGPT","midjourney"]
 categories: ["人工智能"]
 series: ["人工智能系列"]

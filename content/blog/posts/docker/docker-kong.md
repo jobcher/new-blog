@@ -2,7 +2,7 @@
 title: "docker 安装kong 网关"
 date: 2021-12-22
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]

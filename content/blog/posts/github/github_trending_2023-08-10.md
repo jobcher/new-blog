@@ -2,7 +2,7 @@
 title: 2023-08-10 打工人日报
 date: 2023-08-10
 draft: false
-author: 'jobcher'
+authors: 'jobcher'
 featuredImage: '/images/wallpaper/2023-08-10.jpg.webp'
 featuredImagePreview: '/images/wallpaper/2023-08-10.jpg.webp'
 images: ['/images/wallpaper/2023-08-10.jpg.webp']

@@ -4,7 +4,7 @@ date: 2022-11-25
 draft: false
 featuredImage: "/images/logo-jenkins.png"
 featuredImagePreview: "/images/logo-jenkins.png"
-author: "jobcher"
+authors: "jobcher"
 tags: ["work"]
 categories: ["work"]
 series: ["问题库系列"]

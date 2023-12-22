@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/Appinn-feature-images-2023-09-25T152200.586-1536x669.webp"
 featuredImagePreview: "/images/Appinn-feature-images-2023-09-25T152200.586-1536x669.webp"
 images: ["/images/Appinn-feature-images-2023-09-25T152200.586-1536x669.webp"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["福利"]
 series: ["福利系列"]

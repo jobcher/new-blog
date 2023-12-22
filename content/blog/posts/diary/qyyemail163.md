@@ -2,7 +2,7 @@
 title: "163企业邮箱设置教程"
 date: 2021-12-10
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["日常"]
 series: ["日常系列"]

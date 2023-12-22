@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/ChatGPT-Plus/homeelegance_white_background_linework_greyscale_cartoon_sticke_0dc66fc8-8ac8-414d-8538-c3a7c63d38bb.png.webp"
 featuredImagePreview: "/images/ChatGPT-Plus/homeelegance_white_background_linework_greyscale_cartoon_sticke_0dc66fc8-8ac8-414d-8538-c3a7c63d38bb.png.webp"
 images: ["/images/ChatGPT-Plus/homeelegance_white_background_linework_greyscale_cartoon_sticke_0dc66fc8-8ac8-414d-8538-c3a7c63d38bb.png.webp"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["ChatGPT"]
 categories: ["人工智能"]
 series: ["人工智能系列"]

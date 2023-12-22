@@ -2,7 +2,7 @@
 title: "Argo cd 安装和部署"
 date: 2023-12-04
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: "/images/argo-logo.png"
 featuredImagePreview: "/images/argo-logo.png"
 images: ["/images/argo-logo.png"]

@@ -4,7 +4,7 @@ date: 2022-11-07
 draft: false
 featuredImage: "/images/Z-Library_1.webp"
 featuredImagePreview: "/images/Z-Library_1.webp"
-author: "jobcher"
+authors: "jobcher"
 tags: ["brew"]
 categories: ["Mac"]
 series: ["Mac系列"]

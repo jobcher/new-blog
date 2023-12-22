@@ -2,7 +2,7 @@
 title: "nginx 汇总"
 date: 2021-12-08
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["nginx", "linux"]
 categories: ["web 服务器"]
 series: ["web服务入门系列"]

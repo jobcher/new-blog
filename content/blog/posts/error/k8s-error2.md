@@ -2,7 +2,7 @@
 title: "k8s CNI 问题 连接认证失效"
 date: 2022-09-23
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["error"]
 categories: ["问题库"]
 series: ["问题库系列"]

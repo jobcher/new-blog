@@ -4,7 +4,7 @@ date: 2023-05-26
 draft: false
 featuredImage: "/images/ChatGPT-Plus/chatgpt.webp"
 featuredImagePreview: "/images/ChatGPT-Plus/chatgpt.webp"
-author: "jobcher"
+authors: "jobcher"
 tags: ["ChatGPT"]
 categories: ["人工智能"]
 series: ["人工智能系列"]

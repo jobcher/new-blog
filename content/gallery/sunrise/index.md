@@ -5,50 +5,50 @@ description: Sunrise Photos
 resources:
   - src: 20240405000000.jpg
     params:
-      author: Hernan Pauccara
+      authors: Hernan Pauccara
       source: Pexels
   - src: 20220111000000.jpg
     params:
-      author: Joel Holland
+      authors: Joel Holland
       source: Pexels
   - src: 20220110000000.jpg
     params:
-      author: Rachel Cook
+      authors: Rachel Cook
       source: Unsplash
   - src: 20220109000000.jpg
     params:
-      author: Quang Nguyen Vinh
+      authors: Quang Nguyen Vinh
       source: Pexels
   - src: 20220108000000.jpg
     params:
-      author: Johannes Plenio
+      authors: Johannes Plenio
       source: Pexels
   - src: 20220107000000.jpg
     params:
-      author: Anand Dandekar
+      authors: Anand Dandekar
       source: Pexels
   - src: 20220106000000.jpg
     params:
-      author: Nuno Obey
+      authors: Nuno Obey
       source: Pexels
   - src: 20220105000000.jpg
     params:
-      author: Pixabay
+      authors: Pixabay
       source: Pexels
   - src: 20220104000000.jpg
     params:
-      author: Rahul Pandit
+      authors: Rahul Pandit
       source: Pexels
   - src: 20220103000000.jpg
     params:
-      author: Pixabay
+      authors: Pixabay
       source: Pexels
   - src: 20220102000000.jpg
     params:
-      author: Tetyana Kovyrina
+      authors: Tetyana Kovyrina
       source: Pexels
   - src: 20220101000000.jpg
     params:
-      author: Arthur Ogleznev
+      authors: Arthur Ogleznev
       source: Pexels
 ---

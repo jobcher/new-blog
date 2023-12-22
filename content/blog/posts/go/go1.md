@@ -2,7 +2,7 @@
 title: "go 基础知识"
 date: 2022-04-25
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["golang"]
 categories: ["go"]
 series: ["go系列"]

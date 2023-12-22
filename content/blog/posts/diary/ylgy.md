@@ -2,7 +2,7 @@
 title: "羊了个羊小程序 破解通关"
 date: 2022-09-16
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["日常"]
 series: ["日常系列"]

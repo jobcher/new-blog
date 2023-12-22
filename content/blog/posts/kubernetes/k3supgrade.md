@@ -2,7 +2,7 @@
 title: "k3s 升级版本"
 date: 2021-12-27
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k3s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

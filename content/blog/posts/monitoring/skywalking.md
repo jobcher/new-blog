@@ -2,7 +2,7 @@
 title: "skywalking APM 监控"
 date: 2022-08-10
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["skywalking"]
 categories: ["监控"]
 series: ["运维监控系列"]

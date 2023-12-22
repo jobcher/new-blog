@@ -2,7 +2,7 @@
 title: "logstash 多管道部署"
 date: 2022-07-19
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["logstash"]
 categories: ["监控"]
 series: ["运维监控系列"]

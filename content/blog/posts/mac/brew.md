@@ -2,7 +2,7 @@
 title: "brew 安装配置"
 date: 2021-12-03
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["brew"]
 categories: ["Mac"]
 series: ["Mac系列"]

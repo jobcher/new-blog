@@ -2,7 +2,7 @@
 title: "RocketMQ 安装和启动"
 date: 2022-01-07
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["RocketMQ"]
 categories: ["日常"]
 series: ["日常系列"]

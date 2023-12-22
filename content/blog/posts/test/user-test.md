@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/appium-logo-horiz.png"
 featuredImagePreview: "/images/appium-logo-horiz.png"
 images: ['/images/appium-logo-horiz.png']
-author: "jobcher"
+authors: "jobcher"
 tags: ["测试"]
 categories: ["测试"]
 series: ["测试"]

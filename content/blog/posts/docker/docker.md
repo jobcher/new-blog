@@ -2,7 +2,7 @@
 title: "docker 命令"
 date: 2021-12-28
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]

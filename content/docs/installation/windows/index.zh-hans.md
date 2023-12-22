@@ -1,6 +1,7 @@
 ---
 date: 2022-09-06T22:42:23+08:00
 title: 安装到 Windows 系统
+draft: true
 linkTitle: Windows
 series: 
   - 指南

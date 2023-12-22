@@ -2,7 +2,7 @@
 title: "linux常用命令"
 date: 2022-02-12
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 categories: ["基础"]
 series: ["基础知识系列"]

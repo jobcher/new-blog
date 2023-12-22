@@ -2,7 +2,7 @@
 title: "安装配置 Terraform"
 date: 2021-12-27
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["Terraform"]
 categories: ["日常"]
 series: ["日常系列"]

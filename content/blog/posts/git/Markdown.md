@@ -2,7 +2,7 @@
 title: "Markdown教程"
 date: 2021-12-03
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["Markdown"]
 categories: ["gitlab"]
 series: ["git入门系列"]

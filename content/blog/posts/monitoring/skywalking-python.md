@@ -2,7 +2,7 @@
 title: "skywalking python agent 安装和配置"
 date: 2023-05-31
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: "/images/skwalking-python.png"
 featuredImagePreview: "/images/skwalking-python.png"
 tags: ["skywalking"]

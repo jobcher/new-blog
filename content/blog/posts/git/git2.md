@@ -2,7 +2,7 @@
 title: "git版本控制"
 date: 2022-02-28
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

@@ -2,7 +2,7 @@
 title: "rsync 文件同步"
 date: 2021-12-20
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy", "rsync"]
 categories: ["日常"]
 series: ["日常系列"]

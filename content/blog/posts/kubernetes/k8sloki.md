@@ -2,7 +2,7 @@
 title: "k8s 部署loki日志"
 date: 2021-12-16
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

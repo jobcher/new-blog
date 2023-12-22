@@ -2,7 +2,7 @@
 title: "k8s本地联调神器kt-connect"
 date: 2022-04-14
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

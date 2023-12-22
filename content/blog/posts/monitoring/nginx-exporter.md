@@ -2,7 +2,7 @@
 title: "nginx exporter 安装配置"
 date: 2022-06-08
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["prometheus"]
 categories: ["监控"]
 series: ["运维监控系列"]

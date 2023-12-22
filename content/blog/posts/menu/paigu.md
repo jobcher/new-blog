@@ -2,7 +2,7 @@
 title: "懒人烧排骨"
 date: 2022-09-26
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["美食"]
 categories: ["美食"]
 series: ["美食家常菜系列"]

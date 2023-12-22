@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/daimaiwang.png"
 featuredImagePreview: "/images/daimaiwang.png"
 images: ["/images/daimaiwang.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["福利"]
 series: ["福利系列"]

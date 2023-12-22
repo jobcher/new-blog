@@ -2,7 +2,7 @@
 title: "nginx ssh-key connection exception"
 date: 2022-06-15
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["nginx", "linux"]
 categories: ["web 服务器"]
 series: ["web服务入门系列"]

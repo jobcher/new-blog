@@ -2,7 +2,7 @@
 title: "OpenELB：让k8s私有环境对外暴露端口"
 date: 2022-04-13
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

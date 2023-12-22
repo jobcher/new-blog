@@ -2,7 +2,7 @@
 title: "Maven 安装编译"
 date: 2022-03-03
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["work"]
 categories: ["work"]
 series: ["问题库系列"]

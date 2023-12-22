@@ -2,7 +2,7 @@
 title: "Ant中如何添加第三方jar包依赖"
 date: 2022-04-14
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["javascript"]
 categories: ["日常"]
 series: ["日常系列"]

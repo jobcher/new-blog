@@ -2,7 +2,7 @@
 title: "nginx 重写规则 rewrite模块"
 date: 2021-12-24
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["nginx", "linux"]
 categories: ["web 服务器"]
 series: ["web服务入门系列"]

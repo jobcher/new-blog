@@ -2,7 +2,7 @@
 title: "安装 minIO Azure S3网关"
 date: 2022-01-07
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["minIO"]
 categories: ["日常"]
 series: ["日常系列"]

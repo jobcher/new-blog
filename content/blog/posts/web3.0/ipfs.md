@@ -2,7 +2,7 @@
 title: "打开web 3.0的大门——IPFS使用"
 date: 2022-10-21
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["IPFS", "web3.0"]
 categories: ["web3.0"]
 series: ["web3.0"]

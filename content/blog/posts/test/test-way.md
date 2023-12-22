@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/test.jpeg"
 featuredImagePreview: "/images/test.jpeg"
 images: ['/images/test.jpeg']
-author: "jobcher"
+authors: "jobcher"
 tags: ["测试"]
 categories: ["测试"]
 series: ["测试"]

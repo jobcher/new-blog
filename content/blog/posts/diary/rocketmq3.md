@@ -2,7 +2,7 @@
 title: "RocketMQ k8s部署 4主4从集群"
 date: 2022-08-29
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["RocketMQ"]
 categories: ["日常"]
 series: ["日常系列"]

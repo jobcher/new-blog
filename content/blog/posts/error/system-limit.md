@@ -2,7 +2,7 @@
 title: "linux服务器进程打开文件过多导致服务异常"
 date: 2023-11-07
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: '/images/elasticsearch.png'
 featuredImagePreview: '/images/elasticsearch.png'
 images: ['/images/elasticsearch.png']

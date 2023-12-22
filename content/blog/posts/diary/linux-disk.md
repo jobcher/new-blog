@@ -2,7 +2,7 @@
 title: "linux服务器 删除空间却未释放"
 date: 2022-07-20
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["日常生活"]
 categories: ["日常"]
 series: ["日常系列"]

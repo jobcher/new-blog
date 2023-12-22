@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/grafana-logo.png"
 featuredImagePreview: "/images/grafana-logo.png"
 images: ["/images/grafana-logo.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

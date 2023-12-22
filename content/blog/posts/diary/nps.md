@@ -2,7 +2,7 @@
 title: "自建服务器内网穿透"
 date: 2021-12-08
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["内网穿透", "nps"]
 categories: ["日常"]
 series: ["日常系列"]

@@ -2,7 +2,7 @@
 title: "在windows上安装appium"
 date: 2023-05-15
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 featuredImage: "/images/appium-logo-horiz.png"
 featuredImagePreview: "/images/appium-logo-horiz.png"

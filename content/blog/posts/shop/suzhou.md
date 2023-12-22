@@ -2,7 +2,7 @@
 title: "苏州旅行"
 date: 2022-09-27
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["logstash"]
 categories: ["旅行"]
 series: ["旅行系列"]

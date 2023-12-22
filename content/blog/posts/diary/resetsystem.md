@@ -2,7 +2,7 @@
 title: "linux系统开启root权限"
 date: 2021-12-12
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["linux"]
 categories: ["日常"]
 series: ["日常系列"]

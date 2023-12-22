@@ -2,7 +2,7 @@
 title: "Jenkins 安装与使用"
 date: 2022-02-09
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

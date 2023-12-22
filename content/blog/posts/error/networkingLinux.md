@@ -2,7 +2,7 @@
 title: "Linux 系统收包流程以及内核参数优化"
 date: 2023-08-30
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: '/images/networking-dc52a683.svg'
 featuredImagePreview: '/images/networking-dc52a683.svg'
 images: ['/images/nginx.png']

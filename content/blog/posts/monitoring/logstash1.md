@@ -4,7 +4,7 @@ date: 2022-10-31
 draft: false
 featuredImage: "/images/lostash.png"
 featuredImagePreview: "/images/lostash.png"
-author: "jobcher"
+authors: "jobcher"
 tags: ["logstash"]
 categories: ["监控"]
 series: ["运维监控系列"]

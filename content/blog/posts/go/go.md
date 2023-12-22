@@ -2,7 +2,7 @@
 title: "Golang go build 编译不同版本"
 date: 2022-04-17
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["golang"]
 categories: ["go"]
 series: ["go系列"]

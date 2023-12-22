@@ -1,7 +1,7 @@
 ---
 title: "Landing Page Example"
 date: 2023-04-06T01:44:59+08:00
-draft: false
+draft: true
 layout: landing
 ---
 

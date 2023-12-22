@@ -2,7 +2,7 @@
 title: "TCP/IP详解"
 date: 2021-12-08
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["TCP/IP"]
 categories: ["基础"]
 series: ["基础知识系列"]

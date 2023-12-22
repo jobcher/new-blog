@@ -4,7 +4,7 @@ date: 2023-03-30
 draft: false
 featuredImage: "/images/chrome1.png"
 featuredImagePreview: "/images/chrome1.png"
-author: "jobcher"
+authors: "jobcher"
 tags: ["work"]
 categories: ["work"]
 series: ["问题库系列"]

@@ -2,7 +2,7 @@
 title: "黑群晖最新安装教程"
 date: 2023-08-01
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: "/images/lyd0wozvo39ycoc8t2ke.png"
 featuredImagePreview: "/images/lyd0wozvo39ycoc8t2ke.png"
 images: ['/images/lyd0wozvo39ycoc8t2ke.png']

@@ -2,7 +2,7 @@
 title: "Golang 初识（安装、使用）"
 date: 2022-09-21
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["golang"]
 categories: ["go"]
 series: ["go系列"]

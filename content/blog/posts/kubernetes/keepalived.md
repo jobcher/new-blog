@@ -2,7 +2,7 @@
 title: "Keepalived高可用"
 date: 2022-01-05
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

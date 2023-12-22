@@ -2,7 +2,7 @@
 title: "清理Docker容器日志"
 date: 2022-09-19
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]

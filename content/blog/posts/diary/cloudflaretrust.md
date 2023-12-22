@@ -2,7 +2,7 @@
 title: "Cloudflare Zero Trust 内网穿透"
 date: 2022-09-30
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: "/images/cloudflare.png"
 featuredImagePreview: "/images/cloudflare.png"
 tags: ["内网穿透", "nps"]

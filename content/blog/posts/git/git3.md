@@ -2,7 +2,7 @@
 title: "Git 规则"
 date: 2022-03-24
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]
@@ -459,15 +459,15 @@ Note: Spike solutions are made to analyze or solve the problem. These solutions 
 ```sh
 (main)$ git log
 commit e3851e817c451cc36f2e6f3049db528415e3c114
-Author: Alex Lee <alexlee@example.com>
+authors: Alex Lee <alexlee@example.com>
 Date:   Tue Jul 22 15:39:27 2014 -0400
     Bug #21 - Added CSRF protection
 commit 5ea51731d150f7ddc4a365437931cd8be3bf3131
-Author: Alex Lee <alexlee@example.com>
+authors: Alex Lee <alexlee@example.com>
 Date:   Tue Jul 22 15:39:12 2014 -0400
     Bug #14 - Fixed spacing on title
 commit a13b85e984171c6e2a1729bb061994525f626d14
-Author: Aki Rose <akirose@example.com>
+authors: Aki Rose <akirose@example.com>
 Date:   Tue Jul 21 01:12:48 2014 -0400
     First commit
 ```
@@ -544,11 +544,11 @@ README.md foo.txt
  create mode 100644 foo.txt
 (my-branch)$ git log
 commit 4e3cd85a670ced7cc17a2b5d8d3d809ac88d5012
-Author: siemiatj <siemiatj@example.com>
+authors: siemiatj <siemiatj@example.com>
 Date:   Wed Jul 30 00:34:10 2014 +0200
     foo.txt added
 commit 69204cdf0acbab201619d95ad8295928e7f411d5
-Author: Kate Hudson <katehudson@example.com>
+authors: Kate Hudson <katehudson@example.com>
 Date:   Tue Jul 29 13:14:46 2014 -0400
     Fixes #6: Force pushing after amending commits
 ```

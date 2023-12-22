@@ -2,7 +2,7 @@
 title: "linux 网络测速"
 date: 2022-02-22
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["javascript"]
 categories: ["日常"]
 series: ["日常系列"]

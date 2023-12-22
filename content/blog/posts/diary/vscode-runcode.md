@@ -2,7 +2,7 @@
 title: "VSCode插件推荐=> Code Runner"
 date: 2022-04-25
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["日常生活"]
 categories: ["日常"]
 series: ["日常系列"]

@@ -2,7 +2,7 @@
 title: "Harbor 搭建"
 date: 2022-01-14
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["k8s"]
 categories: ["k8s"]
 series: ["k8s入门系列"]

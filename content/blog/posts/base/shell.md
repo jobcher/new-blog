@@ -2,7 +2,7 @@
 title: "shell基础知识"
 date: 2021-12-15
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 categories: ["基础"]
 series: ["基础知识系列"]

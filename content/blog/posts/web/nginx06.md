@@ -4,7 +4,7 @@ date: 2023-04-20
 draft: false
 featuredImage: "/images/nginx.png"
 featuredImagePreview: "/images/nginx.png"
-author: "jobcher"
+authors: "jobcher"
 tags: ["nginx", "linux"]
 categories: ["web 服务器"]
 series: ["web服务入门系列"]

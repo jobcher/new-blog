@@ -2,6 +2,7 @@
 date: 2022-10-16T22:42:23+08:00
 title: Install on Ubuntu
 linkTitle: Ubuntu
+draft: false
 series:
   - Guide
 categories:

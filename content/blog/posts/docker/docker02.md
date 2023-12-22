@@ -2,7 +2,7 @@
 title: "docker 命令(2)"
 date: 2022-02-18
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker进阶系列"]

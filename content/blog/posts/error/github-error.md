@@ -2,7 +2,7 @@
 title: "githubAction set-output弃用错误"
 date: 2022-10-21
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["error"]
 categories: ["问题库"]
 series: ["问题库系列"]

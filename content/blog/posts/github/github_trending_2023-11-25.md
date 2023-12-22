@@ -2,7 +2,7 @@
 title: 2023-11-25 打工人日报
 date: 2023-11-25
 draft: false
-author: 'jobcher'
+authors: 'jobcher'
 featuredImage: '/images/wallpaper/2023-11-25.jpg.webp'
 featuredImagePreview: '/images/wallpaper/2023-11-25.jpg.webp'
 images: ['/images/wallpaper/2023-11-25.jpg.webp']

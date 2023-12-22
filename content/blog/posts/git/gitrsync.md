@@ -2,7 +2,7 @@
 title: "gitlab与github同步项目"
 date: 2021-12-27
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

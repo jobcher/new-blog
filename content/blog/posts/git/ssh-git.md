@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/github.png"
 featuredImagePreview: "/images/github.png"
 images: ["/images/github.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["gitlab"]
 categories: ["gitlab"]
 series: ["git入门系列"]

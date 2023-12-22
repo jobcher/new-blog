@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/xiaopeng.png"
 featuredImagePreview: "/images/xiaopeng.png"
 images: ["/images/xiaopeng.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["福利"]
 series: ["福利系列"]

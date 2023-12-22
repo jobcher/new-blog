@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/cocoapods-orange-on-grey-1.jpg"
 featuredImagePreview: "/images/cocoapods-orange-on-grey-1.jpg"
 images: ['/images/cocoapods-orange-on-grey-1.jpg']
-author: "jobcher"
+authors: "jobcher"
 tags: ["IOS 开发"]
 categories: ["IOS 开发"]
 series: ["IOS 开发"]

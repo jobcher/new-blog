@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/gnulinux-logo-gnu-linux-logo-png.png"
 featuredImagePreview: "/images/gnulinux-logo-gnu-linux-logo-png.png"
 images: ["/images/gnulinux-logo-gnu-linux-logo-png.png"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 categories: ["基础"]
 series: ["基础知识系列"]

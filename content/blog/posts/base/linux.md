@@ -2,7 +2,7 @@
 title: "linux基础知识"
 date: 2022-02-11
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["运维"]
 categories: ["基础"]
 series: ["基础知识系列"]

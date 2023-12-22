@@ -2,7 +2,7 @@
 title: "logrotate 日志滚动的使用"
 date: 2021-12-29
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["日常"]
 series: ["日常系列"]

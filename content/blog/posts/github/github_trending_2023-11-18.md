@@ -2,7 +2,7 @@
 title: 2023-11-18 打工人日报
 date: 2023-11-18
 draft: true
-author: 'jobcher'
+authors: 'jobcher'
 featuredImage: '/images/wallpaper/2023-11-18.jpg.webp'
 featuredImagePreview: '/images/wallpaper/2023-11-18.jpg.webp'
 images: ['/images/wallpaper/2023-11-18.jpg.webp']

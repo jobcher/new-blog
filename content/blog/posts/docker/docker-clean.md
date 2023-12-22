@@ -2,7 +2,7 @@
 title: "清理Docker的container，image与volume"
 date: 2022-02-10
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker进阶系列"]

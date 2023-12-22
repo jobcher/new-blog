@@ -2,7 +2,7 @@
 title: "Planet 下载及安装"
 date: 2022-08-17
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["Planet", "web3.0"]
 categories: ["web3.0"]
 series: ["web3.0"]

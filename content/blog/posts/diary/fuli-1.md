@@ -5,7 +5,7 @@ draft: false
 featuredImage: "/images/p9CGZnI.jpg"
 featuredImagePreview: "/images/p9CGZnI.jpg"
 images: ["/images/p9CGZnI.jpg"]
-author: "jobcher"
+authors: "jobcher"
 tags: ["daliy"]
 categories: ["福利"]
 series: ["福利系列"]

@@ -2,7 +2,7 @@
 title: "github 国内代理访问下载"
 date: 2023-04-11
 draft: false
-author: "jobcher"
+authors: "jobcher"
 featuredImage: "/images/github.png"
 featuredImagePreview: "/images/github.png"
 tags: ["daliy"]

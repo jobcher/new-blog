@@ -2,7 +2,7 @@
 title: "mysql 笔记（2）"
 date: 2022-01-21
 draft: false
-author: "jobcher"
+authors: "jobcher"
 tags: ["mysql"]
 categories: ["数据库"]
 series: ["mysql系列"]
