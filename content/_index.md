@@ -1,5 +1,5 @@
 ---
-title: HB Theme Template
+title: jobcher‘s blog
 # menu:
 #   main:
 #     name: Home

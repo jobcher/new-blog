@@ -1,5 +1,5 @@
 ---
-title: HB 主题模板
+title: 打工人日志
 # menu:
 #   main:
 #     name: 主页
