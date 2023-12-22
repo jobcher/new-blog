@@ -15,7 +15,7 @@ series: ["运维监控系列"]
 ## APM 监控
 
 一个基于微服务架构的电商系统  
-<img src="https://www.jobcher.com/images/skywalkning.png" width="100%">  
+<img src="https://test.jobcher.com/images/skywalkning.png" width="100%">  
 `APM `(Application Performance Management) 即应用性能管理，属于 IT 运维管理（ITOM)范畴.  
 分为一下三个方面：
 
@@ -27,9 +27,9 @@ series: ["运维监控系列"]
   在微服务架构系统中一请求会经过很多服务处理，调用链路会非常长，要确定中间哪个服务出现异常是非常麻烦的事情，通过分布式链路追踪，运维人员就可以构建一个请求的视图。视图上战术了一个请求从进入系统开始到返回响应的整个流程。
 
 > `系统交互图`  
-> <img src="https://www.jobcher.com/images/skywalking2.svg" width="70%">
+> <img src="https://test.jobcher.com/images/skywalking2.svg" width="70%">
 
-> `系统加载图` > <img src="https://www.jobcher.com/images/skywalking3.svg" width="100%">
+> `系统加载图` > <img src="https://test.jobcher.com/images/skywalking3.svg" width="100%">
 
 ## 目前流行的`APM监控`
 
@@ -55,7 +55,7 @@ series: ["运维监控系列"]
 
 # skywalking 整体框架
 
-<img src="https://www.jobcher.com/images/skywalking4.jpg" width="100%">  
+<img src="https://test.jobcher.com/images/skywalking4.jpg" width="100%">  
   
 - 上部分 `Agent` ：负责从应用中，收集链路信息，发送给 SkyWalking OAP 服务器。目前支持 SkyWalking、Zikpin、Jaeger 等提供的 Tracing 数据信息。而我们目前采用的是，SkyWalking Agent 收集 SkyWalking Tracing 数据，传递给服务器。
 - 下部分 `SkyWalking OAP` ：负责接收 Agent 发送的 Tracing 数据信息，然后进行分析(Analysis Core) ，存储到外部存储器( Storage )，最终提供查询( Query )功能。

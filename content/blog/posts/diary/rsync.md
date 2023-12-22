@@ -41,4 +41,4 @@ rsync -r source destination
 rsync -av <源地址>/ <用户名>@<ip地址>:/<目标地址>
 ```
 
-1. 友情地址：[mysql 迁移](https://www.jobcher.com/mysqldump/)
+1. 友情地址：[mysql 迁移](https://test.jobcher.com/mysqldump/)

@@ -37,9 +37,9 @@ sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 ```
 ### 准备包环境
-更换软件源，可以参考这篇文章 [GNU/Linux 一键更换系统软件源脚本](https://www.jobcher.com/linux-mirror/)  
+更换软件源，可以参考这篇文章 [GNU/Linux 一键更换系统软件源脚本](https://test.jobcher.com/linux-mirror/)  
 ```sh
-bash <(curl -sSL https://www.jobcher.com/ChangeMirrors.sh)
+bash <(curl -sSL https://test.jobcher.com/ChangeMirrors.sh)
 ```
 更新apt，允许使用https
 ```sh

@@ -18,7 +18,7 @@ Harbor 是一个开源可信的云原生注册表项目，用于存储、签名�
 2. docker 17.06.0-ce 以上
 3. docker-compose 1.18.0 以上
 
-[链接跳转：docker 安装](https://www.jobcher.com/docker/)
+[链接跳转：docker 安装](https://test.jobcher.com/docker/)
 
 ## 安装
 

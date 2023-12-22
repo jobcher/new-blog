@@ -123,4 +123,4 @@ series: ["日常系列"]
 </project>
 ```
 
-欢迎关注我的博客[www.jobcher.com](https://www.jobcher.com/)
+欢迎关注我的博客[test.jobcher.com](https://test.jobcher.com/)

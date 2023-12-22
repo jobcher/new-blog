@@ -14,7 +14,7 @@ series: ["git入门系列"]
 
 ## 安装 docker
 
-[安装 docker](https://www.jobcher.com/docker/)
+[安装 docker](https://test.jobcher.com/docker/)
 
 ## docker 安装 jenkins
 

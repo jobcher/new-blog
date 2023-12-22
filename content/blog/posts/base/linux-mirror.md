@@ -68,15 +68,15 @@ series: ["基础知识系列"]
 ## 执行命令
 ### 国内使用
 ```bash
-bash <(curl -sSL https://www.jobcher.com/ChangeMirrors.sh)
+bash <(curl -sSL https://test.jobcher.com/ChangeMirrors.sh)
 ```
 ### 教育网使用
 ```bash
-bash <(curl -sSL https://www.jobcher.com/ChangeMirrors.sh) --edu
+bash <(curl -sSL https://test.jobcher.com/ChangeMirrors.sh) --edu
 ```
 ### 海外使用
 ```bash
-bash <(curl -sSL https://www.jobcher.com/ChangeMirrors.sh) --abroad
+bash <(curl -sSL https://test.jobcher.com/ChangeMirrors.sh) --abroad
 ```
 
 ## 注意事项

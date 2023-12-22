@@ -98,7 +98,7 @@ iOS需要外区账号
 
 ```
 欢迎关注我的博客  
-[www.jobcher.com](https://www.jobcher.com/)
+[test.jobcher.com](https://test.jobcher.com/)
 ```
 
 ### 转载自（[https://www.ahhhhfs.com/](https://www.ahhhhfs.com/)）

@@ -196,6 +196,6 @@ scrape_configs:
 
 ```yaml
 - targets:
-    - https://www.jobcher.com
+    - https://test.jobcher.com
     - https://<域名>
 ```

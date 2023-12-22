@@ -1,4 +1,4 @@
-baseURL: https://www.jobcher.com/
+baseURL: https://test.jobcher.com/
 title: 打工人日志
 # Copyright, the {year} is the placeholder of this year.
 copyright: "Copyright © 2022-{year} All Rights Reserved."
