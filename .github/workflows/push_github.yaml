@@ -54,10 +54,10 @@ jobs:
             --gc \
             --enableGitInfo    
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./public
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v1
+      #   with:
+      #     path: ./public
 
       - name: Deploy Web	
         uses: peaceiris/actions-gh-pages@v3.8.0	
