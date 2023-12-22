@@ -34,10 +34,11 @@ hb:
       profile:
         # title: Profile title other than site title.
         # description: Profile description other than site description.
-        company: COMPANY
+        # company: COMPANY
         location: Earth
         socials:
           github: jobcher
+          twitter: jobcher1
           # mastodon: https://techhub.social/@hbstack
           rss: true
       posts:

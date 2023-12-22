@@ -80,4 +80,14 @@ main:
       icon:
         vendor: bs
         name: book
+      description: k8s使用文档。
+
+  - name: 导航
+    url: https://nav.jobcher.com/
+    weight: 2
+    params:
+      icon:
+        vendor: font-awesome-solid
+        name: headset
+        color: red
       description: 使用文档。

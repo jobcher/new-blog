@@ -3,5 +3,16 @@
 /*! purgecss start ignore */
 
 /*! PUT YOU STYLE HERE TO AVOID GETTING REMOVING BY PURGECSS. */
+.hb-footer-site-info {
+    display: none;
+}
+
+.hb-blog-sidebar-posts {
+    display: none;
+}
+
+.hb-blog-home-carousel {
+    display: none;
+}
 
 /*! purgecss end ignore */
