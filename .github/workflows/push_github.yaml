@@ -62,8 +62,8 @@ jobs:
           hugo \
             --gc \
             --enableGitInfo    
-            mv -f ./ads.txt /home/runner/work/blog/blog/public/.
-            mv -f ./ChangeMirrors.sh /home/runner/work/blog/blog/public/.
+            mv -f ./ads.txt ./public/
+            mv -f ./ChangeMirrors.sh ./public/
 
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v1
