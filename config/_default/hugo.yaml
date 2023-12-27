@@ -28,6 +28,13 @@ outputs:
     - SearchIndex    # required by search module.
     - WebAppManifest # required by PWA module to make your site installable.
 
+  page:
+    - HTML
+    - Offline        # required by PWA module for displaying the offline pages.
+    - RSS
+    - SearchIndex    # required by search module.
+    - WebAppManifest # required by PWA module to make your site installable.
+
 taxonomies:
   authors: authors       # multiple authors.
   tags: tags
