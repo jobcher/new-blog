@@ -22,3 +22,18 @@ features = ["search", "flexible", "modular"]
 [author]
 name = "jobcher"
 homepage = "https://www.jobcher.com/"
+
+# 网站地图配置
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[permalinks]
+  posts = "/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
