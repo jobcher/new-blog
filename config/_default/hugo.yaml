@@ -18,7 +18,7 @@ sitemap:
   priority: 0.5
 
 permalinks:
-  blog: /:slug/
+  blog: /:filename/
 
 outputs:
   home:
