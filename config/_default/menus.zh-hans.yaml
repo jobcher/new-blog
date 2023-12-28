@@ -90,4 +90,14 @@ main:
         vendor: font-awesome-solid
         name: headset
         color: red
-      description: 使用文档。
+      description: 页面导航
+  
+  - name: ip检测
+    url: https://realip.jobcher.com/
+    weight: 3
+    params:
+      icon:
+        vendor: font-awesome-regular
+        name: comments
+        color: green
+      description: ip检测
