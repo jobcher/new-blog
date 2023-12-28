@@ -3,6 +3,9 @@ title: "k8s.gcr.io国内无法连接解决方法"
 date: 2022-09-22
 draft: false
 authors: "jobcher"
+featuredImage: '/images/error.jpeg'
+featuredImagePreview: '/images/error.jpeg'
+images: ['/images/error.jpeg']
 tags: ["error"]
 categories: ["问题库"]
 series: ["问题库系列"]

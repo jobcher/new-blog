@@ -3,6 +3,9 @@ title: "安装 docker 出现 ERROR: Unsupported distribution 'ol' 问题"
 date: 2022-01-11
 draft: false
 authors: "jobcher"
+featuredImage: '/images/error.jpeg'
+featuredImagePreview: '/images/error.jpeg'
+images: ['/images/error.jpeg']
 tags: ["error"]
 categories: ["问题库"]
 series: ["问题库系列"]

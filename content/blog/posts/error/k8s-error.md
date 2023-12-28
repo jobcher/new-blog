@@ -3,6 +3,9 @@ title: "K8S 问题排查：cgroup 内存泄露问题"
 date: 2022-08-30
 draft: false
 authors: "jobcher"
+featuredImage: '/images/error.jpeg'
+featuredImagePreview: '/images/error.jpeg'
+images: ['/images/error.jpeg']
 tags: ["error"]
 categories: ["问题库"]
 series: ["问题库系列"]
