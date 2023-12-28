@@ -59,14 +59,14 @@ hb:
         - blog
         - tutorials
     giscus:
-      repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo: jobcher/jobcher.github.io
+      repo_id: R_kgDOGls6vw
+      category_id: DIC_kwDOGls6v84CcDKf
   docs:
     giscus:
       repo: hbstack/theme
-      repo_id: R_kgDOJP3qtA
-      category_id: DIC_kwDOJP3qtM4CVavM
+      repo_id: R_kgDOGls6vw
+      category_id: DIC_kwDOGls6v84CcDKf
   content_panel:
     repo:
       service: github # github or gitlab.
