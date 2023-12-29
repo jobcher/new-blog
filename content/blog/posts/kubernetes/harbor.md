@@ -219,6 +219,73 @@ proxy:
 ```
 
 ## harbor 配置和使用
+### 配置host地址
+```sh
+vim /etc/hosts
+```
+```sh
+192.168.0.230 harbor.dev
+```
+### 配置docker参数
+查找docker.service地址
+```sh
+systemctl status docker
+```
+我的地址是 `/usr/lib/systemd/system/docker.service`  
+```sh
+vim /usr/lib/systemd/system/docker.service
+```
+增加 `--insecure-registry=harbor.dev`  
+```sh
+[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network-online.target docker.socket firewalld.service containerd.service time-set.target
+Wants=network-online.target containerd.service
+Requires=docker.socket
+
+[Service]
+Type=notify
+# the default is not to use systemd for cgroups because the delegate issues still
+# exists and systemd currently does not support the cgroup feature set required
+# for containers run by docker
+ExecStart=/usr/bin/dockerd -H fd:// --insecure-registry=harbor.dev  --containerd=/run/containerd/containerd.sock
+ExecReload=/bin/kill -s HUP $MAINPID
+TimeoutStartSec=0
+RestartSec=2
+Restart=always
+
+# Note that StartLimit* options were moved from "Service" to "Unit" in systemd 229.
+# Both the old, and new location are accepted by systemd 229 and up, so using the old location
+# to make them work for either version of systemd.
+StartLimitBurst=3
+
+# Note that StartLimitInterval was renamed to StartLimitIntervalSec in systemd 230.
+# Both the old, and new name are accepted by systemd 230 and up, so using the old name to make
+# this option work for either version of systemd.
+StartLimitInterval=60s
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Comment TasksMax if your systemd version does not support it.
+# Only systemd 226 and above support this option.
+TasksMax=infinity
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+OOMScoreAdjust=-500
+
+[Install]
+WantedBy=multi-user.target
+```
+### 登陆
 在你需要上传的服务器上执行  
 ```sh
 docker login <harbor域名>

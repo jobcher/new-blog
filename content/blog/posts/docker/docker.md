@@ -23,7 +23,7 @@ curl -sSL https://get.daocloud.io/docker | sh
 
 ```sh
 #下载安装
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.jobcher.com/gh/https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 #可执行权限
 sudo chmod +x /usr/local/bin/docker-compose
 #创建软链：
