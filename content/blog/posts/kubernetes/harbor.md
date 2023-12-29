@@ -249,6 +249,7 @@ Type=notify
 # the default is not to use systemd for cgroups because the delegate issues still
 # exists and systemd currently does not support the cgroup feature set required
 # for containers run by docker
+# 增加 私有harbor 地址
 ExecStart=/usr/bin/dockerd -H fd:// --insecure-registry=harbor.dev  --containerd=/run/containerd/containerd.sock
 ExecReload=/bin/kill -s HUP $MAINPID
 TimeoutStartSec=0
@@ -284,6 +285,12 @@ OOMScoreAdjust=-500
 
 [Install]
 WantedBy=multi-user.target
+```
+
+### 重新加载docker
+```sh
+sudo systemctl daemon-reload
+sudo systemctl restart docker
 ```
 ### 登陆
 在你需要上传的服务器上执行  
