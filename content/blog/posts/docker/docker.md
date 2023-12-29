@@ -1,5 +1,5 @@
 ---
-title: "docker 命令"
+title: "docker 和 docker-compose 安装"
 date: 2021-12-28
 draft: false
 authors: "jobcher"
@@ -13,8 +13,10 @@ series: ["docker入门系列"]
 通过 docker 脚本安装
 
 ```sh
-    curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
-    curl -sSL https://get.daocloud.io/docker | sh
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+```
+```sh
+curl -sSL https://get.daocloud.io/docker | sh
 ```
 
 ## docker-compose 安装
