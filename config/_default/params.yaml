@@ -86,7 +86,7 @@ pwa:
   manifest:
     background_color: '#712cf9'
     theme_color: '#712cf9'
-    short_name: 'HB Theme'
+    short_name: "Jobcher's Blog"
 
 # see https://hugomods.com/en/docs/search/#site-parameters
 search:
