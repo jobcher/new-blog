@@ -58,15 +58,16 @@ hb:
         - docs
         - blog
         - tutorials
-    giscus:
-      repo: jobcher/jobcher.github.io
-      repo_id: R_kgDOGls6vw
-      category_id: DIC_kwDOGls6v84CcDKf
-  docs:
-    giscus:
-      repo: jobcher/jobcher.github.io
-      repo_id: R_kgDOGls6vw
-      category_id: DIC_kwDOGls6v84CcDKf
+  ## 评论区
+  #   giscus:
+  #     repo: jobcher/jobcher.github.io
+  #     repo_id: R_kgDOGls6vw
+  #     category_id: DIC_kwDOGls6v84CcDKf
+  # docs:
+  #   giscus:
+  #     repo: jobcher/jobcher.github.io
+  #     repo_id: R_kgDOGls6vw
+  #     category_id: DIC_kwDOGls6v84CcDKf
   content_panel:
     repo:
       service: github # github or gitlab.
