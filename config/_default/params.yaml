@@ -70,7 +70,7 @@ hb:
   content_panel:
     repo:
       service: github # github or gitlab.
-      repo: hbstack/theme
+      repo: jobcher/new-blog
       branch: main
       # subpath: exampleSite
   # gallery:
