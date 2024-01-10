@@ -5,7 +5,7 @@ draft: false
 author: 'jobcher'
 featuredImage: '/images/sd-logo.jpeg'
 featuredImagePreview: '/images/sd-logo.jpeg'
-images: ['/images/wallpaper/sd-logo.jpeg']
+images: ['/images/sd-logo.jpeg']
 tags: ['stable diffusion']
 categories: ['stable diffusion']
 series: ['stable diffusion']
