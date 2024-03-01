@@ -678,6 +678,7 @@ func push_email() {
 	today := time.Now().Format("2006-01-02")
 	md_name := "github_trending_" + today
 
+	// 发送邮件
 	for rows.Next() {
 		var email string
 		if err := rows.Scan(&email); err != nil {
@@ -727,10 +728,11 @@ func push_email() {
 		d := gomail.NewDialer("smtp.qiye.aliyun.com", 25, smtp_mail, smtp_pass)
 
 		if err := d.DialAndSend(m); err != nil {
-			log.Fatal(err)
+			log.Println("Failed to send email to", email, ":", err)
+		} else {
+			fmt.Printf("已发送订阅邮件至 %s\n", email)
 		}
 
-		fmt.Printf("已发送订阅邮件至 %s\n", email)
 	}
 
 	if err := rows.Err(); err != nil {
