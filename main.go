@@ -2,6 +2,7 @@ package main
 
 import (
 	"crypto/md5"
+	"database/sql"
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
@@ -20,6 +21,9 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/chai2010/webp"
+
+	_ "github.com/go-sql-driver/mysql"
+	gomail "gopkg.in/gomail.v2"
 )
 
 type Item struct {
@@ -82,6 +86,9 @@ func main() {
 	dnsport_new(md_name)
 	// 获取abskoop热门
 	abskoop(md_name)
+
+	// 发送邮件
+	push_email()
 
 	fmt.Println("成功生成文件")
 }
@@ -641,4 +648,93 @@ func tran_webp() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+}
+
+// 发送订阅邮件
+func push_email() {
+	// 环境变量
+	db_host := os.Getenv("DB_HOST")
+	db_port := os.Getenv("DB_PORT")
+	db_user := os.Getenv("DB_USER")
+	db_pass := os.Getenv("DB_PASS")
+	db_database := os.Getenv("DB_DATABASE")
+	smtp_mail := os.Getenv("SMTP_MAIL")
+	smtp_pass := os.Getenv("SMTP_PASS")
+
+	db, err := sql.Open("mysql", db_user+":"+db_pass+"@tcp("+db_host+":"+db_port+")/"+db_database+"?charset=utf8")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer db.Close()
+
+	rows, err := db.Query("SELECT email FROM subscriptions")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer rows.Close()
+
+	today := time.Now().Format("2006-01-02")
+	md_name := "github_trending_" + today
+
+	for rows.Next() {
+		var email string
+		if err := rows.Scan(&email); err != nil {
+			log.Fatal(err)
+		}
+
+		m := gomail.NewMessage()
+		m.SetHeader("From", smtp_mail)
+		m.SetHeader("To", email)
+		m.SetHeader("Subject", "【打工人日报】 【"+today+"】")
+		m.SetBody("text/html", `
+		<html>
+		<head>
+		<style>
+		body {font-family: Arial, sans-serif;}
+		.container {margin: auto; width: 50%;}
+		h1 {color: #333;}
+		p {font-size: 16px;}
+		a {color: #1a0dab; text-decoration: none;}
+		.button {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		</style>
+		</head>
+		<body>
+		<div class="container">
+		<h2>打工人日报</h2>
+		<p>【`+today+`】</p>
+		<p>您订阅的打工人日报已更新，点击下方按钮查看详情。</p>
+		<a href='https://www.jobcher.com/`+md_name+`/' class='button'>点击查看</a>
+		<p>为避免标记为垃圾邮件，请将此邮件地址添加到您的联系人列表。</p>
+		<p>如有任何问题，请联系我们。</p>
+		</div>
+		</body>
+		</html>
+		`)
+
+		d := gomail.NewDialer("smtp.qiye.aliyun.com", 25, smtp_mail, smtp_pass)
+
+		if err := d.DialAndSend(m); err != nil {
+			log.Fatal(err)
+		}
+
+		fmt.Printf("已发送订阅邮件至 %s\n", email)
+	}
+
+	if err := rows.Err(); err != nil {
+		log.Fatal(err)
+	}
+
 }
