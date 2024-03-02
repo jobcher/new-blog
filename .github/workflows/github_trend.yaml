@@ -14,6 +14,13 @@ jobs:
     env:
       BAIDU_TRANSLATE_API_KEY: ${{ secrets.BAIDU_TRANSLATE_API_KEY }}
       BAIDU_TRANSLATE_API_ID: ${{ secrets.BAIDU_TRANSLATE_API_ID }}
+      DB_HOST: ${{ secrets.DB_HOST }}
+      DB_PORT: ${{ secrets.DB_PORT }}
+      DB_USER: ${{ secrets.DB_USER }}
+      DB_PASS: ${{ secrets.DB_PASS }}
+      DB_DATABASE: ${{ secrets.DB_DATABASE }}
+      SMTP_MAIL: ${{ secrets.SMTP_MAIL }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2

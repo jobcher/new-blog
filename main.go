@@ -660,12 +660,9 @@ func push_email() {
 	db_pass := os.Getenv("DB_PASS")
 	db_database := os.Getenv("DB_DATABASE")
 	smtp_mail := os.Getenv("SMTP_MAIL")
-	fmt.Println(smtp_mail)
 	smtp_pass := os.Getenv("SMTP_PASS")
 
-	mysql_tcp := "" + db_user + ":" + db_pass + "@tcp(" + db_host + ":" + db_port + ")/" + db_database + "?charset=utf8"
-
-	fmt.Println(mysql_tcp)
+	mysql_tcp := db_user + ":" + db_pass + "@tcp(" + db_host + ":" + db_port + ")/" + db_database + "?charset=utf8"
 
 	db, err := sql.Open("mysql", mysql_tcp)
 
