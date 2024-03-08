@@ -4,8 +4,8 @@ date: 2023-01-01
 draft: false
 authors: "jobcher"
 tags: ["基础"]
-featuredImage: "/images/base/xxl-desktop-pc.jpg"
-featuredImagePreview: "/images/base/xxl-desktop-pc.jpg"
+featuredImage: "/images/xxl-desktop-pc.jpg"
+featuredImagePreview: "/images/xxl-desktop-pc.jpg"
 categories: ["基础"]
 series: ["基础知识系列"]
 ---
