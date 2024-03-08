@@ -37,3 +37,7 @@ homepage = "https://www.jobcher.com/"
   page = ["HTML"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
+
+# 数学公式
+[params.math]
+  enable = true
