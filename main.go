@@ -722,7 +722,7 @@ func push_email() {
 		<a href='https://www.jobcher.com/`+md_name+`/' class='button'>点击查看</a>
 		<p>为避免标记为垃圾邮件，请将此邮件地址添加到您的联系人列表。</p>
 		<p>如有任何问题，请联系我们。</p>
-		<P>取消订阅：<a href='https://sub.jobcher.com/unsubscribe/'>https://sub.jobcher.com/unsubscribe/</a></p>
+		<P>取消订阅：<a href='https://sub.jobcher.com/unsubscribe'>https://sub.jobcher.com/unsubscribe</a></p>
 		</div>
 		</body>
 		</html>

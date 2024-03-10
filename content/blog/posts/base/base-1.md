@@ -74,5 +74,8 @@ CPU 主要由`运算器`、`控制器`、`寄存器`组和内部总线等部件�
 {{< katex >}}
 2^{k}-1 \geq {n+k}
 {{< /katex >}}  
+海明码的编码规则如下  
+设k个检验位为{{< katex "P_k,P_{k-1}" true />}},……,{{< katex "P_1" true />}}，n个数据位为{{< katex "D_{n-1},D_{n-2}" true />}},……,{{< katex "D_1,D_0" true />}},对应的海明码为{{< katex "H_{n+k},H_{n+k-1}" true />}},……,{{< katex "H_1" true />}},那么：  
+
 - **循环冗余校验码**:循环冗余校验码（Cyclic Redundancy Check，CRC）由两部分组成，左边为信息码（数据），右边为校验码。广泛用于数据通信领域和磁介质存储系统中  
 ![循环冗余校验码（CRC 的代码格式）](/images/base/base-1-2.png)  
