@@ -1,7 +1,7 @@
-name = "HB Starter Theme Template"
+name = "打工人日志"
 license = "MIT"
 licenselink = "https://github.com/jobcher"
-description = "keep simple, keep stupid"
+description = "A week is 2% of the year"
 homepage = "https://github.com/jobcher"
 demosite = "https://www.jobcher.com/"
 tags = [
