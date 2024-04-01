@@ -3,6 +3,9 @@ title: "contained 安装及使用"
 date: 2022-08-17
 draft: false
 authors: "jobcher"
+featuredImage: "/images/docker.png"
+featuredImagePreview: "/images/docker.png"
+images: ['/images/docker.png']
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]

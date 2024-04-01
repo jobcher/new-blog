@@ -3,6 +3,9 @@ title: "清理Docker容器日志"
 date: 2022-09-19
 draft: false
 authors: "jobcher"
+featuredImage: "/images/docker.png"
+featuredImagePreview: "/images/docker.png"
+images: ['/images/docker.png']
 tags: ["docker"]
 categories: ["docker"]
 series: ["docker入门系列"]
