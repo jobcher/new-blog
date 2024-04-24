@@ -55,10 +55,14 @@ func main() {
 	md_name := "github_trending_" + today + ".md"
 
 	//判断文件是否存在
-	_, err := os.Stat("content/blog/posts/github/" + md_name)
-	if err == nil {
-		fmt.Println("文件已存在")
-		os.Exit(0)
+	dir := "content/blog/posts/github"
+	_, err := os.Stat(dir)
+
+	if os.IsNotExist(err) {
+		errDir := os.MkdirAll(dir, 0755)
+		if errDir != nil {
+			log.Fatal(err)
+		}
 	}
 
 	// 创建 Markdown 文件
