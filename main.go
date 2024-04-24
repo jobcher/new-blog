@@ -44,6 +44,11 @@ type RSS struct {
 	Channel Channel `xml:"channel"`
 }
 
+type Message struct {
+	Role    string `json:"role"`
+	Content string `json:"content"`
+}
+
 func main() {
 	// 当前日期
 	today := time.Now().Format("2006-01-02")
@@ -120,7 +125,8 @@ func get_weibo(md_name string) {
 	}
 
 	count := 0
-	// 查找所有的热搜
+	var contents []string
+
 	doc.Find(".table tbody tr").Each(func(i int, s *goquery.Selection) {
 		count++
 		if count > 20 {
@@ -139,16 +145,24 @@ func get_weibo(md_name string) {
 		content += fmt.Sprintf("[%s]", title)
 		content += fmt.Sprintf("(https://s.weibo.com/weibo?q=%s)\n", url)
 
-		fmt.Println(content)
-
-		// 写入 Markdown 文件
-		file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer file.Close()
-		file.WriteString(content)
+		// 将 content 添加到 contents 切片中
+		contents = append(contents, content)
 	})
+
+	// 将所有的 content 汇总成一个字符串
+	allContent := strings.Join(contents, "\n")
+
+	summary := AI_summary(allContent)
+	fmt.Println(summary)
+	fmt.Println(allContent)
+
+	// 写入 Markdown 文件
+	file, err = os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 热搜链接\n\n" + allContent)
 }
 
 func get_github(md_name string) {
@@ -742,4 +756,49 @@ func push_email() {
 		log.Fatal(err)
 	}
 
+}
+
+func AI_summary(promt string) string {
+	cloudflareAccountID := os.Getenv("CLOUDFLARE_ID")    // 你的 Cloudflare 账户 ID
+	cloudflareAuthToken := os.Getenv("CLOUDFLARE_TOKEN") // 你的 Cloudflare 授权令牌
+	ai_url := "https://api.cloudflare.com/client/v4/accounts/" + cloudflareAccountID + "/ai/run/@cf/qwen/qwen1.5-14b-chat-awq"
+
+	messages := []Message{
+		{
+			Role:    "system",
+			Content: "AI 生成摘要能够生成简洁、有逻辑性的文本摘要。它可以根据输入的文本内容，提取出其中的关键信息，生成易于理解的、精炼的摘要内容，方便用户快速获取文本核心信息。",
+		},
+		{
+			Role:    "user",
+			Content: promt,
+		},
+	}
+
+	data := map[string]interface{}{"messages": messages}
+	jsonData, err := json.Marshal(data)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	req, err := http.NewRequest("POST", ai_url, strings.NewReader(string(jsonData)))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	req.Header.Set("Authorization", "Bearer "+cloudflareAuthToken)
+	req.Header.Set("Content-Type", "application/json")
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer resp.Body.Close()
+
+	//返回 JSON 的result字段中的 response 字段
+	var result map[string]interface{}
+	json.NewDecoder(resp.Body).Decode(&result)
+	response := result["result"].(map[string]interface{})["response"].(string)
+
+	return response
 }
