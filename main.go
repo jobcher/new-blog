@@ -802,7 +802,20 @@ func AI_summary(promt string) string {
 	//返回 JSON 的result字段中的 response 字段
 	var result map[string]interface{}
 	json.NewDecoder(resp.Body).Decode(&result)
-	response := result["result"].(map[string]interface{})["response"].(string)
+
+	if result["result"] == nil {
+		log.Fatal("result field is nil")
+	}
+
+	responseMap, ok := result["result"].(map[string]interface{})
+	if !ok {
+		log.Fatal("result field is not a map[string]interface{}")
+	}
+
+	response, ok := responseMap["response"].(string)
+	if !ok {
+		log.Fatal("response field not found in the result or is not a string")
+	}
 
 	return response
 }
