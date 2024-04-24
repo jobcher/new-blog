@@ -21,6 +21,9 @@ jobs:
       DB_DATABASE: ${{ secrets.DB_DATABASE }}
       SMTP_MAIL: ${{ secrets.SMTP_MAIL }}
       SMTP_PASS: ${{ secrets.SMTP_PASS }}
+      CLOUDFLARE_ID: ${{ secrets.CLOUDFLARE_ID }}
+      CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
