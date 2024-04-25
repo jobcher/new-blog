@@ -15,30 +15,11 @@ series: ['日报']
 
 ### AI 摘要
 
-1. 西部大开发再掀新篇章
-2. 社保缴满15年退休政策详解
-3. 洪海仁原定计划：iu泪女王新剧
-4. 山西观察：气象万千的焦点
-5. 彩礼话题：财产归属与返还讨论
-6. 物业工作人员电梯事故悲剧
-7. 唐家三少再婚声明引发关注
-8. 北京车展科技亮点展示
-9. 价值百万黄金店铺开业被盗
-10. 淫秽物品标准引舆论关注
-11. 《花少》第一站波折张翰事件
-12. 老爷爷浪漫金婚地铁行
-13. 王一博造型引热议：鲨鱼夹
-14. 叶诗文体坛抉择：退出比赛
-15. 肖战荣誉：入选最美面孔全球榜
-16. 娱乐风波：技师事件与客服回应
-17. 母亲行为引关注：关孩子餐食问题
-18. TikTok官方立场：反对剥离法案
-19. 特斯拉市值一夜暴涨惊人
-20. 娱乐圈趣闻：狗头萝莉招聘新员工
+关于西部大开发，总书记强调了六个坚持，引发了热议；官方就社保缴满15年与退休问题给出了回应；还有洪海仁原定的IU出演剧集变动，令人关注。各地气象各异，如山西展新貌，魏牌蓝山智驾版亮相北京车展。讨论点涉及彩礼、坠楼事故、名人婚事、北京车展新车、法律议题、安全事件、娱乐圈动态、运动员选择、亲子问题、明星颜值和科技公司新闻。从金婚地铁喜庆画面，到叶诗文退出比赛，展现了多元社会事件。
 
 ### 热搜链接
 
-- 排名 1.[奋力谱写西部大开发新篇章](https://s.weibo.com/weibo?q=奋力谱写西部大开发新篇章)
+- 排名 1.[关于西部大开发总书记强调6个坚持](https://s.weibo.com/weibo?q=关于西部大开发总书记强调6个坚持)
 
 - 排名 2.[官方回应社保缴满15年就坐等退休](https://s.weibo.com/weibo?q=官方回应社保缴满15年就坐等退休)
 
@@ -46,37 +27,37 @@ series: ['日报']
 
 - 排名 4.[万千气象看山西](https://s.weibo.com/weibo?q=万千气象看山西)
 
-- 排名 5.[彩礼该以女方陪嫁形式返还小家庭吗](https://s.weibo.com/weibo?q=彩礼该以女方陪嫁形式返还小家庭吗)
+- 排名 5.[魏牌蓝山智驾版亮相北京车展](https://s.weibo.com/weibo?q=魏牌蓝山智驾版亮相北京车展)
 
-- 排名 6.[电梯从20楼坠落致物业工作人员死亡](https://s.weibo.com/weibo?q=电梯从20楼坠落致物业工作人员死亡)
+- 排名 6.[彩礼该以女方陪嫁形式返还小家庭吗](https://s.weibo.com/weibo?q=彩礼该以女方陪嫁形式返还小家庭吗)
 
-- 排名 7.[唐家三少说再婚会通知书友](https://s.weibo.com/weibo?q=唐家三少说再婚会通知书友)
+- 排名 7.[电梯从20楼坠落致物业工作人员死亡](https://s.weibo.com/weibo?q=电梯从20楼坠落致物业工作人员死亡)
 
-- 排名 8.[北京车展星科技](https://s.weibo.com/weibo?q=北京车展星科技)
+- 排名 8.[唐家三少说再婚会通知书友](https://s.weibo.com/weibo?q=唐家三少说再婚会通知书友)
 
-- 排名 9.[刚开业价值300万黄金被洗劫一空](https://s.weibo.com/weibo?q=刚开业价值300万黄金被洗劫一空)
+- 排名 9.[北京车展最大奥迪上新](https://s.weibo.com/weibo?q=北京车展最大奥迪上新)
 
 - 排名 10.[淫秽物品认定标准](https://s.weibo.com/weibo?q=淫秽物品认定标准)
 
-- 排名 11.[花少第一站破碎的是张翰](https://s.weibo.com/weibo?q=花少第一站破碎的是张翰)
+- 排名 11.[刚开业价值300万黄金被洗劫一空](https://s.weibo.com/weibo?q=刚开业价值300万黄金被洗劫一空)
 
-- 排名 12.[老爷爷带写着金婚快乐的玫瑰乘地铁](https://s.weibo.com/weibo?q=老爷爷带写着金婚快乐的玫瑰乘地铁)
+- 排名 12.[东郊到家回应男子被女技师色诱加钟](https://s.weibo.com/weibo?q=东郊到家回应男子被女技师色诱加钟)
 
-- 排名 13.[王一博鲨鱼夹](https://s.weibo.com/weibo?q=王一博鲨鱼夹)
+- 排名 13.[老爷爷带写着金婚快乐的玫瑰乘地铁](https://s.weibo.com/weibo?q=老爷爷带写着金婚快乐的玫瑰乘地铁)
 
-- 排名 14.[叶诗文决定退出200混比赛](https://s.weibo.com/weibo?q=叶诗文决定退出200混比赛)
+- 排名 14.[王一博鲨鱼夹](https://s.weibo.com/weibo?q=王一博鲨鱼夹)
 
-- 排名 15.[肖战入选世界十大最美面孔](https://s.weibo.com/weibo?q=肖战入选世界十大最美面孔)
+- 排名 15.[叶诗文决定退出200混比赛](https://s.weibo.com/weibo?q=叶诗文决定退出200混比赛)
 
-- 排名 16.[东郊到家回应男子被女技师色诱加钟](https://s.weibo.com/weibo?q=东郊到家回应男子被女技师色诱加钟)
+- 排名 16.[妈妈将3个孩子反锁家中1天只吃1顿](https://s.weibo.com/weibo?q=妈妈将3个孩子反锁家中1天只吃1顿)
 
-- 排名 17.[妈妈将3个孩子反锁家中1天只吃1顿](https://s.weibo.com/weibo?q=妈妈将3个孩子反锁家中1天只吃1顿)
+- 排名 17.[肖战入选世界十大最美面孔](https://s.weibo.com/weibo?q=肖战入选世界十大最美面孔)
 
-- 排名 18.[TikTok发声明反对剥离法案](https://s.weibo.com/weibo?q=TikTok发声明反对剥离法案)
+- 排名 18.[花少第一站破碎的是张翰](https://s.weibo.com/weibo?q=花少第一站破碎的是张翰)
 
 - 排名 19.[特斯拉市值一夜大涨4028亿](https://s.weibo.com/weibo?q=特斯拉市值一夜大涨4028亿)
 
-- 排名 20.[狗头萝莉自曝找到员工了](https://s.weibo.com/weibo?q=狗头萝莉自曝找到员工了)
+- 排名 20.[TikTok发声明反对剥离法案](https://s.weibo.com/weibo?q=TikTok发声明反对剥离法案)
 ## GitHub 热门榜单
 
 #### 排名 1:/ntdevlabs/tiny11builder
@@ -201,34 +182,41 @@ series: ['日报']
 
 ## v2ex 热门帖子
 
-- 1.[天暖和了，一起跑步吧！](https://www.v2ex.com/t/1035447#reply32)
-- 2.[推荐一个https免费通配符ssl免费通配符证书网站](https://www.v2ex.com/t/1035451#reply20)
-- 3.[最近多雨，之前买的小米折叠伞挺好用的，但是丢了，有其他推荐的吗？](https://www.v2ex.com/t/1035452#reply18)
-- 4.[被公司老板恶心到了](https://www.v2ex.com/t/1035450#reply13)
-- 5.[在试用期过程中对新公司不满意离职会影响下一家找工作吗？](https://www.v2ex.com/t/1035448#reply11)
-- 6.[家门口看见了一台su7实车](https://www.v2ex.com/t/1035458#reply10)
-- 7.[什么需求才会用巨魔呀](https://www.v2ex.com/t/1035462#reply9)
-- 8.[AI服务器配置报价](https://www.v2ex.com/t/1035456#reply8)
-- 9.[有人遇到过吗，usbctoc直连没有反应，用c转a转接头+atoc就能用是什么原因](https://www.v2ex.com/t/1035461#reply6)
-- 10.[M1pro14inch最近更新14.4.1之后卡顿感明显](https://www.v2ex.com/t/1035449#reply5)
-- 11.[非自愿独身者](https://www.v2ex.com/t/1035463#reply4)
-- 12.[清明香港行记录](https://www.v2ex.com/t/1035455#reply3)
-- 13.[貌似最近支付宝的红包又变大了，保底1-2块](https://www.v2ex.com/t/1035467#reply3)
-- 14.[都注销备案了为什么还给我打电话询问网站情况](https://www.v2ex.com/t/1035469#reply3)
-- 15.[请教个Android的JetpackCompose技术问题](https://www.v2ex.com/t/1035459#reply2)
-- 16.[有批量管理测试Prompt的web工具吗？最好是开源的](https://www.v2ex.com/t/1035464#reply2)
-- 17.[分享给大家一个基友旅行泰国的网站](https://www.v2ex.com/t/1035465#reply2)
-- 18.[[新加坡]前端，Go，flutter，webrtc流媒体等多职位](https://www.v2ex.com/t/1035470#reply2)
-- 19.[主要矛盾是贫富差距太大，总体上来说，大家是比以前富裕的](https://www.v2ex.com/t/1035471#reply2)
-- 20.[香港免费办卡五一节](https://www.v2ex.com/t/1035475#reply2)
-- 21.[微软翻译也给墙了？](https://www.v2ex.com/t/1035453#reply1)
-- 22.[做了一个生成VSCode的主题配色网站](https://www.v2ex.com/t/1035460#reply1)
-- 23.[想换手机了，3000-4000左右预算，请问有什么推荐的吗？](https://www.v2ex.com/t/1035473#reply1)
+- 1.[天暖和了，一起跑步吧！](https://www.v2ex.com/t/1035447#reply36)
+- 2.[推荐一个https免费通配符ssl免费通配符证书网站](https://www.v2ex.com/t/1035451#reply22)
+- 3.[最近多雨，之前买的小米折叠伞挺好用的，但是丢了，有其他推荐的吗？](https://www.v2ex.com/t/1035452#reply22)
+- 4.[被公司老板恶心到了](https://www.v2ex.com/t/1035450#reply14)
+- 5.[什么需求才会用巨魔呀](https://www.v2ex.com/t/1035462#reply13)
+- 6.[在试用期过程中对新公司不满意离职会影响下一家找工作吗？](https://www.v2ex.com/t/1035448#reply11)
+- 7.[AI服务器配置报价](https://www.v2ex.com/t/1035456#reply11)
+- 8.[家门口看见了一台su7实车](https://www.v2ex.com/t/1035458#reply10)
+- 9.[貌似最近支付宝的红包又变大了，保底1-2块](https://www.v2ex.com/t/1035467#reply9)
+- 10.[有人遇到过吗，usbctoc直连没有反应，用c转a转接头+atoc就能用是什么原因](https://www.v2ex.com/t/1035461#reply6)
+- 11.[非自愿独身者](https://www.v2ex.com/t/1035463#reply6)
+- 12.[M1pro14inch最近更新14.4.1之后卡顿感明显](https://www.v2ex.com/t/1035449#reply5)
+- 13.[主要矛盾是贫富差距太大，总体上来说，大家是比以前富裕的](https://www.v2ex.com/t/1035471#reply5)
+- 14.[都注销备案了为什么还给我打电话询问网站情况](https://www.v2ex.com/t/1035469#reply4)
+- 15.[清明香港行记录](https://www.v2ex.com/t/1035455#reply3)
+- 16.[请教个Android的JetpackCompose技术问题](https://www.v2ex.com/t/1035459#reply2)
+- 17.[有批量管理测试Prompt的web工具吗？最好是开源的](https://www.v2ex.com/t/1035464#reply2)
+- 18.[分享给大家一个基友旅行泰国的网站](https://www.v2ex.com/t/1035465#reply2)
+- 19.[[新加坡]前端，Go，flutter，webrtc流媒体等多职位](https://www.v2ex.com/t/1035470#reply2)
+- 20.[想换手机了，3000-4000左右预算，请问有什么推荐的吗？](https://www.v2ex.com/t/1035473#reply2)
+- 21.[香港免费办卡五一节](https://www.v2ex.com/t/1035475#reply2)
+- 22.[微软翻译也给墙了？](https://www.v2ex.com/t/1035453#reply1)
+- 23.[做了一个生成VSCode的主题配色网站](https://www.v2ex.com/t/1035460#reply1)
 - 24.[前端一枚，寻找有意思的项目](https://www.v2ex.com/t/1035454#reply0)
 - 25.[Spotify美区家庭组会员！长期！拼车](https://www.v2ex.com/t/1035457#reply0)
 - 26.[iPhone有ai修图工具吗如人像和风景一键修](https://www.v2ex.com/t/1035468#reply0)
-- 27.[有没有unity大佬对接过telegramminiapp中的unity游戏的](https://www.v2ex.com/t/1035476#reply0)
+- 27.[昨天面试的几个MySQL和Redis的题目，来请教一下](https://www.v2ex.com/t/1035477#reply0)
+- 28.[有没有可以根据入站数据的协议类型将数据转发至不同端口的端口转发工具](https://www.v2ex.com/t/1035478#reply0)
 ## 热点新闻
+
+### AI 摘要
+
+美国总统拜登签署950亿美元对外援助法案，其中首批对乌克兰援助包括防空武器等，并计划立即运送。澳大利亚警方逮捕7名青少年，涉嫌暴力极端主义活动。阿根廷抗议者要求增加公立大学资助，因政府削减资助引起不满。朝鲜劳动党副部长谴责韩美联合军演加剧紧张。美国参议院通过涉乌克兰、以色列、台湾和TikTok法案，总统拜登表达支持并计划签署。
+
+### 热点新闻
 
 #### ↩️🖼 美国总统拜登已签署总额达950亿美元的对外援助拨款法案。该法案中对乌克兰的首批军援将在几小时内开始运送，包括防空武器、炮弹、装甲车和其他武器。 ...
 <div class="rsshub-quote"><blockquote>                                    <p><a href="https://t.me/tnews365/30228"><b>竹新社</b>:</a></p>                                    <p><small>美国参议院以79票赞成、18票反对的压倒性结果通过了包括援助乌克兰、以色列、台湾及印太地区，强制剥离TikTok在内的一揽子法案。 总统拜登随即表示，他将于24日签署该法案，并启动向乌克兰运送武器的进程。 （美联社）</small></p>                                                                    </blockquote></div><p>美国总统拜登已签署总额达950亿美元的对外援助拨款法案。该法案中对乌克兰的首批军援将在几小时内开始运送，包括防空武器、炮弹、装甲车和其他武器。<br>（<a href="https://apnews.com/article/joe-biden-mike-johnson-ukraine-israel-b72aed9b195818735d24363f2bc34ea4" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">美联社</a>）</p><img src="https://cdn5.cdn-telegram.org/file/mF34yeBr4MHjkiUQ4QXCVDRKzOJ5FJvx6xgSvrcns0KnKKnRXMflL3AFxT0GFQ2t4teKOJyR2JlrwvteY2T8iN9-l4wlLAtCOclPpbnfV2RWWWy0z3MtswKVuGstHju3caOmmoGneAZ0ERUq8Be3iZD98jKsEJZXjb5rGtDk-Zh5I9shM0C8Ow-yHNnVRoSl_1K9XWcuMwFmLaZXI6FohnGKLgGzHuDk0sIDSBf3pWn5GCn4Dev4RTomadFJh6uFmDLN7nB_ej7JC0jL8dxCtMyWQAhl0IPHXMEpFi_WPTDKG7eJrxodkuEfy0Ez5cYwmTo61pk5nIOsj4P7aXif2Q.jpg" referrerpolicy="no-referrer">
@@ -248,6 +236,42 @@ series: ['日报']
 
 #### ↩️🖼 美国参议院以79票赞成、18票反对的压倒性结果通过了包括援助乌克兰、以色列、台湾及印太地区，强制剥离TikTok在内的一揽子法案。 总统拜登随即表示，他...
 <div class="rsshub-quote"><blockquote>                                    <p><a href="https://t.me/tnews365/30197"><b>竹新社</b>:</a></p>                                    <p><small>Photo</small></p>                                                                    </blockquote></div><p>美国参议院以79票赞成、18票反对的压倒性结果通过了包括援助乌克兰、以色列、台湾及印太地区，强制剥离TikTok在内的一揽子法案。<br>总统拜登随即表示，他将于24日签署该法案，并启动向乌克兰运送武器的进程。<br>（<a href="https://apnews.com/article/israel-ukraine-aid-tiktok-senate-8fe738b17e5c4b2636bc0de11b2620b7" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">美联社</a>）</p><img src="https://cdn5.cdn-telegram.org/file/jnjvDb1TJr_FcZv9IGDngcspwRB9cWT2T5MA1cOQsZP_tkowgmRhd-UKWxiU_Lb9JQrYNewSBt-vwOb1UxIgrQKfcqdWgX29igIzL4Zlwuog8228k-U3JgmG_exj_e6oI8e3kFhkrDIuD1d23TddH83Zx7ql8HiaO7KfdKkeQt9sxWxRfViwatd3UEaJsN8xR9E1oSrxOqhhB6AMjbnBzqyz-CJt78LIm-QvBfFjEcEvzqiB0ZboHskFplxseulIPF7llcncXn0mINF5qTAT_P8dskd5OamOxsO2IiZqJq37-EQmM8gtoqdE6LIXvYyJzlvDRGR3h4fgr0HtN97t2w.jpg" referrerpolicy="no-referrer">
+
+### AI 摘要
+
+以下是关于Reddit应用更新、国际新闻和公司动态的摘要：
+
+1. Reddit更新应用：其移动应用正在进行更新，目的是强化评论功能，旨在减少用户在使用过程中的障碍和不便，提升用户体验。
+
+2. 韩国考虑禁止军事建筑内使用iPhone：《韩国先驱报》报道，军方考虑全面禁止军事建筑内的iPhone等设备使用，以防敏感信息泄露，目前具体措施正在讨论中。
+
+3. 日航总裁态度：虽然宣布了一项涉及空客的决策，日本航空公司总裁表示仍将依赖两家供应商的飞机，以防供应链风险。
+
+4. 影音娱乐业动态：大行对B站首季业绩持乐观预期，认为业绩将符合市场，并给出了买入评级和目标价。
+
+5. 日本反对核污染水排海：民间团体向政府递交请愿书，坚决反对福岛核污染水排海计划。
+
+6. 全日空航班故障：一架波音787客机在即将抵达新千岁机场时发生漏油，导致排海作业暂停。
+
+7. 金融科技动态：嘉实国际宣布比特币和以太币现货ETF即将在香港上市。
+
+8. 影片票房与抗议活动：4月24日，五一档新片预售票房突破5000万，同时阿根廷进行大规模抗议，要求增加教育资助。
+
+9. 欧盟对中国医疗设备采购展开调查，关注市场公平问题。
+
+10. 欧洲议会华裔员工间谍案：一名工作人员被德国警方逮捕，指控为中国从事间谍活动。
+
+11. 台湾与大陆民航互动：国台办回应启用新航路，台湾方面回应表示有飞行安全疑虑。
+
+12. 特斯拉国内政策调整：取消今年应届毕业生offer，全球裁员影响到中国业务。
+
+13. PC市场复苏：第一季度全球PC出货量正增长，预计全年增长3%。
+
+14. 华为智能驾驶发展：华为车BU宣布今年将有超过50万辆汽车采用鸿蒙智能驾驶技术。
+
+15. 神舟十八号发射：中国计划于年内实现中国人登月，目标2030年前。
+
+### 热点新闻
 
 #### Reddit 正在更新其应用以加强评论功能 Reddit 今天表示，正在更新其移动应用，以加强该公司在博客文章中写道，宣布的几项变革旨在“消除障碍，减少摩擦点”。这...
 <p><b>Reddit 正在更新其应用以加强评论功能</b><br><br>Reddit 今天表示，正在更新其移动应用，以加强该公司在博客文章中写道，宣布的几项变革旨在“消除障碍，减少摩擦点”。这些变化虽然不明显，但加起来却让评论成为用户体验的焦点。现在，评论加载速度更快，当用户点击帖子的评论图标时，评论会“立即”打开。点击评论图标会将用户直接带到顶部评论，基本上绕过了原始帖子。带有原始帖子的“上下文栏”将固定在屏幕顶部，其中的文本、图片或视频内容已压缩。点击缩略图将使用户返回原始帖子的文本或展开的图像。此次更新还简化了用户导航至评论的方式，使不同类型的帖子保持一致。现在，无论原始帖子中的媒体类型如何，用户都可以在新帖子之间向左滑动，向上滑动即可直接进入评论部分。<br><br>—— <a href="https://www.theverge.com/2024/4/24/24139196/reddit-app-update-instant-comments-loading" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">theverge</a></p>
@@ -294,7 +318,7 @@ series: ['日报']
 
 
 #### 🖼 外汇交易员 (Twitter) 欧盟正式启动对中国医疗设备采购的调查。 这项调查将着重从公司和成员国收集信息，需在9个月内完成。如果欧盟发现采购市场没有做到互...
-<p><a href="https://twitter.com/myfxtrader/status/1782947947564630502" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">外汇交易员 (Twitter)</a><br><br>欧盟正式启动对中国医疗设备采购的调查。<br>这项调查将着重从公司和成员国收集信息，需在9个月内完成。如果欧盟发现采购市场没有做到互惠互利，可能会限制中国参与欧盟的招标。</p><img src="https://cdn4.cdn-telegram.org/file/cUiD0builZSlEAT7mTCJepJDVFIU6f03JAKnbqUYFGBWSOxkjZkSX2-JdcE__2GOztdggkB9TP-IW_KRM2FMlgtjz-Fd7TRYx5X2n2Xfdv3gfl3GMODUsiDfWJP0CxSKy3W8kgyStgF1bUi-43peexGjot_noFZQooWW-TBp_01KqoMCqGfhh9OZ3Kjac5iB9yoDRAKQ0bkjMF9PnXO3Z-Z4pIZbJ-3ZPdSTn8bRHpLY4a9NtDmC5u-7NNKb96T_ziUSqnTu0v2tYBOMnc5dCBxmt7uKoRagIvaIMiGdvkPBYOOvBaFQMQFX5UeD3VyPNUSgkCeERZxav1HJhBkpLg.jpg" referrerpolicy="no-referrer">
+<p><a href="https://twitter.com/myfxtrader/status/1782947947564630502" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">外汇交易员 (Twitter)</a><br><br>欧盟正式启动对中国医疗设备采购的调查。<br>这项调查将着重从公司和成员国收集信息，需在9个月内完成。如果欧盟发现采购市场没有做到互惠互利，可能会限制中国参与欧盟的招标。</p><img src="https://cdn4.cdn-telegram.org/file/FCFRrEYvctNaafm7UzKcVWYohZCaXFK2vNj0eE9s8z0RIX8PWGQyFpCeu2_eSYqFvhBc12x59ls3-C6jfwSNzzNUun80EpyMH-hKboRxbG58u8g68KbYft9Rivh6z3P8seXmCQSzK4a2lhXDRfsoKnmlDsB2N8cv7tlpgrYaM_Gd0Y6EbNSNXpmOdxzY0nSjXPlemaPt7PjpW3MUuSlefh0acJ8L6VYB7j53qnFj-ANJU6DDVYAE_XtUhool2SJfBLNhxO2tqcuPH9jdnYnh7EWJqPf8lJ6wOM-88Pc4T0A53jnSaUJcvFDMRYNZTMIzrUNII2UTPAJjccNrfEBMpw.jpg" referrerpolicy="no-referrer">
 
 
 #### 欧洲议会华裔员工因间谍指控被捕 警方逮捕了欧洲议会一位德国极右翼议员的一名工作人员，罪名是为中国从事间谍活动。德国联邦检察官周二指控马克西米利安•克拉...
