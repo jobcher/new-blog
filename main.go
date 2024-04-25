@@ -334,6 +334,7 @@ func DIY_god(md_name string) {
 	fmt.Println("Formatted time:", formattedTime)
 
 	var contents []string
+	var titles []string
 	// Process the RSS feed data as needed
 	for _, item := range rss.Channel.Items {
 		if item.PubDate[:16] != formattedTime[:16] {
@@ -346,14 +347,18 @@ func DIY_god(md_name string) {
 		content := fmt.Sprintf("#### %s\n", item.Title)
 		// content += fmt.Sprintf("%s\n", item.PubDate)
 		content += fmt.Sprintf("%s\n\n", description)
+		title := fmt.Sprintf("%s \n", item.Title)
 
+		titles = append(titles, title)
 		contents = append(contents, content)
+
 	}
 
 	// 将所有的 content 汇总成一个字符串
+	alltitle := strings.Join(titles, "\n")
 	allContent := strings.Join(contents, "\n")
-	// summary := AI_summary(allContent)
-	// fmt.Println(summary)
+	summary := AI_summary(alltitle)
+	fmt.Println(summary)
 	fmt.Println(allContent)
 
 	// 写入 Markdown 文件
@@ -362,7 +367,7 @@ func DIY_god(md_name string) {
 		log.Fatal(err)
 	}
 	defer file.Close()
-	file.WriteString(allContent)
+	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 热点新闻\n\n" + allContent)
 
 }
 
@@ -461,6 +466,7 @@ func dnsport_new(md_name string) {
 	fmt.Println("Formatted time:", formattedTime)
 
 	var contents []string
+	var titles []string
 	// Process the RSS feed data as needed
 	for _, item := range rss.Channel.Items {
 		if item.PubDate[:16] != formattedTime[:16] {
@@ -473,22 +479,25 @@ func dnsport_new(md_name string) {
 		content := fmt.Sprintf("#### %s\n", item.Title)
 		// content += fmt.Sprintf("%s\n", item.PubDate)
 		content += fmt.Sprintf("%s\n\n", description)
+		title := fmt.Sprintf("%s \n", item.Title)
 
+		titles = append(titles, title)
 		contents = append(contents, content)
 	}
 
 	// 将所有的 content 汇总成一个字符串
+	alltitle := strings.Join(titles, "\n")
 	allContent := strings.Join(contents, "\n")
+	summary := AI_summary(alltitle)
 	fmt.Println(allContent)
-	// summary := AI_summary(allContent)
-	// fmt.Println(summary)
+	fmt.Println(summary)
 
 	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer file.Close()
-	file.WriteString(allContent)
+	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 热点新闻\n\n" + allContent)
 }
 
 type BingResponse struct {
