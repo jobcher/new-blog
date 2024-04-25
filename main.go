@@ -479,9 +479,9 @@ func dnsport_new(md_name string) {
 
 	// 将所有的 content 汇总成一个字符串
 	allContent := strings.Join(contents, "\n")
+	fmt.Println(allContent)
 	summary := AI_summary(allContent)
 	fmt.Println(summary)
-	fmt.Println(allContent)
 
 	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
