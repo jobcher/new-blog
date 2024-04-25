@@ -352,8 +352,8 @@ func DIY_god(md_name string) {
 
 	// 将所有的 content 汇总成一个字符串
 	allContent := strings.Join(contents, "\n")
-	summary := AI_summary(allContent)
-	fmt.Println(summary)
+	// summary := AI_summary(allContent)
+	// fmt.Println(summary)
 	fmt.Println(allContent)
 
 	// 写入 Markdown 文件
@@ -362,7 +362,7 @@ func DIY_god(md_name string) {
 		log.Fatal(err)
 	}
 	defer file.Close()
-	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 详情\n\n" + allContent)
+	file.WriteString(allContent)
 
 }
 
@@ -480,15 +480,15 @@ func dnsport_new(md_name string) {
 	// 将所有的 content 汇总成一个字符串
 	allContent := strings.Join(contents, "\n")
 	fmt.Println(allContent)
-	summary := AI_summary(allContent)
-	fmt.Println(summary)
+	// summary := AI_summary(allContent)
+	// fmt.Println(summary)
 
 	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer file.Close()
-	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 详情\n\n" + allContent)
+	file.WriteString(allContent)
 }
 
 type BingResponse struct {
