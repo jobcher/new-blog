@@ -89,10 +89,10 @@ func main() {
 	get_github(md_name)
 	// 获取v2ex热门
 	get_v2ex(md_name)
-	// 获取DIYgod热门
-	DIY_god(md_name)
 	// 获取DNSPOD热门
 	dnsport_new(md_name)
+	// 获取DIYgod热门
+	DIY_god(md_name)
 	// 获取abskoop热门
 	abskoop(md_name)
 
