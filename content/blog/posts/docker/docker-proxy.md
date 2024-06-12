@@ -53,7 +53,7 @@ sudo systemctl restart docker
 在 Cloudflare Workers 部署一个 Worker 时，它会在30秒之内部署到 Cloudflare 的整个边缘网络，全世界95个国家/200个城市节点。域中的每个请求都会由离用户更近地点的 Worker 来处理，基于此来实现代码的 “随处运行”。  
 ### 1.创建 Worker
 进入`Cloudflare Workers`，点击 `Create Worker`  
-![create-worker](/images/docker-1.png)  
+![create-worker](/images/dockerhub-1.png)  
 ### 2.部署 Worker
 填写你的环境参数
 >const hub_host = 'registry-1.docker.io'  
