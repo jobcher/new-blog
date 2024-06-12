@@ -56,9 +56,9 @@ sudo systemctl restart docker
 ![create-worker](/images/docker-1.png)  
 ### 2.部署 Worker
 填写你的环境参数
->const hub_host = 'registry-1.docker.io'
->const auth_url = 'https://auth.docker.io'
-填写你的worker page url地址
+>const hub_host = 'registry-1.docker.io'  
+>const auth_url = 'https://auth.docker.io'  
+填写你的worker page url地址  
 >const workers_url = 'https://dockerhub.jobcher.com'  
   
 粘贴一下到cloudeflare的worker.js中
