@@ -4,9 +4,9 @@ date: 2024-06-13
 draft: false
 authors: "jobcher"
 tags: ["运维"]
-featuredImage: "/images/tmux-1.jpg"
-featuredImagePreview: "/images/tmux-1.jpg"
-images: ['/images/tmux.jpg','/images/tmux-1.png','/images/tmux-2.png',]
+featuredImage: "/images/tmux-3.jpg"
+featuredImagePreview: "/images/tmux-3.jpg"
+images: ['/images/tmux-3.jpg','/images/tmux-1.png','/images/tmux-2.png',]
 categories: ["基础"]
 series: ["基础知识系列"]
 ---
