@@ -1,6 +1,6 @@
 ---
 title: "KyBook 3 | calibre-web - IOS系统最佳图书伴侣"
-date: 2024-6-19
+date: 2024-06-19
 draft: false
 featuredImage: "/images/1200x600kybook.png"
 featuredImagePreview: "/images/1200x600kybook.png"
