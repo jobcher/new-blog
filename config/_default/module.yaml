@@ -40,7 +40,8 @@ imports:
   - path: github.com/hbstack/blog/modules/content-panel
 
   # docs comments engine
-  - path: github.com/hbstack/docs/modules/giscus
+  #- path: github.com/hbstack/docs/modules/giscus
+  - path: github.com/hbstack/docs/modules/twikoo
   # - path: github.com/hbstack/docs/modules/utterances
   # - path: github.com/hbstack/docs/modules/disqus
 
