@@ -60,16 +60,16 @@ hb:
         - tutorials
   ## 评论区
     twikoo:
-      envId: https://comments.jobcher.com
-      lang: zh-CN
+      envId: "https://comments.jobcher.com"
+      lang: "zh-CN"
   #   giscus:
   #     repo: jobcher/jobcher.github.io
   #     repo_id: R_kgDOGls6vw
   #     category_id: DIC_kwDOGls6v84CcDKf
   docs:
     twikoo:
-      envId: https://comments.jobcher.com
-      lang: zh-CN
+      envId: "https://comments.jobcher.com"
+      lang: "zh-CN"
       # region:
       # path:
   content_panel:
