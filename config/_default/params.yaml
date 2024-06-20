@@ -60,16 +60,16 @@ hb:
         - tutorials
   ## 评论区
     twikoo:
-      envId: "https://comments.jobcher.com"
-      lang: "zh-CN"
+      env_id: https://comments.jobcher.com/
+      js_url: https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js
   #   giscus:
   #     repo: jobcher/jobcher.github.io
   #     repo_id: R_kgDOGls6vw
   #     category_id: DIC_kwDOGls6v84CcDKf
   docs:
     twikoo:
-      envId: "https://comments.jobcher.com"
-      lang: "zh-CN"
+      env_id: https://comments.jobcher.com/
+      js_url: https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js
       # region:
       # path:
   content_panel:
