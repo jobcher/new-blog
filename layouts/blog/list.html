@@ -1,0 +1,20 @@
+{{- define "title" }}
+  {{- $pages := .RegularPagesRecursive }}
+  {{- $paginator := .Paginate $pages .Site.Params.hb.blog.paginate }}
+  {{- .Store.Set "paginated" true }}
+  {{ partial "base/title" . }}
+{{- end -}}
+
+{{- define "main" }}
+  {{ partial "hb/modules/blog/list" . }}
+
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="4d8397a8-a29c-4fa1-94a0-3c1d3679ed6c"
+  data-page-id="{{ PAGE_ID }}"
+  data-page-url="{{ PAGE_URL }}"
+  data-page-title="{{ PAGE_TITLE }}"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+{{- end -}}
