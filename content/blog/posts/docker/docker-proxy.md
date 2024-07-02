@@ -16,24 +16,30 @@ series: ["docker进阶系列"]
 因为不能直接访问国外的镜像仓库，下载国外的docker镜像速度一直很慢, 国内从 Docker Hub 拉取镜像有时会遇到困难，此时可以配置镜像加速器。  
 ## 使用
 我这边已经部署好了加速镜像节点，同学们如果不想自己部署，可以使用我的加速节点，但是，不能保证节点长期有效。  
-```sh
+```bash
 https://dockerhub.jobcher.com
 ```
 ### 第一步：代理拉取镜像
 假如我们下载node镜像，那么我们可以这样写：
-```sh
+```bash
 docker pull dockerhub.jobcher.com/library/node:latest
+# 或者
+docker pull dockerhub.jobcher.com/bitnami/node:latest
 ```
 ### 第二步：重命名镜像
-```sh
+```bash
 docker tag dockerhub.jobcher.com/library/node:latest node:latest
+# 或者
+docker tag dockerhub.jobcher.com/bitnami/node:latest node:latest
 ```
 ### 第三步：删除代理镜像
-```sh
+```bash
 docker rmi dockerhub.jobcher.com/library/node:latest
+# 或者
+docker rmi dockerhub.jobcher.com/bitnami/node:latest
 ```
 ### 或者直接配置到镜像仓库
-```sh
+```bash
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
@@ -44,7 +50,7 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 ```
 重新加载docker
-```sh
+```bash
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
