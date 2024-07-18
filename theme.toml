@@ -25,9 +25,9 @@ homepage = "https://www.jobcher.com/"
 
 # 网站地图配置
 [sitemap]
-  changefreq = "weekly"
+  changefreq = "hourly"
   filename = "sitemap.xml"
-  priority = 0.5
+  priority = -1
 
 [permalinks]
   posts = "/:slug/"
