@@ -55,7 +55,7 @@ func main() {
 	md_name := "github_trending_" + today + ".md"
 
 	//判断文件是否存在
-	dir := "content/blog/posts/github"
+	dir := "content/new/daily"
 	_, err := os.Stat(dir)
 
 	if os.IsNotExist(err) {
@@ -66,7 +66,7 @@ func main() {
 	}
 
 	// 创建 Markdown 文件
-	file, err := os.Create("content/blog/posts/github/" + md_name)
+	file, err := os.Create("content/new/daily/" + md_name)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -104,7 +104,7 @@ func main() {
 
 func get_weibo(md_name string) {
 	//写入标题
-	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -161,7 +161,7 @@ func get_weibo(md_name string) {
 	fmt.Println(allContent)
 
 	// 写入 Markdown 文件
-	file, err = os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err = os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -171,7 +171,7 @@ func get_weibo(md_name string) {
 
 func get_github(md_name string) {
 	//写入标题
-	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -228,7 +228,7 @@ func get_github(md_name string) {
 		fmt.Println(content)
 
 		// 写入 Markdown 文件
-		file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+		file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -239,7 +239,7 @@ func get_github(md_name string) {
 
 func get_v2ex(md_name string) {
 	//写入标题
-	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -285,7 +285,7 @@ func get_v2ex(md_name string) {
 		fmt.Println(content)
 
 		// 写入 Markdown 文件
-		file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+		file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -296,7 +296,7 @@ func get_v2ex(md_name string) {
 
 func DIY_god(md_name string) {
 	//写入标题
-	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -362,7 +362,7 @@ func DIY_god(md_name string) {
 	fmt.Println(allContent)
 
 	// 写入 Markdown 文件
-	file, err = os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err = os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -373,7 +373,7 @@ func DIY_god(md_name string) {
 
 func abskoop(md_name string) {
 	//写入标题
-	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -424,7 +424,7 @@ func abskoop(md_name string) {
 		content += fmt.Sprintf("%s\n\n", description)
 		fmt.Println(content)
 
-		file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+		file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -492,7 +492,7 @@ func dnsport_new(md_name string) {
 	fmt.Println(allContent)
 	fmt.Println(summary)
 
-	file, err := os.OpenFile("content/blog/posts/github/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -764,7 +764,7 @@ func push_email() {
 		<h2>打工人日报</h2>
 		<p>【`+today+`】</p>
 		<p>您订阅的打工人日报已更新，点击下方按钮查看详情。</p>
-		<a href='https://www.jobcher.com/`+md_name+`/' class='button'>点击查看</a>
+		<a href='https://www.jobcher.com/new/daily/`+md_name+`/' class='button'>点击查看</a>
 		<p>为避免标记为垃圾邮件，请将此邮件地址添加到您的联系人列表。</p>
 		<p>如有任何问题，请联系我们。</p>
 		<P>取消订阅：<a href='https://sub.jobcher.com/unsubscribe'>https://sub.jobcher.com/unsubscribe</a></p>
