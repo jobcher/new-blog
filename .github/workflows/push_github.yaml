@@ -61,6 +61,7 @@ jobs:
         run: |
           hugo \
             --gc \
+            --minify \
             --enableGitInfo    
             mv -f ./ads.txt ./public/
             mv -f ./ChangeMirrors.sh ./public/
