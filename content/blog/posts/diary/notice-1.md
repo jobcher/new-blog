@@ -9,6 +9,7 @@ images: ["/images/notice.png"]
 tags: ["daliy"]
 categories: ["日常"]
 series: ["日常系列"]
+weight: 1
 ---
 
 ## 通知：《打工人日报》迁移到独立板块
