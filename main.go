@@ -828,12 +828,21 @@ func get_sitemap() {
 	}
 	fmt.Println(contents)
 
-	// 写入文件
+	//写入txt
 	file, err := os.Create("sitemap.txt")
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("Error creating file:", err)
+		return
 	}
 	defer file.Close()
+
+	_, err = file.WriteString(strings.Join(contents, "\n"))
+	if err != nil {
+		fmt.Println("Error writing to file:", err)
+		return
+	}
+
+	fmt.Println("Sitemap.txt file created successfully.")
 
 }
 
