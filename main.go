@@ -95,7 +95,8 @@ func main() {
 	DIY_god(md_name)
 	// 获取abskoop热门
 	abskoop(md_name)
-
+	// sitemap 生成
+	get_sitemap()
 	// 发送邮件
 	push_email()
 
@@ -786,6 +787,53 @@ func push_email() {
 	if err := rows.Err(); err != nil {
 		log.Fatal(err)
 	}
+
+}
+
+func get_sitemap() {
+	rss_url := "https://www.jobcher.com/index.xml"
+
+	// 发送 GET 请求
+	resp, err := http.Get(rss_url)
+	if err != nil {
+		fmt.Println("Error fetching RSS feed:", err)
+		return
+	}
+	defer resp.Body.Close()
+
+	// 读取响应内容
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Println("Error reading response body:", err)
+		return
+	}
+	// 解析 XML 数据
+	var rss RSS
+	err = xml.Unmarshal(body, &rss)
+	if err != nil {
+		fmt.Println("Error unmarshaling XML:", err)
+		return
+	}
+
+	var contents []string
+
+	// 遍历 RSS 中的条目
+	for _, item := range rss.Channel.Items {
+		// 提取 URL
+		url := item.Link
+
+		cotent := fmt.Sprintf("%s\n", url)
+
+		contents = append(contents, cotent)
+	}
+	fmt.Println(contents)
+
+	// 写入文件
+	file, err := os.Create("sitemap.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
 
 }
 

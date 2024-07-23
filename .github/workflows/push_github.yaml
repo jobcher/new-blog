@@ -65,6 +65,7 @@ jobs:
             --enableGitInfo 
             mv -f ./ads.txt ./public/
             mv -f ./ChangeMirrors.sh ./public/
+            mv -f ./sitemap.txt ./public/
 
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v1
