@@ -13,10 +13,8 @@ series: ["问题库系列"]
 ## 背景
 今天有同事在使用nginx部署一个服务，部署完成后发现无法访问，nginx创建端口无法创建，无法访问  
 ![nginx-error](/images/selinux-error-1.png)  
-```sh
-nginx: [emerg] bind() to 0.0.0.0:8081 failed (13: Permission denied)
-```
-
+>nginx: [emerg] bind() to 0.0.0.0:8081 failed (13: Permission denied)  
+  
 ## 解决方法
 查看日志发现是SELinux导致的，SELinux是Linux系统的安全机制，它会限制进程访问文件和网络端口等资源。  
 查看SELinux状态
