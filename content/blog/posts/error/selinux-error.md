@@ -18,26 +18,26 @@ series: ["问题库系列"]
 ## 解决方法
 查看日志发现是SELinux导致的，SELinux是Linux系统的安全机制，它会限制进程访问文件和网络端口等资源。  
 查看SELinux状态
-```sh
+```bash
 sudo getenforce
 ```
 当 SELinux 处于 enforcing 模式时，会阻止进程访问不允许的资源。有三种方法可以解决
 
 ### 1. 临时关闭SELinux
-```sh
+```bash
 sudo setenforce 0
 ```
 ### 2. 永久关闭SELinux
-```sh
+```bash
 sudo vim /etc/selinux/config
 # 修改SELINUX=enforcing 为 SELINUX=disabled
 ```
 重启服务器
-```sh
+```bash
 sudo reboot
 ```
 ### 3. 设置为宽容模式
-```sh
+```bash
 semanage permissive -a http_port_t
 ```
 这个命令会将 http_port_t 类型的端口设置为宽容模式（permissive mode），使得 semanage 不再对该类型的端口进行访问控制。  

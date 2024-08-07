@@ -86,3 +86,15 @@ bash <(curl -sSL https://www.jobcher.com/ChangeMirrors.sh) --abroad
     如果你使用的系统终端界面不支持 UTF-8 编码那么将无法正常显示中文内容，导致无法正确选择交互内容。大部分系统都会自动开启该服务
 3. 首次在新系统上执行脚本
     当前执行方式依赖 `curl` 指令来获取脚本内容并执行，所以需要先通过包管理工具来安装该软件包，否则会报错 `Command not found`，若无法安装就复制源码到本地新建.sh脚本，然后通过 bash 手动执行
+
+## 其他问题
+有一部分小伙伴会出现这些问题：  
+>gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7  
+  
+这个配置告诉YUM，这个repository的GPG key存在于磁盘上。而当YUM在路径 /etc/pki/rpm-gpg 下找不到这个GPG key的时候，就会报如上的错误了  
+### 解决
+```bash
+cd /etc/pki/rpm-gpg
+yum install wget -y
+wget https://archive.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+```
