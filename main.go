@@ -95,8 +95,8 @@ func main() {
 	DIY_god(md_name)
 	// 获取abskoop热门
 	abskoop(md_name)
-	// sitemap 生成
-	get_sitemap()
+	// // sitemap 生成
+	// get_sitemap()
 	// 发送邮件
 	push_email()
 
