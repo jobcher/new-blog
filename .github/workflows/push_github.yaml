@@ -66,6 +66,7 @@ jobs:
             mv -f ./ads.txt ./public/
             mv -f ./ChangeMirrors.sh ./public/
             mv -f ./sitemap.txt ./public/
+            sed -i 's/Recent content on 打工人日志/feedId:56003627300625409+userId:61956619330322432/' ./public/index.xml
 
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v1
