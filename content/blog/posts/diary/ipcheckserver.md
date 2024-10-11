@@ -2,9 +2,9 @@
 title: "搭建ip地址检索服务"
 date: 2024-10-11
 draft: false
-featuredImage: "/images/ipcheck-1.png"
-featuredImagePreview: "/images/ipcheck-1.png"
-images: ["/images/ipcheck-1.png"]
+featuredImage: "/images/ipcheck.png"
+featuredImagePreview: "/images/ipcheck.png"
+images: ["/images/ipcheck.png"]
 authors: "jobcher"
 tags: ["daliy"]
 categories: ["日常"]
