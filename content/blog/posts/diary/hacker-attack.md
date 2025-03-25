@@ -27,7 +27,7 @@ awk '{print $7}' access.log | sort | uniq -c | sort -nr | head -n 10
   
 ## 解决
 1. 检查nginx的配置文件，上传接口拒绝所有外部请求
-```conf
+```
 server{
     location /upload {
         proxy_pass http://192.168.1.1:8080;
@@ -40,7 +40,7 @@ server{
 ```
   
 2. 查找最早上传的文件,创建python文件，并在图片服务器执行
-```py
+```
 import os
 
 # 查找最早包含 FFmpeg 的 JPG 文件
@@ -72,7 +72,7 @@ def find_earliest_jpg_with_ffmpeg(directory):
 find_earliest_jpg_with_ffmpeg('/var/www/html/images/')
 ```
 3. 删除这些`FFmpeg`文件，创建python文件，并在图片服务器执行
-```py
+```
 import os
 
 # 检查文件头是否包含 FFmpeg
