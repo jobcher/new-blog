@@ -19,10 +19,10 @@ series: ["日常系列"]
 cd /var/log/nginx
 awk '{print $7}' access.log | sort | uniq -c | sort -nr | head -n 10
 ```
-![server-log](/images/hacker-attack-01.png)  
+![server-log](/images/hacker-attack01.png)  
 
 2. 这个是一个图片服务器，看起来都是图片的请求，好像没有发现异常的请求。但是这个图片为什么有那么高的流量呢？检查这个图片，发现图片无法打开，所以我换二进制的方式打开图片  
-![hex-open](/images/hacker-attack-02.png)  
+![hex-open](/images/hacker-attack02.png)  
 > 发现图片的二进制头部是 `FFmpeg`, 所以这是一个伪装成图片的视频文件  
   
 ## 解决
