@@ -84,7 +84,7 @@ func main() {
 	}
 
 	// 获取微博热搜
-	get_weibo(md_name)
+	// get_weibo(md_name)
 	// 获取github热门
 	get_github(md_name)
 	// 获取v2ex热门
