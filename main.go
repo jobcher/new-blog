@@ -304,7 +304,7 @@ func DIY_god(md_name string) {
 	defer file.Close()
 	file.WriteString("## 热点新闻\n\n")
 
-	rssURL := "https://rsshub.app/telegram/channel/tnews365" // Replace with the actual RSS feed URL
+	rssURL := "https://rssweb.160826.xyz/telegram/channel/tnews365" // Replace with the actual RSS feed URL
 
 	resp, err := http.Get(rssURL)
 	if err != nil {
@@ -381,7 +381,7 @@ func abskoop(md_name string) {
 	defer file.Close()
 	file.WriteString("## 福利分享\n\n")
 
-	rssURL := "https://rsshub.app/telegram/channel/abskoop" // Replace with the actual RSS feed URL
+	rssURL := "https://rssweb.160826.xyz/telegram/channel/abskoop" // Replace with the actual RSS feed URL
 
 	resp, err := http.Get(rssURL)
 	if err != nil {
@@ -436,7 +436,7 @@ func abskoop(md_name string) {
 
 func dnsport_new(md_name string) {
 
-	rssURL := "https://rsshub.app/telegram/channel/DNSPODT" // Replace with the actual RSS feed URL
+	rssURL := "https://rssweb.160826.xyz/telegram/channel/DNSPODT" // Replace with the actual RSS feed URL
 
 	resp, err := http.Get(rssURL)
 	if err != nil {
