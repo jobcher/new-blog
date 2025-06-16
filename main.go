@@ -97,8 +97,8 @@ func main() {
 	abskoop(md_name)
 	// // sitemap 生成
 	// get_sitemap()
-	// 发送邮件
-	push_email()
+	// // 发送邮件
+	// push_email()
 
 	fmt.Println("成功生成文件")
 }
