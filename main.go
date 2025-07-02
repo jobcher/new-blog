@@ -296,7 +296,6 @@ func get_v2ex(md_name string) {
 }
 
 func DIY_god(md_name string) {
-	//写入标题
 	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
@@ -304,76 +303,91 @@ func DIY_god(md_name string) {
 	defer file.Close()
 	file.WriteString("## 热点新闻\n\n")
 
-	rssURL := "https://rsshub.app/telegram/channel/tnews365" // Replace with the actual RSS feed URL
-
-	resp, err := http.Get(rssURL)
-	if err != nil {
-		fmt.Println("Error fetching RSS feed:", err)
-		return
-	}
-	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response body:", err)
-		return
+	rssURLs := []string{
+		"https://rsshub.app/telegram/channel/tnews365",
+		"https://rssweb.160826.xyz/telegram/channel/tnews365",
+		"https://rss.160826.xyz/telegram/channel/tnews365",
 	}
 
+	var body []byte
 	var rss RSS
-	err = xml.Unmarshal(body, &rss)
-	if err != nil {
-		fmt.Println("Error unmarshaling XML:", err)
+	var fetchSuccess bool
+
+	for _, rssURL := range rssURLs {
+		fmt.Println("尝试 RSS 源:", rssURL)
+		resp, err := http.Get(rssURL)
+		if err != nil {
+			fmt.Println("请求失败:", err)
+			continue
+		}
+		defer resp.Body.Close()
+
+		if resp.StatusCode != http.StatusOK {
+			fmt.Printf("非 200 状态码: %d\n", resp.StatusCode)
+			continue
+		}
+
+		body, err = ioutil.ReadAll(resp.Body)
+		if err != nil {
+			fmt.Println("读取响应失败:", err)
+			continue
+		}
+
+		if !strings.Contains(string(body), "<?xml") {
+			fmt.Println("返回内容不是 XML 格式")
+			continue
+		}
+
+		err = xml.Unmarshal(body, &rss)
+		if err != nil {
+			fmt.Println("XML 解析失败:", err)
+			continue
+		}
+
+		fetchSuccess = true
+		break
+	}
+
+	if !fetchSuccess {
+		fmt.Println("🚫 所有 tnews365 RSS 源均不可用")
 		return
 	}
 
-	// 获取当前时间
 	currentTime := time.Now().UTC().AddDate(0, 0, -1)
-
-	// 格式化为 Mon, 09 Oct 2023 03:03:35 GMT
 	formattedTime := currentTime.Format("Mon, 02 Jan 2006 15:04:05 GMT")
-
 	fmt.Println("Formatted time:", formattedTime)
 
 	var contents []string
 	var titles []string
-	// Process the RSS feed data as needed
+
 	for _, item := range rss.Channel.Items {
-		if item.PubDate[:16] != formattedTime[:16] {
+		if len(item.PubDate) < 16 || item.PubDate[:16] != formattedTime[:16] {
 			continue
 		}
-		// description去除换行
-		description := strings.Replace(item.Description, "\n", "", -1)
-
-		// 写入 Markdown 文件
-		content := fmt.Sprintf("#### %s\n", item.Title)
-		// content += fmt.Sprintf("%s\n", item.PubDate)
-		content += fmt.Sprintf("%s\n\n", description)
-		title := fmt.Sprintf("%s \n", item.Title)
+		description := strings.ReplaceAll(item.Description, "\n", "")
+		content := fmt.Sprintf("#### %s\n%s\n\n", item.Title, description)
+		title := fmt.Sprintf("%s\n", item.Title)
 
 		titles = append(titles, title)
 		contents = append(contents, content)
-
 	}
 
-	// 将所有的 content 汇总成一个字符串
+	if len(contents) == 0 {
+		fmt.Println("⚠️ 没有找到符合时间条件的 tnews365 项目")
+		return
+	}
+
 	alltitle := strings.Join(titles, "\n")
 	allContent := strings.Join(contents, "\n")
 	summary := AI_summary(alltitle)
+
 	fmt.Println(summary)
 	fmt.Println(allContent)
 
-	// 写入 Markdown 文件
-	file, err = os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer file.Close()
 	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 热点新闻\n\n" + allContent)
-
 }
 
 func abskoop(md_name string) {
-	//写入标题
 	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
@@ -381,115 +395,154 @@ func abskoop(md_name string) {
 	defer file.Close()
 	file.WriteString("## 福利分享\n\n")
 
-	rssURL := "https://rsshub.app/telegram/channel/abskoop" // Replace with the actual RSS feed URL
-
-	resp, err := http.Get(rssURL)
-	if err != nil {
-		fmt.Println("Error fetching RSS feed:", err)
-		return
-	}
-	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response body:", err)
-		return
+	rssURLs := []string{
+		"https://rsshub.app/telegram/channel/abskoop",
+		"https://rssweb.160826.xyz/telegram/channel/abskoop",
+		"https://rss.160826.xyz/telegram/channel/abskoop",
 	}
 
+	var body []byte
 	var rss RSS
-	err = xml.Unmarshal(body, &rss)
-	if err != nil {
-		fmt.Println("Error unmarshaling XML:", err)
-		return
-	}
+	var fetchSuccess bool
 
-	// 获取当前时间
-	currentTime := time.Now().UTC().AddDate(0, 0, -1)
-
-	// 格式化为 Mon, 09 Oct 2023 03:03:35 GMT
-	formattedTime := currentTime.Format("Mon, 02 Jan 2006 15:04:05 GMT")
-
-	fmt.Println("Formatted time:", formattedTime)
-
-	// Process the RSS feed data as needed
-	for _, item := range rss.Channel.Items {
-		if item.PubDate[:16] != formattedTime[:16] {
+	for _, rssURL := range rssURLs {
+		fmt.Println("尝试 RSS 源:", rssURL)
+		resp, err := http.Get(rssURL)
+		if err != nil {
+			fmt.Println("请求失败:", err)
 			continue
 		}
-		// description去除换行
-		description := strings.Replace(item.Description, "\n", "", -1)
+		defer resp.Body.Close()
 
-		// 写入 Markdown 文件
-		content := fmt.Sprintf("#### %s\n", item.Title)
-		// content += fmt.Sprintf("%s\n", item.PubDate)
-		content += fmt.Sprintf("%s\n\n", description)
+		if resp.StatusCode != http.StatusOK {
+			fmt.Printf("非 200 状态码: %d\n", resp.StatusCode)
+			continue
+		}
+
+		body, err = ioutil.ReadAll(resp.Body)
+		if err != nil {
+			fmt.Println("读取响应失败:", err)
+			continue
+		}
+
+		if !strings.Contains(string(body), "<?xml") {
+			fmt.Println("返回内容不是 XML 格式")
+			continue
+		}
+
+		err = xml.Unmarshal(body, &rss)
+		if err != nil {
+			fmt.Println("XML 解析失败:", err)
+			continue
+		}
+
+		fetchSuccess = true
+		break
+	}
+
+	if !fetchSuccess {
+		fmt.Println("🚫 所有 abskoop RSS 源均不可用")
+		return
+	}
+
+	currentTime := time.Now().UTC().AddDate(0, 0, -1)
+	formattedTime := currentTime.Format("Mon, 02 Jan 2006 15:04:05 GMT")
+	fmt.Println("Formatted time:", formattedTime)
+
+	for _, item := range rss.Channel.Items {
+		if len(item.PubDate) < 16 || item.PubDate[:16] != formattedTime[:16] {
+			continue
+		}
+		description := strings.ReplaceAll(item.Description, "\n", "")
+		content := fmt.Sprintf("#### %s\n%s\n\n", item.Title, description)
 		fmt.Println(content)
 
-		file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer file.Close()
 		file.WriteString(content)
 	}
 }
 
 func dnsport_new(md_name string) {
-
-	rssURL := "https://rsshub.app/telegram/channel/DNSPODT" // Replace with the actual RSS feed URL
-
-	resp, err := http.Get(rssURL)
-	if err != nil {
-		fmt.Println("Error fetching RSS feed:", err)
-		return
-	}
-	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response body:", err)
-		return
+	// 多个候选 RSS 地址
+	rssURLs := []string{
+		"https://rsshub.app/telegram/channel/DNSPODT",
+		"https://rssweb.160826.xyz/telegram/channel/DNSPODT",
+		"https://rss.160826.xyz/telegram/channel/DNSPODT",
 	}
 
+	var body []byte
 	var rss RSS
-	err = xml.Unmarshal(body, &rss)
-	if err != nil {
-		fmt.Println("Error unmarshaling XML:", err)
+	var fetchSuccess bool
+
+	for _, rssURL := range rssURLs {
+		fmt.Println("尝试 RSS 源:", rssURL)
+		resp, err := http.Get(rssURL)
+		if err != nil {
+			fmt.Println("请求失败:", err)
+			continue
+		}
+		defer resp.Body.Close()
+
+		if resp.StatusCode != http.StatusOK {
+			fmt.Printf("非 200 状态码: %d\n", resp.StatusCode)
+			continue
+		}
+
+		body, err = ioutil.ReadAll(resp.Body)
+		if err != nil {
+			fmt.Println("读取响应失败:", err)
+			continue
+		}
+
+		if !strings.Contains(string(body), "<?xml") {
+			fmt.Println("返回内容不是 XML 格式")
+			continue
+		}
+
+		err = xml.Unmarshal(body, &rss)
+		if err != nil {
+			fmt.Println("XML 解析失败:", err)
+			continue
+		}
+
+		// 成功解析
+		fetchSuccess = true
+		break
+	}
+
+	if !fetchSuccess {
+		fmt.Println("🚫 所有 DNSPODT RSS 源均不可用")
 		return
 	}
 
-	// 获取当前时间
+	// 获取前一天的 UTC 时间
 	currentTime := time.Now().UTC().AddDate(0, 0, -1)
-
-	// 格式化为 Mon, 09 Oct 2023 03:03:35 GMT
 	formattedTime := currentTime.Format("Mon, 02 Jan 2006 15:04:05 GMT")
-
 	fmt.Println("Formatted time:", formattedTime)
 
 	var contents []string
 	var titles []string
-	// Process the RSS feed data as needed
+
 	for _, item := range rss.Channel.Items {
-		if item.PubDate[:16] != formattedTime[:16] {
+		if len(item.PubDate) < 16 || item.PubDate[:16] != formattedTime[:16] {
 			continue
 		}
-		// description去除换行
-		description := strings.Replace(item.Description, "\n", "", -1)
-
-		// 写入 Markdown 文件
-		content := fmt.Sprintf("#### %s\n", item.Title)
-		// content += fmt.Sprintf("%s\n", item.PubDate)
-		content += fmt.Sprintf("%s\n\n", description)
-		title := fmt.Sprintf("%s \n", item.Title)
+		description := strings.ReplaceAll(item.Description, "\n", "")
+		content := fmt.Sprintf("#### %s\n%s\n\n", item.Title, description)
+		title := fmt.Sprintf("%s\n", item.Title)
 
 		titles = append(titles, title)
 		contents = append(contents, content)
 	}
 
-	// 将所有的 content 汇总成一个字符串
+	if len(contents) == 0 {
+		fmt.Println("⚠️ 没有找到符合时间条件的 DNSPODT 项目")
+		return
+	}
+
 	alltitle := strings.Join(titles, "\n")
 	allContent := strings.Join(contents, "\n")
 	summary := AI_summary(alltitle)
+
 	fmt.Println(allContent)
 	fmt.Println(summary)
 
