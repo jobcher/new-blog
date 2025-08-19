@@ -97,7 +97,7 @@ jobs:
           SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-8)
           COMMIT_MSG=$(git log -1 --pretty=%s)
 
-          MSG="nav-fast 构建部署 ${STATUS}\n分支: main\n提交人: ${{ github.actor }}\n提交ID: ${SHORT_SHA}\n说明: ${COMMIT_MSG}"
+          MSG="jobcher博客 构建部署 ${STATUS}\n分支: main\n提交人: ${{ github.actor }}\n提交ID: ${SHORT_SHA}\n说明: ${COMMIT_MSG}"
 
           curl -s -X POST "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=$TOKEN" \
             -H "Content-Type: application/json" \
