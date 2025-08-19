@@ -44,3 +44,29 @@ jobs:
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      - name: 企业微信通知
+        if: always()
+        run: |
+          set -e
+          # 获取 token
+          TOKEN=$(curl -s "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${{ secrets.WEWORK_CORPID }}&corpsecret=${{ secrets.WEWORK_SECRET }}" | jq -r .access_token)
+
+          STATUS="✅ 成功"
+          if [ "${{ job.status }}" != "success" ]; then
+            STATUS="❌ 失败"
+          fi
+
+          SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-8)
+          COMMIT_MSG=$(git log -1 --pretty=%s)
+
+          MSG="jobcher博客 热点数据抓取 ${STATUS}\n分支: main\n提交人: ${{ github.actor }}\n提交ID: ${SHORT_SHA}\n说明: ${COMMIT_MSG}"
+
+          curl -s -X POST "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=$TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "{
+                  \"touser\": \"@all\",
+                  \"msgtype\": \"text\",
+                  \"agentid\": ${{ secrets.WEWORK_AGENTID }},
+                  \"text\": { \"content\": \"$MSG\" },
+                  \"safe\": 0
+                }"
