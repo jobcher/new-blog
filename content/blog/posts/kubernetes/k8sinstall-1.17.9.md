@@ -29,9 +29,9 @@ echo "192.168.40.1 k8s" | sudo tee -a /etc/hosts
 ```
 
 ### 更新系统
-1. 切换镜像源
+1. 切换镜像源,选择你喜欢的镜像源，我这里选择腾讯云
 ```sh
-bash <(curl -sSL https://www.jobcher.com/ChangeMirrors.sh)
+bash <(curl -sSL https://linuxmirrors.cn/main.sh)
 ```
 2. 更新系统
 ```sh
@@ -127,6 +127,8 @@ sudo yum install -y kubelet-1.17.9 kubeadm-1.17.9 kubectl-1.17.9 --disableexclud
 sudo systemctl enable --now kubelet
 ```
 
+> **注意：** 接下来的步骤有所不同，如果你是初始化集群，继续跟着文档操作，如果你在已有集群的情况下，请跳到[加入集群](#加入集群)
+
 ### 初始化集群
 1. 初始化集群：
 ```sh
@@ -153,6 +155,12 @@ sudo docker tag quay.io/coreos/flannel:v0.12.0-amd64 quay.io/coreos/flannel:v0.1
 wget https://raw.githubusercontent.com/coreos/flannel/v0.12.0/Documentation/kube-flannel.yml
 kubectl apply -f kube-flannel.yml
 ```
+## 加入集群
+在主节点上执行`kubeadm token create --print-join-command` 命令，获取加入集群的命令，然后在其他节点上执行该命令，即可加入集群。
+```sh
+kubeadm token create --print-join-command
+```
+在你需要加入集群的节点上执行该命令，即可加入集群。
 
 ## 验证安装
 查看节点状态：
@@ -162,4 +170,48 @@ kubectl get nodes
 查看所有 Pod 状态：
 ```sh
 kubectl get pods -A
+```
+
+## 其他问题
+### 节点状态为 NotReady
+执行`systemctl status kubelet` 查看 kubelet 服务状态  
+发现`[failed to find plugin "flannel" in path [/opt/cni/bin]]`
+```sh
+● kubelet.service - kubelet: The Kubernetes Node Agent
+   Loaded: loaded (/usr/lib/systemd/system/kubelet.service; enabled; vendor preset: disabled)
+  Drop-In: /usr/lib/systemd/system/kubelet.service.d
+           └─10-kubeadm.conf
+   Active: active (running) since Fri 2025-08-29 10:26:22 CST; 12min ago
+     Docs: https://kubernetes.io/docs/
+ Main PID: 31569 (kubelet)
+    Tasks: 20
+   Memory: 38.6M
+   CGroup: /system.slice/kubelet.service
+           └─31569 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --cgroup-driver=cgroupfs --network-plugin=cni --pod-in...
+
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: "type": "portmap",
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: "capabilities": {
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: "portMappings": true
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: }
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: }
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: ]
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: }
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: : [failed to find plugin "flannel" in path [/opt/cni/bin]]
+Aug 29 10:38:24 dev-nbsj-node2-174 kubelet[31569]: W0829 10:38:24.012395   31569 cni.go:237] Unable to update cni config: no valid networks found in /etc/cni/net.d
+Aug 29 10:38:25 dev-nbsj-node2-174 kubelet[31569]: E0829 10:38:25.817847   31569 kubelet.go:2184] Container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is...ig uninitialized
+```
+### 解决方法
+在新节点安装 CNI 插件时，要确保包含 flannel：
+```sh
+cd /tmp
+curl -L https://github.jobcher.com/gh/https://github.com/flannel-io/cni-plugin/releases/download/v1.1.0/flannel-amd64 -o /opt/cni/bin/flannel
+chmod +x /opt/cni/bin/flannel
+```
+确认文件存在
+```sh
+ls /opt/cni/bin/flannel
+```
+重启 kubelet 服务
+```sh
+systemctl restart kubelet
 ```
