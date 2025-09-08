@@ -75,6 +75,48 @@ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "NodePort"}}'
 kubectl get svc -n argocd
 ```
 
+### argo nginx-ingress 配置
+修改配置
+```sh
+kubectl patch configmap argocd-cmd-params-cm \
+-n argocd \
+--type merge \
+-p '{"data":{"server.insecure":"true"}}'
+```
+修改argo cd 服务
+```sh
+kubectl patch deployment argocd-server \
+-n argocd --type='json'  \
+-p='[{"op": "add", "path": "/spec/template/spec/containers/0/args/-", "value": "--insecure"}]'
+```
+检查服务是否正常并获取密码
+```sh
+kubectl get svc -n ingress-nginx nginx-ingress-controller
+kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d && echo
+```
+### 创建 ingress 路由
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: argocd-ingress
+  namespace: argocd
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: argocd.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: argocd-server
+            port:
+              number: 80
+```
 ## 使用
 
 ![argocd-2](/images/argocd_2.png)
