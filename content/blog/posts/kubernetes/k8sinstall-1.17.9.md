@@ -161,7 +161,24 @@ kubectl apply -f kube-flannel.yml
 kubeadm token create --print-join-command
 ```
 在你需要加入集群的节点上执行该命令，即可加入集群。
-
+### 配置网络组件
+创建 `/etc/cni/net.d` 目录
+```sh
+mkdir -p /etc/cni/net.d
+```
+下载 flannel 配置文件
+```sh
+cd /tmp
+curl -L -o flannel.tgz   https://github.jobcher.com/gh/https://github.com/flannel-io/cni-plugin/releases/download/v1.1.2/cni-plugin-flannel-windows-amd64-v1.1.2.tgz
+tar -xzvf flannel.tgz -C /opt/cni/bin
+sudo ln -s /opt/cni/bin/flannel-amd64 /opt/cni/bin/flannel
+ls -l /opt/cni/bin/flannel
+```
+重启 kubelet 服务
+```sh
+sudo systemctl daemon-reload
+sudo systemctl restart kubelet
+```
 ## 验证安装
 查看节点状态：
 ```sh
