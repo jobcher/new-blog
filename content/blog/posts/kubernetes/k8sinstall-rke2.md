@@ -27,7 +27,7 @@ curl -sfL https://get.rke2.io | sh -
 创建配置文件
 ```sh
 mkdir -p /etc/rancher/rke2/
-```空2
+```
 ```sh
 # 配置 server
 cat <<EOF >/etc/rancher/rke2/config.yaml
