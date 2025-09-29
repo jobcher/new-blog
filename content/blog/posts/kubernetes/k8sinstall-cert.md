@@ -170,7 +170,7 @@ echo "✅ 复制完成"
 ./copy-example-cert.sh
 ```
 脚本会依次输出
-```python-repl
+```console
 >>> 正在复制到命名空间: argocd
 secret/example-com-tls created
 >>> 正在复制到命名空间: longhorn-system
