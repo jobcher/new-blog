@@ -323,6 +323,11 @@ func DIY_god(md_name string) {
 		defer resp.Body.Close()
 
 		if resp.StatusCode != http.StatusOK {
+			if resp.StatusCode == 429 {
+				fmt.Printf("RSS 源 %s 被限流 (429)，等待后重试...\n", rssURL)
+				time.Sleep(5 * time.Second) // 等待5秒后重试
+				continue
+			}
 			fmt.Printf("非 200 状态码: %d\n", resp.StatusCode)
 			continue
 		}
@@ -353,17 +358,42 @@ func DIY_god(md_name string) {
 		return
 	}
 
-	currentTime := time.Now().UTC().AddDate(0, 0, -1)
-	formattedTime := currentTime.Format("Mon, 02 Jan 2006 15:04:05 GMT")
-	fmt.Println("Formatted time:", formattedTime)
+	// 获取当前时间，用于比较
+	currentTime := time.Now().UTC()
+	yesterday := currentTime.AddDate(0, 0, -1)
+
+	// 打印调试信息
+	fmt.Printf("Current time: %s\n", currentTime.Format("2006-01-02 15:04:05 UTC"))
+	fmt.Printf("Yesterday: %s\n", yesterday.Format("2006-01-02 15:04:05 UTC"))
 
 	var contents []string
 	var titles []string
 
 	for _, item := range rss.Channel.Items {
-		if len(item.PubDate) < 16 || item.PubDate[:16] != formattedTime[:16] {
+		// 解析 RSS 条目的发布时间
+		itemTime, err := time.Parse(time.RFC1123Z, item.PubDate)
+		if err != nil {
+			// 尝试其他时间格式
+			itemTime, err = time.Parse("Mon, 02 Jan 2006 15:04:05 GMT", item.PubDate)
+			if err != nil {
+				// 尝试 RFC822 格式
+				itemTime, err = time.Parse(time.RFC822, item.PubDate)
+				if err != nil {
+					fmt.Printf("无法解析时间格式: %s, 错误: %v\n", item.PubDate, err)
+					continue
+				}
+			}
+		}
+
+		// 检查是否是昨天的内容（允许一些时间误差）
+		timeDiff := itemTime.Sub(yesterday)
+		if timeDiff < -24*time.Hour || timeDiff > 24*time.Hour {
+			fmt.Printf("跳过项目，时间不匹配: %s (发布时间: %s)\n", item.Title, itemTime.Format("2006-01-02 15:04:05 UTC"))
 			continue
 		}
+
+		fmt.Printf("匹配项目: %s (发布时间: %s)\n", item.Title, itemTime.Format("2006-01-02 15:04:05 UTC"))
+
 		description := strings.ReplaceAll(item.Description, "\n", "")
 		content := fmt.Sprintf("#### %s\n%s\n\n", item.Title, description)
 		title := fmt.Sprintf("%s\n", item.Title)
@@ -415,6 +445,11 @@ func abskoop(md_name string) {
 		defer resp.Body.Close()
 
 		if resp.StatusCode != http.StatusOK {
+			if resp.StatusCode == 429 {
+				fmt.Printf("RSS 源 %s 被限流 (429)，等待后重试...\n", rssURL)
+				time.Sleep(5 * time.Second) // 等待5秒后重试
+				continue
+			}
 			fmt.Printf("非 200 状态码: %d\n", resp.StatusCode)
 			continue
 		}
@@ -445,14 +480,39 @@ func abskoop(md_name string) {
 		return
 	}
 
-	currentTime := time.Now().UTC().AddDate(0, 0, -1)
-	formattedTime := currentTime.Format("Mon, 02 Jan 2006 15:04:05 GMT")
-	fmt.Println("Formatted time:", formattedTime)
+	// 获取当前时间，用于比较
+	currentTime := time.Now().UTC()
+	yesterday := currentTime.AddDate(0, 0, -1)
+
+	// 打印调试信息
+	fmt.Printf("Current time: %s\n", currentTime.Format("2006-01-02 15:04:05 UTC"))
+	fmt.Printf("Yesterday: %s\n", yesterday.Format("2006-01-02 15:04:05 UTC"))
 
 	for _, item := range rss.Channel.Items {
-		if len(item.PubDate) < 16 || item.PubDate[:16] != formattedTime[:16] {
+		// 解析 RSS 条目的发布时间
+		itemTime, err := time.Parse(time.RFC1123Z, item.PubDate)
+		if err != nil {
+			// 尝试其他时间格式
+			itemTime, err = time.Parse("Mon, 02 Jan 2006 15:04:05 GMT", item.PubDate)
+			if err != nil {
+				// 尝试 RFC822 格式
+				itemTime, err = time.Parse(time.RFC822, item.PubDate)
+				if err != nil {
+					fmt.Printf("无法解析时间格式: %s, 错误: %v\n", item.PubDate, err)
+					continue
+				}
+			}
+		}
+
+		// 检查是否是昨天的内容（允许一些时间误差）
+		timeDiff := itemTime.Sub(yesterday)
+		if timeDiff < -24*time.Hour || timeDiff > 24*time.Hour {
+			fmt.Printf("跳过项目，时间不匹配: %s (发布时间: %s)\n", item.Title, itemTime.Format("2006-01-02 15:04:05 UTC"))
 			continue
 		}
+
+		fmt.Printf("匹配项目: %s (发布时间: %s)\n", item.Title, itemTime.Format("2006-01-02 15:04:05 UTC"))
+
 		description := strings.ReplaceAll(item.Description, "\n", "")
 		content := fmt.Sprintf("#### %s\n%s\n\n", item.Title, description)
 		fmt.Println(content)
@@ -465,8 +525,8 @@ func dnsport_new(md_name string) {
 	// 多个候选 RSS 地址
 	rssURLs := []string{
 		"https://rsshub.app/telegram/channel/DNSPODT",
-		"https://rssweb.160826.xyz/telegram/channel/DNSPODT",
 		"https://rss.160826.xyz/telegram/channel/DNSPODT",
+		"https://rssweb.160826.xyz/telegram/channel/DNSPODT",
 	}
 
 	var body []byte
@@ -483,6 +543,11 @@ func dnsport_new(md_name string) {
 		defer resp.Body.Close()
 
 		if resp.StatusCode != http.StatusOK {
+			if resp.StatusCode == 429 {
+				fmt.Printf("RSS 源 %s 被限流 (429)，等待后重试...\n", rssURL)
+				time.Sleep(5 * time.Second) // 等待5秒后重试
+				continue
+			}
 			fmt.Printf("非 200 状态码: %d\n", resp.StatusCode)
 			continue
 		}
@@ -514,18 +579,42 @@ func dnsport_new(md_name string) {
 		return
 	}
 
-	// 获取前一天的 UTC 时间
-	currentTime := time.Now().UTC().AddDate(0, 0, -1)
-	formattedTime := currentTime.Format("Mon, 02 Jan 2006 15:04:05 GMT")
-	fmt.Println("Formatted time:", formattedTime)
+	// 获取当前时间，用于比较
+	currentTime := time.Now().UTC()
+	yesterday := currentTime.AddDate(0, 0, -1)
+
+	// 打印调试信息
+	fmt.Printf("Current time: %s\n", currentTime.Format("2006-01-02 15:04:05 UTC"))
+	fmt.Printf("Yesterday: %s\n", yesterday.Format("2006-01-02 15:04:05 UTC"))
 
 	var contents []string
 	var titles []string
 
 	for _, item := range rss.Channel.Items {
-		if len(item.PubDate) < 16 || item.PubDate[:16] != formattedTime[:16] {
+		// 解析 RSS 条目的发布时间
+		itemTime, err := time.Parse(time.RFC1123Z, item.PubDate)
+		if err != nil {
+			// 尝试其他时间格式
+			itemTime, err = time.Parse("Mon, 02 Jan 2006 15:04:05 GMT", item.PubDate)
+			if err != nil {
+				// 尝试 RFC822 格式
+				itemTime, err = time.Parse(time.RFC822, item.PubDate)
+				if err != nil {
+					fmt.Printf("无法解析时间格式: %s, 错误: %v\n", item.PubDate, err)
+					continue
+				}
+			}
+		}
+
+		// 检查是否是昨天的内容（允许一些时间误差）
+		timeDiff := itemTime.Sub(yesterday)
+		if timeDiff < -24*time.Hour || timeDiff > 24*time.Hour {
+			fmt.Printf("跳过项目，时间不匹配: %s (发布时间: %s)\n", item.Title, itemTime.Format("2006-01-02 15:04:05 UTC"))
 			continue
 		}
+
+		fmt.Printf("匹配项目: %s (发布时间: %s)\n", item.Title, itemTime.Format("2006-01-02 15:04:05 UTC"))
+
 		description := strings.ReplaceAll(item.Description, "\n", "")
 		content := fmt.Sprintf("#### %s\n%s\n\n", item.Title, description)
 		title := fmt.Sprintf("%s\n", item.Title)
@@ -918,12 +1007,14 @@ func AI_summary(promt string) string {
 	data := map[string]interface{}{"messages": messages}
 	jsonData, err := json.Marshal(data)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Printf("JSON marshal error: %v\n", err)
+		return "摘要生成失败：JSON 序列化错误"
 	}
 
 	req, err := http.NewRequest("POST", ai_url, strings.NewReader(string(jsonData)))
 	if err != nil {
-		log.Fatal(err)
+		fmt.Printf("Request creation error: %v\n", err)
+		return "摘要生成失败：请求创建错误"
 	}
 
 	req.Header.Set("Authorization", "Bearer "+cloudflareAuthToken)
@@ -932,26 +1023,73 @@ func AI_summary(promt string) string {
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		log.Fatal(err)
+		fmt.Printf("Request execution error: %v\n", err)
+		return "摘要生成失败：请求执行错误"
 	}
 	defer resp.Body.Close()
 
-	//返回 JSON 的result字段中的 response 字段
+	// 检查 HTTP 状态码
+	if resp.StatusCode != 200 {
+		body, _ := ioutil.ReadAll(resp.Body)
+		fmt.Printf("API returned status %d: %s\n", resp.StatusCode, string(body))
+		return "摘要生成失败：API 返回错误状态码"
+	}
+
+	// 读取响应体
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Printf("Error reading response body: %v\n", err)
+		return "摘要生成失败：读取响应体错误"
+	}
+
+	// 打印原始响应用于调试
+	fmt.Printf("Raw API response: %s\n", string(body))
+
+	// 解析 JSON 响应
 	var result map[string]interface{}
-	json.NewDecoder(resp.Body).Decode(&result)
-
-	if result["result"] == nil {
-		log.Fatal("result field is nil")
+	err = json.Unmarshal(body, &result)
+	if err != nil {
+		fmt.Printf("JSON unmarshal error: %v\n", err)
+		return "摘要生成失败：JSON 解析错误"
 	}
 
-	responseMap, ok := result["result"].(map[string]interface{})
-	if !ok {
-		log.Fatal("result field is not a map[string]interface{}")
+	// 检查是否有错误
+	if errors, ok := result["errors"].([]interface{}); ok && len(errors) > 0 {
+		fmt.Printf("API errors: %v\n", errors)
+		return "摘要生成失败：API 返回错误"
 	}
 
-	response, ok := responseMap["response"].(string)
-	if !ok {
-		log.Fatal("response field not found in the result or is not a string")
+	// 尝试从不同的路径获取结果
+	var response string
+
+	// 尝试 result.response 路径
+	if resultMap, ok := result["result"].(map[string]interface{}); ok {
+		if resp, ok := resultMap["response"].(string); ok {
+			response = resp
+		}
+	}
+
+	// 如果上面没找到，尝试直接访问 response 字段
+	if response == "" {
+		if resp, ok := result["response"].(string); ok {
+			response = resp
+		}
+	}
+
+	// 如果还是没找到，尝试 messages 路径
+	if response == "" {
+		if messages, ok := result["messages"].([]interface{}); ok && len(messages) > 0 {
+			if lastMessage, ok := messages[len(messages)-1].(map[string]interface{}); ok {
+				if content, ok := lastMessage["content"].(string); ok {
+					response = content
+				}
+			}
+		}
+	}
+
+	if response == "" {
+		fmt.Printf("Could not extract response from API result: %+v\n", result)
+		return "摘要生成失败：无法从 API 响应中提取结果"
 	}
 
 	return response
