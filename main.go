@@ -407,14 +407,14 @@ func DIY_god(md_name string) {
 		return
 	}
 
-	alltitle := strings.Join(titles, "\n")
+	// alltitle := strings.Join(titles, "\n")
 	allContent := strings.Join(contents, "\n")
-	summary := AI_summary(alltitle)
+	// summary := AI_summary(alltitle)
 
-	fmt.Println(summary)
+	// fmt.Println(summary)
 	fmt.Println(allContent)
 
-	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 热点新闻\n\n" + allContent)
+	file.WriteString("\n\n### 热点新闻\n\n" + allContent)
 }
 
 func abskoop(md_name string) {
@@ -628,19 +628,19 @@ func dnsport_new(md_name string) {
 		return
 	}
 
-	alltitle := strings.Join(titles, "\n")
+	// alltitle := strings.Join(titles, "\n")
 	allContent := strings.Join(contents, "\n")
-	summary := AI_summary(alltitle)
+	// summary := AI_summary(alltitle)
 
 	fmt.Println(allContent)
-	fmt.Println(summary)
+	// fmt.Println(summary)
 
 	file, err := os.OpenFile("content/new/daily/"+md_name, os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer file.Close()
-	file.WriteString("### AI 摘要\n\n" + summary + "\n\n### 热点新闻\n\n" + allContent)
+	file.WriteString("\n\n### 热点新闻\n\n" + allContent)
 }
 
 type BingResponse struct {
