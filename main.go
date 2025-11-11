@@ -304,9 +304,9 @@ func DIY_god(md_name string) {
 	file.WriteString("## 热点新闻\n\n")
 
 	rssURLs := []string{
-		"https://rsshub.app/telegram/channel/tnews365",
 		"https://rssweb.160826.xyz/telegram/channel/tnews365",
 		"https://rss.160826.xyz/telegram/channel/tnews365",
+		"https://rsshub.app/telegram/channel/tnews365",
 	}
 
 	var body []byte
@@ -426,9 +426,9 @@ func abskoop(md_name string) {
 	file.WriteString("## 福利分享\n\n")
 
 	rssURLs := []string{
-		"https://rsshub.app/telegram/channel/abskoop",
 		"https://rssweb.160826.xyz/telegram/channel/abskoop",
 		"https://rss.160826.xyz/telegram/channel/abskoop",
+		"https://rsshub.app/telegram/channel/abskoop",
 	}
 
 	var body []byte
@@ -524,9 +524,9 @@ func abskoop(md_name string) {
 func dnsport_new(md_name string) {
 	// 多个候选 RSS 地址
 	rssURLs := []string{
-		"https://rsshub.app/telegram/channel/DNSPODT",
 		"https://rss.160826.xyz/telegram/channel/DNSPODT",
 		"https://rssweb.160826.xyz/telegram/channel/DNSPODT",
+		"https://rsshub.app/telegram/channel/DNSPODT",
 	}
 
 	var body []byte
