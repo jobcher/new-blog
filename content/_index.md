@@ -1,5 +1,5 @@
 ---
-title: jobcher‘s blog
+title: Jobcher's Blog
 # menu:
 #   main:
 #     name: Home
@@ -9,3 +9,7 @@ title: jobcher‘s blog
 #         vendor: bs
 #         name: house
 ---
+
+Welcome to Jobcher's Blog. This is a personal blog about technology, Kubernetes, and more.
+
+Currently, most articles are available in Chinese. Please switch to [简体中文](/zh-hans/) for more content.

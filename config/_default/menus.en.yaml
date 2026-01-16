@@ -73,16 +73,16 @@
 #         name: mastodon
 #       description: Follow us on Mastodon to get latest updates.
 main:
-  - name: k8s文档
+  - name: k8s Docs
     url: https://k8sbook.jobcher.com/
     weight: 1
     params:
       icon:
         vendor: bs
         name: book
-      description: k8s使用文档。
+      description: Kubernetes documentation.
 
-  - name: 导航
+  - name: Navigation
     url: https://nav.jobcher.com/
     weight: 2
     params:
@@ -90,9 +90,9 @@ main:
         vendor: font-awesome-solid
         name: headset
         color: red
-      description: 页面导航
+      description: Page navigation
   
-  - name: ip检测
+  - name: IP Check
     url: https://realip.jobcher.com/
     weight: 3
     params:
@@ -100,4 +100,4 @@ main:
         vendor: font-awesome-regular
         name: comments
         color: green
-      description: ip检测
+      description: IP detection
