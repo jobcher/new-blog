@@ -1,4 +1,13 @@
-description: A week is 2% of the year
+# Google 首页/列表页 meta description（约 70–160 字，含核心主题）
+description: 打工人日志（Jobcher）——面向开发者与运维的技术博客，覆盖 Kubernetes、Docker、Linux、监控、AI 与开发者工具的实战教程与干货。
+
+# 无文章配图时的默认 OG/Twitter 分享图（Google/社交预览）
+images:
+  - /images/logo.png
+
+# Hugo Twitter Cards / Open Graph 社交账号
+social:
+  twitter: jobcher1
 
 hb:
   # override SASS variables, please replace the dash with underline, e.g. `list-group-color` should be `list_group_color`.

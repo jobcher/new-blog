@@ -2,8 +2,12 @@ en:
   languageName: English
   title: Jobcher's Blog
   weight: 2
+  params:
+    description: Jobcher's Blog — hands-on notes for developers and SRE on Kubernetes, Docker, Linux, monitoring, AI, and developer tooling.
 
 zh-hans:
   languageName: 简体中文
   title: 打工人日志
   weight: 1
+  params:
+    description: 打工人日志（Jobcher）——面向开发者与运维的技术博客，覆盖 Kubernetes、Docker、Linux、监控、AI 与开发者工具的实战教程与干货。

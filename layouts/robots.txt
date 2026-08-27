@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Google / 搜索引擎发现站点地图
+Sitemap: {{ "sitemap.xml" | absURL }}
