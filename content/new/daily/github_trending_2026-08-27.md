@@ -13,129 +13,139 @@ series: ['日报']
 
 ## GitHub 热门榜单
 
-#### 排名 1:/tt-a1i/archify
-- 简介: 具有漂亮、可验证的架构、工作流、序列、数据流和生命周期图的代理技能——具有运动和清晰导出的自包含HTML。
-- URL: https://github.com/tt-a1i/archify
-- 作者: tt-a1i 
+#### 排名 1:/zedeus/nitter
+- 简介: 替代Twitter前端
+- URL: https://github.com/zedeus/nitter
+- 作者: zedeus 
 
 #### 排名 2:/freestylefly/awesome-gpt-image-2
 - 简介: 以代码形式提示|GPT-Image2工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出技能，持续更新中
 - URL: https://github.com/freestylefly/awesome-gpt-image-2
 - 作者: freestylefly 
 
-#### 排名 3:/anthropics/claude-plugins-official
+#### 排名 3:/tt-a1i/archify
+- 简介: 具有漂亮、可验证的架构、工作流、序列、数据流和生命周期图的代理技能——具有运动和清晰导出的自包含HTML。
+- URL: https://github.com/tt-a1i/archify
+- 作者: tt-a1i 
+
+#### 排名 4:/JetBrains/go-modern-guidelines
+- 简介: 帮助AI编码代理编写现代Go
+- URL: https://github.com/JetBrains/go-modern-guidelines
+- 作者: JetBrains 
+
+#### 排名 5:/anthropics/claude-plugins-official
 - 简介: 由Anthropic管理的高质量Claude代码插件的官方目录。
 - URL: https://github.com/anthropics/claude-plugins-official
 - 作者: anthropics 
 
-#### 排名 4:/Alishahryar1/free-claude-code
-- 简介: 从您的终端、应用程序、IDE或类似OpenClaw的手机免费使用Claude Code、Codex、Pi和OpenCode（1.3B+免费令牌）（语音支持+ToS友好）
-- URL: https://github.com/Alishahryar1/free-claude-code
-- 作者: Alishahryar1 
-
-#### 排名 5:/MadsLorentzen/ai-job-search
-- 简介: 在你的机器上运行的求职。基于Claude Code构建的人工智能求职框架：评估职位、定制简历、写求职信、准备面试。叉它，拥有它。
-- URL: https://github.com/MadsLorentzen/ai-job-search
-- 作者: MadsLorentzen 
-
-#### 排名 6:/AgriciDaniel/claude-obsidian
-- 简介: 黑曜石+克劳德代码的自组织人工智能第二大脑。删除任何源代码，Claude就会将其读取、链接并归档到您拥有的一个连接的纯Markdown知识图中。人工智能笔记、个人知识管理（PKM）和开源的Notion替代品。基于Karpathy的LLM Wiki模式。
-- URL: https://github.com/AgriciDaniel/claude-obsidian
-- 作者: AgriciDaniel 
-
-#### 排名 7:/basecamp/omarchy
-- 简介: 美观、现代且富有创意的Linux
-- URL: https://github.com/basecamp/omarchy
-- 作者: basecamp 
-
-#### 排名 8:/rohitg00/ai-engineering-from-scratch
-- 简介: 学习它。建造它。为他人运送它。
-- URL: https://github.com/rohitg00/ai-engineering-from-scratch
-- 作者: rohitg00 
-
-#### 排名 9:/tinyhumansai/openhuman
-- 简介: 你的个人AI超级智能。一个能建立你生活中本地第一记忆的大脑，一个出色的代理车队和工作流程的编排者，以及一个深入的研究者。
-- URL: https://github.com/tinyhumansai/openhuman
-- 作者: tinyhumansai 
-
-#### 排名 10:/DietrichGebert/ponytail
-- 简介: 让你的AI代理像房间里最懒惰的高级开发人员一样思考。最好的代码是你从未写过的代码。
-- URL: https://github.com/DietrichGebert/ponytail
-- 作者: DietrichGebert 
-
-#### 排名 11:/anthropics/claude-plugins-community
-- 简介: Claude Cowork和Claude Code的社区插件市场。只读镜像——在clau.de/plugin-directory提交插件。
-- URL: https://github.com/anthropics/claude-plugins-community
-- 作者: anthropics 
-
-#### 排名 12:/ConardLi/garden-skills
-- 简介: ConardLi的开源技能集，包括网页设计、知识检索、图像生成等。
-- URL: https://github.com/ConardLi/garden-skills
-- 作者: ConardLi 
-
-#### 排名 13:/browser-use/browser-use
-- 简介: 🌐 让AI代理可以访问网站。轻松实现在线任务自动化。
-- URL: https://github.com/browser-use/browser-use
-- 作者: browser-use 
-
-#### 排名 14:/K-Dense-AI/scientific-agent-skills
+#### 排名 6:/K-Dense-AI/scientific-agent-skills
 - 简介: 将任何AI代理变成AI科学家。全球175000多名科学家使用的排名第一的科学代理技能库。163种现成的经过验证的技能，以及100多种涵盖生物学、化学、医学和药物发现的科学数据库。兼容Cursor、Claude Code、Codex、Pi、Antigravity和开放的Agent技能标准。
 - URL: https://github.com/K-Dense-AI/scientific-agent-skills
 - 作者: K-Dense-AI 
 
-#### 排名 15:/marin-community/marin
+#### 排名 7:/DietrichGebert/ponytail
+- 简介: 让你的AI代理像房间里最懒惰的高级开发人员一样思考。最好的代码是你从未写过的代码。
+- URL: https://github.com/DietrichGebert/ponytail
+- 作者: DietrichGebert 
+
+#### 排名 8:/calesthio/OpenMontage
+- 简介: 世界上第一个开源的代理视频制作系统。12条生产流水线，100+工具，700+代理技能和生产知识档案。将你的AI编码助手变成一个完整的视频制作工作室。
+- URL: https://github.com/calesthio/OpenMontage
+- 作者: calesthio 
+
+#### 排名 9:/rohitg00/ai-engineering-from-scratch
+- 简介: 学习它。建造它。为他人运送它。
+- URL: https://github.com/rohitg00/ai-engineering-from-scratch
+- 作者: rohitg00 
+
+#### 排名 10:/ConardLi/garden-skills
+- 简介: ConardLi的开源技能集，包括网页设计、知识检索、图像生成等。
+- URL: https://github.com/ConardLi/garden-skills
+- 作者: ConardLi 
+
+#### 排名 11:/thedotmack/claude-mem
+- 简介: 每个代理的会话间持久上下文——捕获代理在会话期间所做的一切，用AI压缩，并将相关上下文注入到未来的会话中。适用于Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode+更多
+- URL: https://github.com/thedotmack/claude-mem
+- 作者: thedotmack 
+
+#### 排名 12:/google/googletest
+- 简介: GoogleTest-谷歌测试和模拟框架
+- URL: https://github.com/google/googletest
+- 作者: google 
+
+#### 排名 13:/AgriciDaniel/claude-obsidian
+- 简介: 黑曜石+克劳德代码的自组织人工智能第二大脑。删除任何源代码，Claude就会将其读取、链接并归档到您拥有的一个连接的纯Markdown知识图中。人工智能笔记、个人知识管理（PKM）和开源的Notion替代品。基于Karpathy的LLM Wiki模式。
+- URL: https://github.com/AgriciDaniel/claude-obsidian
+- 作者: AgriciDaniel 
+
+#### 排名 14:/marin-community/marin
 - 简介: 用于研究和开发基础模型的开源框架。
 - URL: https://github.com/marin-community/marin
 - 作者: marin-community 
 
-#### 排名 16:/VoltAgent/awesome-agent-skills
-- 简介: 来自官方开发团队和社区的1000多种代理技能的精选集合，与Claude Code、Codex、Gemini CLI、Cursor等兼容。
-- URL: https://github.com/VoltAgent/awesome-agent-skills
-- 作者: VoltAgent 
+#### 排名 15:/ComposioHQ/awesome-claude-skills
+- 简介: 精心策划的Claude技能、资源和工具列表，用于定制Claude AI工作流程
+- URL: https://github.com/ComposioHQ/awesome-claude-skills
+- 作者: ComposioHQ 
+
+#### 排名 16:/actions/checkout
+- 简介: 签出回购的操作
+- URL: https://github.com/actions/checkout
+- 作者: actions 
+
+#### 排名 17:/OpenCut-app/OpenCut
+- 简介: 开源CapCut替代品
+- URL: https://github.com/OpenCut-app/OpenCut
+- 作者: OpenCut-app 
+
+#### 排名 18:/TauricResearch/TradingAgents
+- 简介: TradingAgents：多代理LLM金融交易框架
+- URL: https://github.com/TauricResearch/TradingAgents
+- 作者: TauricResearch 
 
 ## v2ex 热门帖子
 
-- 1.[大家怎么看刘翔求助这个事?](https://www.v2ex.com/t/1237524#reply93)
-- 2.[到底是现在的新歌不好听了,还是我们落伍了?](https://www.v2ex.com/t/1237509#reply86)
-- 3.[看了监控，吉隆口岸的泥石流太恐怖了](https://www.v2ex.com/t/1237546#reply57)
-- 4.[[0元党进]住宅IP免费领，人手一个](https://www.v2ex.com/t/1237512#reply53)
-- 5.[兄弟们都预定了什么配置的新mac](https://www.v2ex.com/t/1237511#reply47)
-- 6.[我有个问题一直想很久了，从网上各种自媒体发布的文章下面的评论区里，为什么老是有那么广东ip的人（概率广东ip偏多）降智言论偏多，是有水军机房在那边部署着吗，还是说真的在广东发那些降智言论有补贴。](https://www.v2ex.com/t/1237538#reply43)
-- 7.[中元节大瓜！西藏定日县口岸泥石流卧槽！](https://www.v2ex.com/t/1237569#reply38)
-- 8.[GLMCodingPlan7天体验卡（从未订阅过套餐的用户可领取）](https://www.v2ex.com/t/1237520#reply28)
-- 9.[你领过最大的空投是什么币？价值多少？](https://www.v2ex.com/t/1237527#reply25)
-- 10.[佳明运动手表怎么选，求推荐](https://www.v2ex.com/t/1237542#reply20)
-- 11.[苹果新系列价格出来了，差不多就是这样了。你们觉得如何？](https://www.v2ex.com/t/1237540#reply18)
-- 12.[兄弟们，预测下今年的18P和18PM首发会好抢一些吗？有折叠分流](https://www.v2ex.com/t/1237526#reply16)
-- 13.[（2026-08-27）最近集中发布的高性价比flash模型](https://www.v2ex.com/t/1237519#reply14)
-- 14.[gptplus五小时？](https://www.v2ex.com/t/1237504#reply13)
-- 15.[小无人机突突突：简单爽快、打爆一切！独立游戏即将推出](https://www.v2ex.com/t/1237513#reply13)
-- 16.[websearch和图片理解](https://www.v2ex.com/t/1237523#reply13)
-- 17.[想在BN搞一个C2C商家，因为有个稳定收U的路子，想搞专门出金业务，主打一个安全，不会冻结自己卡啥的，有佬们熟悉这块吗，想问问可有搞头？](https://www.v2ex.com/t/1237561#reply13)
-- 18.[codex提前启动问题](https://www.v2ex.com/t/1237516#reply12)
-- 19.[⭐送点纯净住宅IP，全球自提资源](https://www.v2ex.com/t/1237517#reply12)
-- 20.[今天cursor在BJ使用不了了，一直提示重新连接，换了外地的手机热点后就正常了](https://www.v2ex.com/t/1237559#reply12)
-- 21.[国内给家人用的大模型工具哪一个更好？](https://www.v2ex.com/t/1237535#reply10)
-- 22.[当时就说过了，m4macmini绝对是mini历史上最具有性价比的一代了](https://www.v2ex.com/t/1237525#reply9)
-- 23.[求v友推荐一下火车票购买的一个方案/软件](https://www.v2ex.com/t/1237532#reply9)
-- 24.[AI时代，大家还看博客吗？](https://www.v2ex.com/t/1237550#reply9)
-- 25.[家里多条宽带一般都是怎么利用的](https://www.v2ex.com/t/1237551#reply8)
-- 26.[你们的gptpuls都加了5小时限额了吗？我咋没有](https://www.v2ex.com/t/1237562#reply8)
-- 27.[收藏了一堆做饭视频却从没真正做过？我们做了「一键大厨」](https://www.v2ex.com/t/1237565#reply8)
-- 28.[纯赠送，12个住宅IP，送鸡蛋](https://www.v2ex.com/t/1237514#reply7)
-- 29.[claude好慢啊，20刀的套餐，随便一个简单的问题都能十几分钟往上，难点的更是二三十分钟](https://www.v2ex.com/t/1237555#reply7)
-- 30.[[送码]iOSApp「LiveGrab」：视频高清截图、截实况](https://www.v2ex.com/t/1237558#reply7)
-- 31.[公司订阅的gpt，老板的那个账号总是用不完，怎么把他账号的token用掉？](https://www.v2ex.com/t/1237544#reply6)
-- 32.[移动5G信号明明显示满格。但是就是卡，经常断网提示无网络](https://www.v2ex.com/t/1237548#reply6)
-- 33.[聊聊你们对Ai的态度?](https://www.v2ex.com/t/1237582#reply6)
-- 34.[[试卷工厂Pic2Paper]一周时间vibe的一个教育工具，试卷图片转word或者pdf，欢迎品尝~](https://www.v2ex.com/t/1237537#reply5)
-- 35.[讲下我自己申请软著和商标的经历](https://www.v2ex.com/t/1237554#reply5)
-- 36.[互联网工作5年有感](https://www.v2ex.com/t/1237560#reply5)
-- 37.[给V2EX评论区添加了弹幕模式](https://www.v2ex.com/t/1237507#reply4)
-- 38.[windowswsl下有那些提供webgui的ai工具](https://www.v2ex.com/t/1237528#reply3)
+- 1.[女人出轨正在离婚很迷茫](https://www.v2ex.com/t/1237635#reply134)
+- 2.[到底是现在的新歌不好听了,还是我们落伍了?](https://www.v2ex.com/t/1237509#reply122)
+- 3.[2026年30w左右电车选择](https://www.v2ex.com/t/1237605#reply119)
+- 4.[兄弟们都预定了什么配置的新mac](https://www.v2ex.com/t/1237511#reply92)
+- 5.[[0元党进]住宅IP免费领，人手一个](https://www.v2ex.com/t/1237512#reply69)
+- 6.[你领过最大的空投是什么币？价值多少？](https://www.v2ex.com/t/1237527#reply67)
+- 7.[心情不好？来跟华子](https://www.v2ex.com/t/1237597#reply63)
+- 8.[有买了24g内存后悔的吗](https://www.v2ex.com/t/1237641#reply56)
+- 9.[3.5年前端找工作半个月，只有一个offer，降薪22%在考虑要不要去](https://www.v2ex.com/t/1237607#reply55)
+- 10.[佳明运动手表怎么选，求推荐](https://www.v2ex.com/t/1237542#reply50)
+- 11.[GPT5.6-Sol烂完了](https://www.v2ex.com/t/1237608#reply47)
+- 12.[GLMCodingPlan7天体验卡（从未订阅过套餐的用户可领取）](https://www.v2ex.com/t/1237520#reply41)
+- 13.[调研一下大家会有这种想法吗](https://www.v2ex.com/t/1237640#reply40)
+- 14.[当时就说过了，m4macmini绝对是mini历史上最具有性价比的一代了](https://www.v2ex.com/t/1237525#reply35)
+- 15.[准备给家里小猫换猫粮，大家有没有推荐](https://www.v2ex.com/t/1237618#reply34)
+- 16.[兄弟们，预测下今年的18P和18PM首发会好抢一些吗？有折叠分流](https://www.v2ex.com/t/1237526#reply30)
+- 17.[苹果新系列价格出来了，差不多就是这样了。你们觉得如何？](https://www.v2ex.com/t/1237540#reply27)
+- 18.[想在BN搞一个C2C商家，因为有个稳定收U的路子，想搞专门出金业务，主打一个安全，不会冻结自己卡啥的，有佬们熟悉这块吗，想问问可有搞头？](https://www.v2ex.com/t/1237561#reply27)
+- 19.[今天cursor在BJ使用不了了，一直提示重新连接，换了外地的手机热点后就正常了](https://www.v2ex.com/t/1237559#reply26)
+- 20.[男30已婚感觉自己真的渣想找长期异性固聊](https://www.v2ex.com/t/1237656#reply26)
+- 21.[AI时代，大家还看博客吗？](https://www.v2ex.com/t/1237550#reply24)
+- 22.[你们的gptpuls都加了5小时限额了吗？我咋没有](https://www.v2ex.com/t/1237562#reply24)
+- 23.[[求助]转行去搞教培靠谱吗？V友们给点建议](https://www.v2ex.com/t/1237573#reply24)
+- 24.[互联网工作5年有感](https://www.v2ex.com/t/1237560#reply23)
+- 25.[回顾总结篇：职业炒股几年脱离社会，如何破局？（答案：知识储备和竞赛）](https://www.v2ex.com/t/1237609#reply22)
+- 26.[求v友推荐一下火车票购买的一个方案/软件](https://www.v2ex.com/t/1237532#reply21)
+- 27.[AI开发开始陷入迷惘中](https://www.v2ex.com/t/1237637#reply21)
+- 28.[iPhone12在Applestore新换的电池要不要升级iOS27beta7？](https://www.v2ex.com/t/1237622#reply20)
+- 29.[小无人机突突突：简单爽快、打爆一切！独立游戏即将推出](https://www.v2ex.com/t/1237513#reply19)
+- 30.[收藏了一堆做饭视频却从没真正做过？我们做了「一键大厨」](https://www.v2ex.com/t/1237565#reply19)
+- 31.[家里多条宽带一般都是怎么利用的](https://www.v2ex.com/t/1237551#reply18)
+- 32.[小米智能存储正式上架京东和拼多多，不用抢了，随便买](https://www.v2ex.com/t/1237636#reply18)
+- 33.[⭐送点纯净住宅IP，全球自提资源](https://www.v2ex.com/t/1237517#reply17)
+- 34.[（2026-08-27）最近集中发布的高性价比flash模型](https://www.v2ex.com/t/1237519#reply17)
 
 
 ### 热点新闻
+
+#### ↩️🖼 尼泊尔山洪死亡人数升至270人
+<div class="rsshub-quote"><blockquote>                                    <p><a href="https://t.me/DNSPODT/14730"><b>LoopDNS资讯播报</b>:</a></p>                                                                        <p>尼泊尔北部山洪暴发已致157人死亡 484名游客失联  央视新闻总台记者当地时间27日获悉，据尼泊尔警方消息，尼泊尔北部地区山洪造成的死亡人数升至157人。  据尼泊尔总理办公室通报，截至当地时间26日晚间，尼泊尔北部地区山洪造成484名游客失联，其中外籍人员391人。</p>                                </blockquote></div><p><b>尼泊尔山洪死亡人数升至270人</b><br><br>据尼泊尔警方通报，截至当地时间8月27日13时30分，尼泊尔山洪死亡人数已升至270人。<br><br>26日，尼泊尔北部热索瓦地区暴发山洪。目前，尼泊尔有关部门正在展开搜寻和救援工作。<br><br><b>注: 此处为尼泊尔境内的伤亡统计</b><br><br>消息来源 : <a href="https://news.cctv.com/2026/08/27/ARTIfdcTl3LOeoG3NKeEtdXG260827.shtm" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">CCTV</a></p><img src="https://cdn4.telesco.pe/file/ltbuQN_nw_LsrfO5mvkm_7G9bS2xkilPdzMOLbukGGyp-cOgfXevK2a8wjoxuMQE_EadHbCGPmGyLciiwJrB3DLUmCSkfGvu7j22VPDb8oA2gDiiWHu-3I3Deokd_dyy1RmPUWRugIIsdxG6OnAwi29e4HaNDV8KwOEUnLu1o6TD8ajqrX8F-FyKLntQ_-hBf7x7r4_EmIdapCn4555ynbIytDI45GBTGLYHUjetVOxnaGJ6amBBCeyRFC6rcdKK5xI56Pwjefp2DT3Nwxc21GYfbCgy36_Tk1sPsbBRcFdUwriqafITF8gruZeAlTKB1_zbwLHO-t_9JZynkhL_bA.jpg" width="800" height="479" referrerpolicy="no-referrer">
+
 
 #### Google 发布 Gemini 3.5 Transcribe
 <p>Google 发布 Gemini 3.5 Transcribe<br><br>8 月 26 日，Google 正式发布 Gemini 3.5 Transcribe，这是一款面向语音转文字任务的 Gemini 音频模型。Google 称其为目前精度最高的语音转写模型，可直接将原始语音转换为经过整理和格式化的文本。<br><br>Gemini 3.5 Transcribe 支持超过 85 种语言及会话中的语言切换，并提供自定义词汇、智能去除口头填充词和格式化等能力。录音转写模式还支持说话人分离与词级时间戳。模型分别提供 <code>gemini-3.5-transcribe</code> 和实时流式版本 <code>gemini-3.5-transcribe-live</code>，后者通过 Live API 提供亚秒级实时转写。<br><br>Google 公布的 FLEURS 测试结果显示，该模型在流式模式下的词错误率（WER）为 5.50%，非流式模式为 5.04%；相较此前的 Chirp 3，从语音输入到最终转写结果的延迟降低约 70%。<br><br>目前 Gemini 3.5 Transcribe 已通过 Gemini API、Google AI Studio 和 Google Antigravity 开放公开预览，并进入 Gemini Enterprise Agent Platform。面向普通用户的版本已用于 macOS 版 Gemini 应用以及部分地区 Android Gboard 的 Rambler 功能，Chrome 支持将在后续推出。<br><br><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Google</a></p>
@@ -208,26 +218,18 @@ series: ['日报']
 #### 🖼 苹果刚刚发布首款2纳米芯片M6和M5 Ultra芯片，同时发布搭载M6或M5Pro芯片的Mac mini（起步价分别为899与1699美元，国行网页未更新），以及M5 Max与M5 Ultra...
 <p>苹果刚刚发布首款2纳米芯片M6和M5 Ultra芯片，同时发布搭载M6或M5Pro芯片的Mac mini（起步价分别为899与1699美元，国行网页未更新），以及M5 Max与M5 Ultra芯片的Mac Studio。<br><br>苹果称M5 Max和M5 Ultra是“苹果迄今最强大的芯片”。<br><br>来源：<a href="https://x.com/fxtrader/status/2092237464333402140/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">外汇交易员</a></p><img src="https://cdn5.telesco.pe/file/UYSZjU9PtWCY_gnb42bH0NPkCkPlgHSeO7Bs83rMrbc2-BsRrgTvfvkGDq6IBtXfwY9YC2w_6AaJo4W84RTAJVJxGkjd7-7KCA2kM7D2MLv4a7gjkB4SmqW30LbWqsnBlFQVFsrELdgs4Dv6WQXxUES4zIphpi-OguNLTeXEMYafzNEMa1IMHFxCxIuHF1QPu24GfEEpfZ9H0E9OZR8ntk9nkrjWFjDlpYoxnCOHcbD8b2MQwpP2qCDZWRnk7qiUnPjN3gmH4e3Sas_aP5iIsaap67KGp79qhbUAd74dgDRxFOWl-AD58LJTCkAhHJ4lw_ux8vrzeXFO6ByzJtcYHg.jpg" width="800" height="499" referrerpolicy="no-referrer">
 
-
-#### 🖼 财新：研究称财政压力增加将显著提高地方罚没收入强度。近期发表在《经济学》（季刊）的一篇研究文章指出，实证分析发现，从2015年到2023年，大部分地级行...
-<p>财新：研究称财政压力增加将显著提高地方罚没收入强度。近期发表在《经济学》（季刊）的一篇研究文章指出，实证分析发现，从2015年到2023年，大部分地级行政单位罚没收入占非税收入的比重（相比全国和省份平均水平）偏高，地方政府对罚没收入的依赖程度在不断增加。从罚没收入占一般公共预算收入的比重来看，占比最低的是深圳市。<br><br><b>▎</b><a href="https://x.com/fxtrader/status/2092130172631974267" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>Source</b></a></p><img src="https://cdn5.telesco.pe/file/SuzBkIwBitPsXXCQun3IskIeFDVoAWT1h4rPxVqR--3AcCZU39T2wRTcvR4SrCn7UsUusiZzXqrnSd0QrJH5kLW7tYj1NWejppshhkrGJRCtv0U7Ej_cLUYMz5fdmZifkpXfmKFYI63c5viuCWyQ69jb_d04gqfng49uOtEnWwn2NMqnwzvCMMwky1IxtadG-gVMxcosmGHWW5NmjTtj_1D9Ns5Bq3XHXgPc9YQvVwzWac88Jhu7N6zlhCzzqm7hlURFvjHRwFDowdRZTtjIacI9OwWjA-yf1e3HYjy0owHGUExzBUJqQSWWW1de-bhOYsuK_fA-rQ05kefbiOdcgg.jpg" width="800" height="747" referrerpolicy="no-referrer">
-
-
-#### Linux 内核修复 KVM 高危拒绝服务漏洞 CVE-2026-74684
-<p><b>Linux 内核修复 KVM 高危拒绝服务漏洞 CVE-2026-74684</b><br><br>Linux 内核社区日前发布修补补丁，修复了一个编号为 CVE-2026-74684 的高危漏洞。该漏洞源于 TAP 网络驱动在解析报头时存在空指针解引用缺陷，影响包括 x86 在内的多平台架构。攻击者在拥有容器内 root 权限的条件下，可通过构造特定数据包引发主机拒绝服务（DoS）崩溃，对使用 KVM 虚拟化技术的云环境构成隐患。目前 Linux 官方已对相关代码进行修正并提交主线，建议相关运维人员及时更新内核补丁。<br><br>来源：<a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=3874892dd27d5387aa9a06f58d9060f18f351d24" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Linux Kernel</a> / <a href="https://www.suse.com/security/cve/CVE-2026-74684.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">SUSE</a></p>
-
 ## 热点新闻
 
 
 
 ### 热点新闻
 
-#### 日本艺术家草间弥生8月14日在东京某医院因多器官衰竭去世，享年97岁。 （共同社）
-<p>日本艺术家草间弥生8月14日在东京某医院因多器官衰竭去世，享年97岁。<br>（<a href="https://china.kyodonews.net/articles/-/14784" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">共同社</a>）</p>
+#### 🖼 日本艺术家草间弥生8月14日在东京某医院因多器官衰竭去世，享年97岁。 （共同社）
+<p>日本艺术家草间弥生8月14日在东京某医院因多器官衰竭去世，享年97岁。<br>（<a href="https://china.kyodonews.net/articles/-/14784" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">共同社</a>）</p><img src="https://cdn5.telesco.pe/file/Aek2R8NYNglYLEoTE6RSRXDG5PFf1gyoC2Avs1RQG8Z7FtAfNr5puHJYDIXsmDtq6nGp3RQiBrbL_128M_RjBkdnlPFRnSC6KBRNGXKV6TUpnos4ZIppdCiZfqs8A0pXW9oXrwRtVxD9gkY7jdAq-8Cz4ysg1OOu99UC1InGqJmvmsMysN09AeePrlugZq_35C40QkLYhqi15Yb0PBWZ741fu6sp8d5UB1WdqnK8I9H42D-q8AIOpGbl0YyVvWI5vyi0Y7ydVDIGE_Wi9ISDjvzT1I7vE_dZi3Tk3vlEYeXTx2_cv71Rgs1_Q567-83mi4ejoCIZn3p2dH6PCL46mQ.jpg" referrerpolicy="no-referrer">
 
 
 #### ↩️🖼 尼泊尔泥石流已造成尼泊尔一侧至少157人死亡，403人失踪。中国一侧截至27日上午8时，排查出3人死亡、558人失联，其中外籍人员260人。 美国地质调查局称...
-<div class="rsshub-quote"><blockquote>                                    <p><a href="https://t.me/tnews365/35537"><b>竹新社</b>:</a></p>                                                                        <p>尼泊尔中国边境的热索瓦地区8月26日上午冰崩溃决，泥石流冲毁中国吉隆口岸。连接吉隆口岸的中方道路通信电力中断，有“重大人员伤亡、失联”，习近平指示李强批示，张国清率团赴现场。 尼泊尔一侧，旅游部门统计至少有384名各国游客失联。中国一侧，截至北京时间26日20时统计到3死265失联。 （澎湃新闻，中国驻尼泊尔大使馆，喜马拉雅时报）</p>                                </blockquote></div><p>尼泊尔泥石流已造成尼泊尔一侧至少157人死亡，403人失踪。中国一侧截至27日上午8时，排查出3人死亡、558人失联，其中外籍人员260人。<br>美国地质调查局称，此次冰崩滑坡使其在北京时间10:52测得一次相当于5.2级的地震。<br>（<a href="https://apnews.com/article/climate-change-nepal-flash-floods-7262dac22e31258955efa5c28c8fe917" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">美联社</a>）</p><img src="https://cdn5.telesco.pe/file/lHrBeHbXvLSQcHnCSz-ZIHqtP6lCbQL9UdMAamQ8rNHJa94UNdvKHaMcLsu6qpkTuFDC6NFk390YCH5sJ6pikT7Nw07PSR35N6uy3Un-Ley-WX3YV5pepow_HmIKF5xOLL7yc8v3LWIm51L5_D_T81tXOZDUn-HbWlKjBl_xhNBpOy1-KXZDsyy3Rw-JyXvsFNS0F2Flaywpxvgi1zYJvoimDZByU4WsWPM_2Vh-FCTNbVrJSAagWXldbiWETlmJ0Hp8dN_wDBHi10aa1PjQfu-4t4RANShKpKsyk8reRUkvPpbCkQvNbg7YUOvsoM-yBSB1EFjLo5es2Ce97LgnIg.jpg" referrerpolicy="no-referrer">
+<div class="rsshub-quote"><blockquote>                                    <p><a href="https://t.me/tnews365/35537"><b>竹新社</b>:</a></p>                                                                        <p>尼泊尔中国边境的热索瓦地区8月26日上午冰崩溃决，泥石流冲毁中国吉隆口岸。连接吉隆口岸的中方道路通信电力中断，有“重大人员伤亡、失联”，习近平指示李强批示，张国清率团赴现场。 尼泊尔一侧，旅游部门统计至少有384名各国游客失联。中国一侧，截至北京时间26日20时统计到3死265失联。 （澎湃新闻，中国驻尼泊尔大使馆，喜马拉雅时报）</p>                                </blockquote></div><p>尼泊尔泥石流已造成尼泊尔一侧至少157人死亡，403人失踪。中国一侧截至27日上午8时，排查出3人死亡、558人失联，其中外籍人员260人。<br><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us7000tbwb/executive" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">美国地质调查局称</a>，此次冰崩滑坡所释放出的巨大能量使其在北京时间当日10:52分测得一次相当于5.2级的地震。<br>（<a href="https://apnews.com/article/climate-change-nepal-flash-floods-7262dac22e31258955efa5c28c8fe917" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">美联社</a>）</p><img src="https://cdn5.telesco.pe/file/lHrBeHbXvLSQcHnCSz-ZIHqtP6lCbQL9UdMAamQ8rNHJa94UNdvKHaMcLsu6qpkTuFDC6NFk390YCH5sJ6pikT7Nw07PSR35N6uy3Un-Ley-WX3YV5pepow_HmIKF5xOLL7yc8v3LWIm51L5_D_T81tXOZDUn-HbWlKjBl_xhNBpOy1-KXZDsyy3Rw-JyXvsFNS0F2Flaywpxvgi1zYJvoimDZByU4WsWPM_2Vh-FCTNbVrJSAagWXldbiWETlmJ0Hp8dN_wDBHi10aa1PjQfu-4t4RANShKpKsyk8reRUkvPpbCkQvNbg7YUOvsoM-yBSB1EFjLo5es2Ce97LgnIg.jpg" referrerpolicy="no-referrer">
 
 
 #### 美国司法部8月26日称，南京鑫玖维网络科技有限公司雇佣的名为QTFY的团体创建并运营了名为QScan和QTRouter的黑客平台。QTFY入侵了NASA、美联储、能源部、司法部、...
@@ -235,7 +237,7 @@ series: ['日报']
 
 
 #### 🎬 尼泊尔中国边境的热索瓦地区8月26日上午冰崩溃决，泥石流冲毁中国吉隆口岸。连接吉隆口岸的中方道路通信电力中断，有“重大人员伤亡、失联”，习近平指示李...
-<p>尼泊尔中国边境的热索瓦地区8月26日上午冰崩溃决，泥石流冲毁中国吉隆口岸。连接吉隆口岸的中方<a href="https://www.news.cn/20260826/c51bb4c0818843778fcd0ca2e8596d83/c.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">道路通信电力中断</a>，有“<a href="https://www.news.cn/20260826/47ab906a23874fd1acc5a24ad4a9afc2/c.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">重大人员伤亡、失联</a>”，习近平指示李强批示，张国清率团赴现场。<br>尼泊尔一侧，旅游部门统计至少有384名各国游客失联。中国一侧，<a href="https://www.news.cn/20260826/968626adafeb42b59c851e0ae93df3bd/c.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">截至北京时间26日20时</a>统计到3死265失联。<br>（<a href="https://www.thepaper.cn/newsDetail_forward_33953759" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">澎湃新闻</a>，<a href="https://np.china-embassy.gov.cn/xwdt/202608/t20260826_12010715.htm" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">中国驻尼泊尔大使馆</a>，<a href="https://thehimalayantimes.com/nepal/at-least-105-indians-among-384-travellers-reported-missing-in-bhote-koshi-flood" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">喜马拉雅时报</a>）</p> <video src="https://cdn5.telesco.pe/file/53fe7474c3.mp4?token=aArR2uoyWlTLyfkYbMoVOjx8exM_HCkJy1QZQEZaxQozzdI5VNH_uFgmXOU9-Vd-Lyq3XPVqKfESe_OyFXVE3aHFV5_r9Ntf_uotkcjDxhV8BH2x9cYu3yue5Pruud6ptJ_aZageDr2chr3-GEoTW3h4vf9rjSh19QGEcUPRPphjmcvP6ji2dFmTizytQG9SxBEa4DFyCSPKW0KOUqNog5OpqK78vB2OAXZEK0drkbKK2pMmgBfnSLkN13zuOXqHU7uYpGMFAyDnk0qLwtbovUeUEHRB8gEFBo3oNOMcwOjYFHOd_uupxLK3bz1_svU1QyqZTySje11k_gsbOkzIahBzPu-BjzhYuYqvwHHvYN44c8GCAHISaTLhEFtJzZAXhZLIbctKtPsKiq0DG-ZjXP8x2gQTiKUfZ1LzpzQ1uDhvePKOG2gZ4RTGEX3cwqhJcesxFfFZl_nzNoDdLq3owwPbzYIKQs5EfLVJdpwtgqpBM3qMs9s_HTUlyUP3Ca_jE5hY1bkM4QO7zYJfNTQA_-dRzEGrZvFFR4nfy2yCio9X1tnYSDtrZXtpCZAn608K0KR3ps9WBCHBUupn_n5GbM6fy1MWzAQ5Zxb2Qlvb8B_0hUs66PFeYS1NqWSt_xXi7viLKrcTErbo6TnmCotmkvtGMttnUUFs5JfiKnPq15Y" controls="controls" poster="https://cdn5.telesco.pe/file/u7SD5iyhDzS_m_bJmpBD9gOlS54aBYrXSTJspNi_3_lX2mIfGsy7sRCgkM2DF5W1m5c0JyFnxzbXQznM0DfJOIpl6VOrZTeOOTNldXyqkDWz9Azo-ft6D7Lq3ma_liGcLiiNOmzgmXYkdc_gz2lNhD8sey_7nNjAvhhvNjdXqnvVle7Lgs65-uT4CZv2qpBn8WxWRgMM_7binVvESt6iaop7jdqVnOiVlqxnhyAnCAo0E1qE3GDheC-efOOoKBEzGYQRKqzUIFINv8SOcM4JGLa8rxOozeYEnSmirEiuCuqWMqOUw4yA1NHr_oPppHy1eMhYydMyfbPcTSGC6FGiCg" style="width:100%"></video> 
+<p>尼泊尔中国边境的热索瓦地区8月26日上午冰崩溃决，泥石流冲毁中国吉隆口岸。连接吉隆口岸的中方<a href="https://www.news.cn/20260826/c51bb4c0818843778fcd0ca2e8596d83/c.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">道路通信电力中断</a>，有“<a href="https://www.news.cn/20260826/47ab906a23874fd1acc5a24ad4a9afc2/c.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">重大人员伤亡、失联</a>”，习近平指示李强批示，张国清率团赴现场。<br>尼泊尔一侧，旅游部门统计至少有384名各国游客失联。中国一侧，<a href="https://www.news.cn/20260826/968626adafeb42b59c851e0ae93df3bd/c.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">截至北京时间26日20时</a>统计到3死265失联。<br>（<a href="https://www.thepaper.cn/newsDetail_forward_33953759" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">澎湃新闻</a>，<a href="https://np.china-embassy.gov.cn/xwdt/202608/t20260826_12010715.htm" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">中国驻尼泊尔大使馆</a>，<a href="https://thehimalayantimes.com/nepal/at-least-105-indians-among-384-travellers-reported-missing-in-bhote-koshi-flood" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">喜马拉雅时报</a>）</p> <video src="https://cdn5.telesco.pe/file/53fe7474c3.mp4?token=vrPL2ig3Kxlg_RmULrgPwbG36P6_wbhxGNU-aurKdDCs3YkhdSFvrGWnhp1FKixdhyNBRJNz6QluknfEPmvhyYEDH6RcWEo3sTGfFcvVQM8YP0lgHclaUomFOhCCsVYK7NbHMk04SfgjmrGWt9u3Pch3SQH5_eq5h60Tlk156vcgmvxiiv4URtmuzqqVrIBLXoU55vhItcwGhEAFaAYo9EQCrAWtl3WqIwnSK_9GFLPh1OYLrYjwQ0ENRYO1tfjA81Stnns2jVDsqVECTMIbu40QAlOIWG4asExgmfCR79W8_AMSKzvv62ftpaBpWkDL2bpI8lFszuCwcv5x3gbmQh-DLUdvTVFX0f5fex4efcADJXGmc6A3MeEQPcoV3ZFo95c-oCc5hBrkp1ylVv6QMnMQY8RKjdFFQ1uyfsYJOIFtK4QC0dx9gTheHRp4QYdbArUIylfgPHHOpFg6-oW9a7TtIVb8fQdgc5kiI4nllL1jTm7Td6sz8491Pnk3aKtuXBT8LGjsmAlSdhur24w-RjicRaVRU3YEp2wXyPBSn0zgKBeG9hDX1LobeJvWyJztx3Aw3hMO3xpZ4gRAeXmRf7miVr94_qfMaFqgcjo8TfRhFv3V7iySJIXVefo2B9975nbTcvdfXvLtymo1CHdcFxKmdATWSUNIXR31ZPTXxS0" controls="controls" poster="https://cdn5.telesco.pe/file/oXdVQUkhjqthQco9LaDyJcSn54n5M338yK1orrPaWqgeV5WdhdxWOL_U8ubVLNmlkOhUysLU3L7HxPCCFDxYI9YieAEgw_MHMTHRTkO7xngQhJbqpmmVZU7BwfV6SrSqQnJLXIS9TKJph1IfCgdYG-DrxUr26ibU_AMLsZG387OSIpIHZuUpUDdDvCZipn7oTZg-X5MlZ2bqK8Foy2jcgdX44Ui1Tzo2e1e6HT4FYc8CSDbSjfPZJxjpJw4yZAz4fNtizrcAxczIm8bW5XoReRclvQck9oUXtNbUm1Z7BKJWoKLaovPtWHE2obcPp-kDSu5eBYKmIfMg3XizjNLnhQ" style="width:100%"></video> 
 
 
 #### 🖼 美国著名乡村音乐歌手多莉·帕顿于8月25日逝世，享年80岁。 （纽约时报）
@@ -262,7 +264,4 @@ series: ['日报']
 <div class="rsshub-quote"><blockquote>                                    <p><a href="https://t.me/tnews365/35512"><b>竹新社</b>:</a></p>                                                                        <p>特朗普8月18日表示，目前没有与伊朗进行任何会谈或对话，也没有计划进行。而就在一天前，特朗普称其政府与伊朗革命卫队建立了秘密沟通渠道，伊朗予以否认。 特朗普声称霍尔木兹海峡保持正常开放。但伊朗首席谈判代表、伊斯兰议会议长卡利巴夫表示，美国满足6月达成的谅解备忘录中的各项条件，否则霍尔木兹海峡将继续关闭。 特朗普还发布一张图片，将霍尔木兹海峡标注为“新美国领土”。特朗普此前一再声称霍尔木兹海峡属于美国。 布伦特原油期货上涨至每桶91美元，系7月以来最高水平。 特朗普此前威胁要轰炸阿曼。两名地区官员18日表示…</p>                                </blockquote></div><p>美国财政部长贝森特8月24日警告各国切断与伊朗的商业联系，否则将面临次级制裁。他表示，继续与伊朗贸易的国家或将被迫退出美元金融体系，但他拒绝透露具体时间表或可能针对哪些国家。<br>伊朗经济部长阿里·马达尼扎德表示，伊朗已准备作出回应。他说中俄都未“接受”美国措施，预计其他国家也会抵制。<br>美国财政部对60个伊朗相关实体实施新制裁，但其中未涉及中国金融机构。中国外交部表示，坚决反对非法单边制裁，中国同伊朗的合作始终在国际法框架内进行，不应受到干扰破坏。中国将采取一切必要措施坚定维护自身权益。<br>巴基斯坦仍在调解，巴基斯坦和伊朗均表示会谈取得显著进展。巴基斯坦政府消息人士称，巴基斯坦告诉伊朗，美国提出在新一轮谈判前或谈判期间撤销制裁。伊朗表示总体愿意恢复和平谈判，同时对制裁表示关切。<br>《纽约时报》援引美国国务院文件称，战争期间撤离的美国外交官可能最早本周开始返回中东。<br>一艘油轮25日在阿曼海岸附近被不明物体击中并失去行动能力。阿曼外长当天抵达伊朗，讨论海峡未来的安排。<br>（<a href="https://www.reuters.com/world/china/iran-vows-retaliate-after-us-widens-sanctions-2026-08-25/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">路透社</a>，<a href="https://www.fmprc.gov.cn/web/fyrbt_673021/202608/t20260825_12010101.shtml" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">中国外交部</a>）</p>
 
 ## 福利分享
-
-#### 🖼 Workbuddy成长计划里面的任务：体验「腾讯轻量云」专家，领取一个月轻量应用服务器 有需要的可以试试
-<p>Workbuddy成长计划里面的任务：体验「腾讯轻量云」专家，领取一个月轻量应用服务器 <br><br>有需要的可以试试</p><img src="https://cdn5.telesco.pe/file/uyuQfuMi5ijDBeMUQ9bzL79mDEw-uxhaFqDb9a_PbiHXt2iF0ouQY8OOsfJkCL66zFPmXsyEUaCnFJyKZy07EmAUkn-z_qViSyR8ElZhcGLrS7wRyIEX6eBUMcCkIDeL8Ya9YafwjKDRdptu6Y3L_YKzpTJqysp1KIX_YAYf5HGNJRqfsI1niIeYT-JfpdKcwsg64vtb6QoRExGlyLvqIqTKI4AYqxPW0iZwxor8rtZtSrDsEMQEb-DXO5Szjq8aQy9UZUADQT2iSTLkdwn_amOERFsgtoGcQToMCp89WUQuMwnKS4vMm2PyjLXpnub3sUjs1mtJT90jL9r85ihwhw.jpg" referrerpolicy="no-referrer">
 
