@@ -52,7 +52,7 @@ MLOps 的核心是处理数据的流动。
     *   **核心目标：** 实现“当你提交代码后，系统自动运行测试、构建镜像、并部署到测试环境”。
 2.  **工作流编排 (Orchestration)：**
     *   学习 **Apache Airflow** (通用任务调度) 或 **Kubeflow Pipelines** (专门为机器学习设计的编排)。
-    *   **核心目标：** 把“拉取数据 $\rightarrow$ 数据清洗 $\rightarrow$ 模型训练 $\rightarrow$ 模型评估 $\rightarrow$ 模型部署”这个长长的链条，串成一个自动化的流水线。
+    *   **核心目标：** 把“拉取数据 → 数据清洗 → 模型训练 → 模型评估 → 模型部署”这个长长的链条，串成一个自动化的流水线。
 
 ### 第四阶段：大规模部署与监控（MLOps 的“外壳”）
 当模型需要服务于成千上万的用户时，你需要处理并发和稳定性。
@@ -78,9 +78,9 @@ MLOps 的核心是处理数据的流动。
 
 如果时间有限，请按以下优先级进阶：
 
-1.  **入门期 (必须掌握):** Python 规范化 $\rightarrow$ Docker $\rightarrow$ MLflow $\rightarrow$ FastAPI。
-2.  **进阶期 (职业分水岭):** Git/CI-CD $\rightarrow$ SQL/特征存储 $\rightarrow$ Airflow $\rightarrow$ K8s。
-3.  **专家期 (高薪领域):** 漂移检测 $\rightarrow$ 分布式训练 $\rightarrow$ K8s 高级调度 $\rightarrow$ 完善的 MLOps 平台搭建。
+1.  **入门期 (必须掌握):** Python 规范化 → Docker → MLflow → FastAPI。
+2.  **进阶期 (职业分水岭):** Git/CI-CD → SQL/特征存储 → Airflow → K8s。
+3.  **专家期 (高薪领域):** 漂移检测 → 分布式训练 → K8s 高级调度 → 完善的 MLOps 平台搭建。
 
 **💡 一个练习建议：**
 不要只是看书！尝试做一个项目：
