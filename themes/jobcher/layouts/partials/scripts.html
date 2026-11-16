@@ -1,0 +1,14 @@
+<dialog id="lightbox" class="lightbox">
+  <img alt="">
+</dialog>
+<dialog id="search" class="search" aria-labelledby="search-label">
+  <form role="search">
+    <label id="search-label" for="search-input">{{ i18n "search" }}</label>
+    <input id="search-input" type="search" placeholder="{{ i18n "search_placeholder" }}" autocomplete="off">
+  </form>
+  <p class="search-empty" hidden>{{ i18n "no_results" }}</p>
+  <ul class="search-results"></ul>
+  <button type="button" class="search-close">{{ i18n "close" }}</button>
+</dialog>
+{{- $js := resources.Get "js/main.js" | minify | fingerprint -}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>

@@ -1,0 +1,26 @@
+{{- $page := . -}}
+{{- $src := $page.Params.featuredImage | default $page.Params.featuredImagePreview -}}
+{{- if not $src -}}
+  {{- with $page.Params.images -}}
+    {{- if reflect.IsSlice . -}}
+      {{- $src = index . 0 -}}
+    {{- else -}}
+      {{- $src = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $src -}}
+  {{- $found := findRESubmatch `!\[[^\]]*\]\(([^)\s]+)` $page.RawContent 1 -}}
+  {{- if eq (len $found) 0 -}}
+    {{- $found = findRESubmatch `<img[^>]+src=["']([^"']+)["']` $page.RawContent 1 -}}
+  {{- end -}}
+  {{- with $found -}}
+    {{- $src = index (index . 0) 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $src (hasPrefix $src "./") -}}
+  {{- $src = substr $src 2 -}}
+{{- end -}}
+{{- with $src -}}
+  {{- partial "image-url.html" (dict "page" $page "src" .) -}}
+{{- end -}}

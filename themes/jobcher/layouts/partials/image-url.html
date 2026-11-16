@@ -1,0 +1,14 @@
+{{- $page := .page -}}
+{{- $src := .src -}}
+{{- if $src -}}
+  {{- if or (hasPrefix $src "/") (hasPrefix $src "http://") (hasPrefix $src "https://") -}}
+    {{- $src -}}
+  {{- else -}}
+    {{- $res := $page.Resources.GetMatch $src -}}
+    {{- if $res -}}
+      {{- $res.RelPermalink -}}
+    {{- else if in $src "/" -}}
+      {{- $src | relURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

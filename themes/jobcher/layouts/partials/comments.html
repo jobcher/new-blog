@@ -1,0 +1,17 @@
+{{- with site.Params.twikoo -}}
+<section class="comments" id="comments">
+  <h2>{{ i18n "comments" }}</h2>
+  <div id="tcomment" data-env="{{ .env_id }}"></div>
+</section>
+<script defer src="{{ .js_url }}"></script>
+<script>
+  window.addEventListener("load", function () {
+    if (!window.twikoo) return;
+    var node = document.getElementById("tcomment");
+    twikoo.init({
+      envId: node.getAttribute("data-env"),
+      el: "#tcomment"
+    });
+  });
+</script>
+{{- end -}}

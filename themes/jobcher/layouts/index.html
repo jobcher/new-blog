@@ -1,0 +1,16 @@
+{{ define "main" }}
+<header class="page-head">
+  <h1>{{ site.Title }}</h1>
+  {{- with site.Params.description }}
+  <p class="lede">{{ . }}</p>
+  {{- end }}
+</header>
+{{- $posts := where site.RegularPages "Section" "blog" -}}
+{{- $paginator := .Paginate $posts -}}
+<div class="post-list">
+{{- range $paginator.Pages }}
+  {{- partial "post-item.html" . }}
+{{- end }}
+</div>
+{{- partial "pagination.html" . }}
+{{ end }}

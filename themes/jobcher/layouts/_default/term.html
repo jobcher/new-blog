@@ -1,0 +1,15 @@
+{{ define "main" }}
+<header class="page-head">
+  <h1>{{ .Title }}</h1>
+  {{- with .Parent }}
+  <p class="lede"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  {{- end }}
+</header>
+{{- $paginator := .Paginate .Pages -}}
+<div class="post-list">
+{{- range $paginator.Pages }}
+  {{- partial "post-item.html" . }}
+{{- end }}
+</div>
+{{- partial "pagination.html" . }}
+{{ end }}

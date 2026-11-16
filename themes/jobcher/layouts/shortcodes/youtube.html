@@ -1,0 +1,4 @@
+{{- $id := .Get "id" | default (.Get 0) -}}
+<div class="video">
+  <iframe class="youtube-frame" src="https://www.youtube-nocookie.com/embed/{{ $id }}" title="YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>

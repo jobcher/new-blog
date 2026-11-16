@@ -1,0 +1,44 @@
+- id: search
+  translation: Search
+- id: search_placeholder
+  translation: Search titles, summaries, categories, or tags
+- id: no_results
+  translation: No matching posts
+- id: close
+  translation: Close
+- id: prev_page
+  translation: Previous
+- id: next_page
+  translation: Next
+- id: pagination
+  translation: Pagination
+- id: newer
+  translation: Newer
+- id: older
+  translation: Older
+- id: toc
+  translation: Contents
+- id: categories
+  translation: Categories
+- id: tags
+  translation: Tags
+- id: series
+  translation: Series
+- id: not_found
+  translation: Page not found
+- id: back_home
+  translation: Back home
+- id: subscribe
+  translation: Subscribe
+- id: comments
+  translation: Comments
+- id: skip
+  translation: Skip to content
+- id: copy
+  translation: Copy
+- id: copied
+  translation: Copied
+- id: theme_to_dark
+  translation: Switch to dark
+- id: theme_to_light
+  translation: Switch to light

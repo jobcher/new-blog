@@ -1,0 +1,19 @@
+{{- $link := .RelPermalink -}}
+{{- $img := trim (partial "thumb-src.html" .) " \n\r\t" -}}
+<article class="post-item">
+  {{- with $img }}
+  <a class="thumb" href="{{ $link }}" tabindex="-1" aria-hidden="true"><img src="{{ . }}" alt="" loading="lazy" decoding="async"></a>
+  {{- end }}
+  <div class="post-body">
+    <h2><a href="{{ $link }}">{{ .Title }}</a></h2>
+    <p class="meta">
+      {{- if not .Date.IsZero }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{- end }}
+      {{- range .GetTerms "categories" }}
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{- end }}
+    </p>
+    <p class="summary">{{ .Summary | plainify | truncate 140 }}</p>
+  </div>
+</article>

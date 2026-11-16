@@ -1,11 +1,15 @@
 baseURL: https://www.jobcher.com/
 title: 打工人日志
+theme: jobcher
+pagination:
+  pagerSize: 12
+  path: page
 # Copyright, the {year} is the placeholder of this year.
 copyright: "Copyright © 2022-{year} All Rights Reserved."
 defaultContentLanguage: zh-hans
 defaultContentLanguageInSubdir: false # disable this to remove the default language code from URL, i.e. /en/docs -> /docs.
 enableRobotsTXT: true
-timeout: 120s # images processing takes a long time, it's recommended to commit the resources folder for improve the build performance.
+timeout: 120s
 enableEmoji: true
 
 title_sections: true # when false, remove the sections from the title.
@@ -18,31 +22,30 @@ sitemap:
   priority: 0.5
 
 permalinks:
-  blog: /:filename/
+  blog: /:contentbasename/
 
 outputs:
   home:
     - HTML
-    - Offline        # required by PWA module for displaying the offline pages.
     - RSS
-    - SearchIndex    # required by search module.
-    - WebAppManifest # required by PWA module to make your site installable.
-
+    - JSON
   page:
     - HTML
-    - Offline        # required by PWA module for displaying the offline pages.
+  section:
+    - HTML
     - RSS
-    - SearchIndex    # required by search module.
-    - WebAppManifest # required by PWA module to make your site installable.
+  taxonomy:
+    - HTML
+    - RSS
+  term:
+    - HTML
+    - RSS
 
 taxonomies:
   authors: authors       # multiple authors.
   tags: tags
   categories: categories
   series: series
-
-build:
-  writeStats: true # required by PurgeCSS.
 
 markup:
   goldmark:

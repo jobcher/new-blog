@@ -1,0 +1,6 @@
+name = "jobcher"
+license = "MIT"
+description = "Lightweight theme for 打工人日志"
+min_version = "0.111.3"
+tags = ["blog", "lightweight"]
+features = ["search", "syntax-highlighting", "responsive"]

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<header class="page-head">
+  <h1>{{ .Title }}</h1>
+</header>
+{{- with .Content }}
+<div class="content intro">{{ . }}</div>
+{{- end }}
+{{- $pages := .RegularPages -}}
+{{- if eq (len $pages) 0 }}
+  {{- $pages = .Pages -}}
+{{- end }}
+{{- $paginator := .Paginate $pages -}}
+<div class="post-list">
+{{- range $paginator.Pages }}
+  {{- partial "post-item.html" . }}
+{{- end }}
+</div>
+{{- partial "pagination.html" . }}
+{{ end }}

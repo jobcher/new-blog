@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body class="layout-page" data-search-url="{{ "index.json" | relLangURL }}" data-copy-label="{{ i18n "copy" }}" data-copied-label="{{ i18n "copied" }}">
+  <a class="skip" href="#content">{{ i18n "skip" }}</a>
+  {{- partial "header.html" . -}}
+  <main id="content">
+    <h1>{{ i18n "not_found" }}</h1>
+    <p><a href="{{ "/" | relLangURL }}">{{ i18n "back_home" }}</a></p>
+  </main>
+  {{- partial "footer.html" . -}}
+  {{- partial "scripts.html" . -}}
+</body>
+</html>

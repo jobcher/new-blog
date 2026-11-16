@@ -1,103 +1,16 @@
-# main:
-#   - name: Support
-#     identifier: support
-#     weight: 100
-#     url: https://github.com/hbstack
-#     params:
-#       header: The HB support community.
-#       icon:
-#         vendor: font-awesome-solid
-#         name: headset
-
-#   - name: Documentations
-#     parent: support
-#     url: https://hbstack.dev/
-#     weight: 1
-#     params:
-#       icon:
-#         vendor: bs
-#         name: book
-#         className: text-primary
-#       description: The documentations.
-
-#   - name: GitHub
-#     parent: support
-#     url: https://github.com/hbstack
-#     weight: 11
-#     params:
-#       icon:
-#         vendor: fab
-#         name: github
-#       description: The code repository.
-
-#   - name: Discussion
-#     parent: support
-#     url: https://github.com/orgs/hbstack/discussions
-#     weight: 12
-#     params:
-#       icon:
-#         vendor: font-awesome-regular
-#         name: comments
-#         color: green
-#       description: Ask questions and share your ideas.
-
-#   - name: Bug Report
-#     parent: support
-#     url: https://github.com/orgs/hbstack/discussions/new?category=issues-and-bugs
-#     weight: 13
-#     params:
-#       icon:
-#         vendor: font-awesome-solid
-#         name: bug
-#         color: red
-#       description: Tell us about a bug or issue.
-
-#   - name: Feature Request
-#     parent: support
-#     url: https://github.com/orgs/hbstack/discussions/new?category=ideas
-#     weight: 14
-#     params:
-#       icon:
-#         vendor: font-awesome-regular
-#         name: lightbulb
-#         color: orange
-#       description: Suggest new or updated features.
-  
-#   - name: Mastodon
-#     parent: support
-#     url: https://techhub.social/@hbstack
-#     weight: 16
-#     params:
-#       icon:
-#         vendor: simple
-#         name: mastodon
-#       description: Follow us on Mastodon to get latest updates.
 main:
+  - name: Home
+    pageRef: /
+    weight: 1
+  - name: Categories
+    pageRef: /categories
+    weight: 3
   - name: k8s Docs
     url: https://k8sbook.jobcher.com/
-    weight: 1
-    params:
-      icon:
-        vendor: bs
-        name: book
-      description: Kubernetes documentation.
-
+    weight: 10
   - name: Navigation
     url: https://nav.jobcher.com/
-    weight: 2
-    params:
-      icon:
-        vendor: font-awesome-solid
-        name: headset
-        color: red
-      description: Page navigation
-  
+    weight: 11
   - name: IP Check
     url: https://realip.jobcher.com/
-    weight: 3
-    params:
-      icon:
-        vendor: font-awesome-regular
-        name: comments
-        color: green
-      description: IP detection
+    weight: 12

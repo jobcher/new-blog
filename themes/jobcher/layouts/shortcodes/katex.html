@@ -1,0 +1,18 @@
+{{- .Page.Store.Set "hasKaTeX" true -}}
+{{- $formula := "" -}}
+{{- $inline := false -}}
+{{- if .IsNamedParams -}}
+  {{- with .Get "inline" }}{{ $inline = . }}{{ end -}}
+  {{- with .Get "formula" }}{{ $formula = . }}{{ end -}}
+{{- else -}}
+  {{- with .Get 0 }}{{ $formula = . }}{{ end -}}
+  {{- with .Get 1 }}{{ $inline = . }}{{ end -}}
+{{- end -}}
+{{- if not $formula -}}
+  {{- $formula = .Inner -}}
+{{- end -}}
+{{- if $inline -}}
+<span class="katex-output katex-output-inline">\({{ $formula }}\)</span>
+{{- else -}}
+<div class="katex-output">$${{ $formula }}$$</div>
+{{- end -}}

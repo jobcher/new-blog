@@ -1,0 +1,52 @@
+{{ define "main" }}
+<article class="post">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    <p class="meta">
+      {{- if not .Date.IsZero }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{- end }}
+      {{- with .GetTerms "categories" }}
+      <span class="meta-label">{{ i18n "categories" }}</span>
+      {{- range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+      {{- end }}
+      {{- with .GetTerms "tags" }}
+      <span class="meta-label">{{ i18n "tags" }}</span>
+      {{- range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+      {{- end }}
+      {{- with .GetTerms "series" }}
+      <span class="meta-label">{{ i18n "series" }}</span>
+      {{- range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+      {{- end }}
+    </p>
+  </header>
+  {{- $toc := .TableOfContents -}}
+  {{- if in (printf "%s" $toc) "<li>" }}
+  <nav class="toc" aria-label="{{ i18n "toc" }}">
+    <p>{{ i18n "toc" }}</p>
+    {{ $toc }}
+  </nav>
+  {{- end }}
+  <div class="content">
+    {{- $img := trim (partial "thumb-src.html" .) " \n\r\t" -}}
+    {{- with $img }}
+    <img class="hero" src="{{ . }}" alt="" loading="lazy" decoding="async">
+    {{- end }}
+    {{ .Content }}
+  </div>
+  {{- if .Store.Get "hasKaTeX" }}
+    {{- partial "katex.html" . }}
+  {{- end }}
+  <nav class="post-pager">
+    {{- with .PrevInSection }}
+    <a class="older" href="{{ .RelPermalink }}"><span>{{ i18n "older" }}</span>{{ .Title }}</a>
+    {{- end }}
+    {{- with .NextInSection }}
+    <a class="newer" href="{{ .RelPermalink }}"><span>{{ i18n "newer" }}</span>{{ .Title }}</a>
+    {{- end }}
+  </nav>
+  {{- if in (slice "blog" "new") .Section }}
+    {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+{{ end }}
