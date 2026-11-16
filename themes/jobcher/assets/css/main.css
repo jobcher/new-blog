@@ -60,6 +60,33 @@ body {
   padding: 0 clamp(1.25rem, 3vw, 2.5rem);
 }
 
+.to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 20;
+  padding: .45rem .7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 650;
+  line-height: 1;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.to-top:hover { color: var(--link); }
+
 body.layout-page .post {
   background: var(--card);
   border: 1px solid var(--line);
@@ -487,6 +514,43 @@ button,
   min-width: 1rem;
   color: var(--muted);
   text-align: center;
+}
+
+.share {
+  margin: 1.6rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.share-label {
+  margin: 0 0 .5rem;
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 650;
+}
+
+.share-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+}
+
+.share-links a {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 10px;
+  background: var(--note);
+  color: var(--text);
+}
+
+.share-links a:hover { color: var(--link); }
+
+.share-links svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
 }
 
 .post-pager {

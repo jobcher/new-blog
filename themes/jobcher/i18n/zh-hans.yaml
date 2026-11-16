@@ -52,3 +52,11 @@
   translation: 联系
 - id: read_more
   translation: 阅读全文
+- id: share
+  translation: 分享
+- id: share_weibo
+  translation: 微博
+- id: share_email
+  translation: 邮箱
+- id: to_top
+  translation: 回到顶部

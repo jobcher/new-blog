@@ -52,3 +52,11 @@
   translation: Contact
 - id: read_more
   translation: Read more
+- id: share
+  translation: Share
+- id: share_weibo
+  translation: Weibo
+- id: share_email
+  translation: Email
+- id: to_top
+  translation: Back to top

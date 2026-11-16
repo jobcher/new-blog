@@ -37,6 +37,7 @@
   {{- if .Store.Get "hasKaTeX" }}
     {{- partial "katex.html" . }}
   {{- end }}
+  {{- partial "share.html" . }}
   <nav class="post-pager">
     {{- with .PrevInSection }}
     <a class="older" href="{{ .RelPermalink }}"><span>{{ i18n "older" }}</span>{{ .Title }}</a>
@@ -49,4 +50,5 @@
     {{- partial "comments.html" . }}
   {{- end }}
 </article>
+<button type="button" class="to-top" aria-label="{{ i18n "to_top" }}">Top</button>
 {{ end }}

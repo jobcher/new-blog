@@ -79,6 +79,19 @@
     });
   }
 
+  var toTop = document.querySelector(".to-top");
+  if (toTop) {
+    var toggleTop = function () {
+      toTop.classList.toggle("is-visible", window.scrollY > 400);
+    };
+    toggleTop();
+    window.addEventListener("scroll", toggleTop, { passive: true });
+    toTop.addEventListener("click", function () {
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    });
+  }
+
   var searchDialog = document.getElementById("search");
   var openButton = document.querySelector(".search-open");
   if (!searchDialog || !openButton) return;
