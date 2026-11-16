@@ -10,7 +10,7 @@
   {{- $pages = .Pages -}}
 {{- end }}
 {{- $paginator := .Paginate $pages -}}
-<div class="post-list">
+<div class="post-list{{ if eq .Section "new" }} is-compact{{ end }}">
 {{- range $paginator.Pages }}
   {{- partial "post-item.html" . }}
 {{- end }}

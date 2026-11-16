@@ -1,16 +1,56 @@
 {{ define "main" }}
 <header class="page-head">
   <h1>{{ site.Title }}</h1>
-  {{- with site.Params.description }}
-  <p class="lede">{{ . }}</p>
-  {{- end }}
 </header>
-{{- $posts := where site.RegularPages "Section" "blog" -}}
-{{- $paginator := .Paginate $posts -}}
-<div class="post-list">
-{{- range $paginator.Pages }}
-  {{- partial "post-item.html" . }}
-{{- end }}
+<div class="home-layout">
+  <div class="home-main">
+    {{- $posts := where site.RegularPages "Section" "blog" -}}
+    {{- $paginator := .Paginate $posts -}}
+    <div class="post-list">
+    {{- range $paginator.Pages }}
+      {{- partial "post-item.html" . }}
+    {{- end }}
+    </div>
+    {{- partial "pagination.html" . }}
+  </div>
+  <aside class="home-side">
+    {{- $weekday := printf "%s" now.Weekday -}}
+    {{- $weekdays := dict "Sunday" "星期日" "Monday" "星期一" "Tuesday" "星期二" "Wednesday" "星期三" "Thursday" "星期四" "Friday" "星期五" "Saturday" "星期六" -}}
+    <section class="side-card">
+      <h2>{{ i18n "today" }}</h2>
+      {{- if eq site.Language.Lang "zh-hans" }}
+      <p class="side-date">{{ now.Format "2006年1月2日" }} {{ index $weekdays $weekday }}</p>
+      {{- else }}
+      <p class="side-date">{{ now.Format "Monday, January 2, 2006" }}</p>
+      {{- end }}
+    </section>
+    {{- with site.Params.description }}
+    <section class="side-card side-about">
+      <img class="side-logo" src="{{ "images/logo.png" | relURL }}" alt="{{ site.Title }}">
+      <div>
+        <h2>{{ i18n "about" }}</h2>
+        <p>{{ . }}</p>
+      </div>
+    </section>
+    {{- end }}
+    <section class="side-card">
+      <h2>{{ i18n "contact" }}</h2>
+      <div class="side-links">
+        <a href="{{ "index.xml" | relLangURL }}" aria-label="RSS" title="RSS">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.2" cy="17.8" r="2.4"/><path d="M4 4.8C11.8 4.8 18.2 11.2 18.2 19h-3.3C14.9 13 10 8.1 4 8.1V4.8z"/><path d="M4 10.6c4.6 0 8.4 3.8 8.4 8.4H9.2A5.2 5.2 0 0 0 4 13.8v-3.2z"/></svg>
+        </a>
+        {{- with site.Params.author.email }}
+        <a href="mailto:{{ . }}" aria-label="{{ i18n "email" }}" title="{{ . }}">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.2A2.2 2.2 0 0 1 5.7 4h12.6a2.2 2.2 0 0 1 2.2 2.2v11.6a2.2 2.2 0 0 1-2.2 2.2H5.7a2.2 2.2 0 0 1-2.2-2.2V6.2zm1.6.3 6.9 5.2 6.9-5.2H5.1zm13.2 1.9-6.3 4.7-6.3-4.7v9.4c0 .2.2.4.4.4h12.2c.2 0 .4-.2.4-.4V8.4z"/></svg>
+        </a>
+        {{- end }}
+        {{- with site.Params.social.twitter }}
+        <a href="https://x.com/{{ . }}" aria-label="X" title="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.6 10.2 21.8 2h-1.7l-6.3 7.1L8.7 2H2.4l7.6 10.8L2.2 22h1.7l6.6-7.5L15 22h6.3l-6.7-11.8zm-2.3 2.6-.8-1.1-6.1-8.5h2.6l4.9 6.8.8 1.1 6.4 8.9h-2.6l-5.2-7.2z"/></svg>
+        </a>
+        {{- end }}
+      </div>
+    </section>
+  </aside>
 </div>
-{{- partial "pagination.html" . }}
 {{ end }}

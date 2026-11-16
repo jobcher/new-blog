@@ -42,3 +42,13 @@
   translation: 切换到黑夜
 - id: theme_to_light
   translation: 切换到白天
+- id: today
+  translation: 今天
+- id: about
+  translation: 关于
+- id: email
+  translation: 邮箱
+- id: contact
+  translation: 联系
+- id: read_more
+  translation: 阅读全文

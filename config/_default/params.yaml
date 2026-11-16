@@ -1,5 +1,9 @@
 description: 打工人日志（Jobcher）——面向开发者与运维的技术博客，覆盖 Kubernetes、Docker、Linux、监控、AI 与开发者工具的实战教程与干货。
 
+author:
+  name: jobcher
+  email: nb@nbtyfood.com
+
 images:
   - /images/logo.png
 

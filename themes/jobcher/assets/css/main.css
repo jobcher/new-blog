@@ -216,7 +216,7 @@ button,
   height: 100%;
   max-height: none;
   margin: 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hero {
@@ -232,6 +232,116 @@ button,
 
 @media (max-width: 720px) {
   .post-list { grid-template-columns: 1fr; }
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 17.5rem;
+  gap: 1.25rem 1.5rem;
+  align-items: start;
+}
+
+.home-side {
+  position: sticky;
+  top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.side-card {
+  padding: .9rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.side-card h2 {
+  margin: 0 0 .35rem;
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 650;
+}
+
+.side-card p { margin: 0; }
+
+.side-about {
+  display: flex;
+  gap: .7rem;
+  align-items: flex-start;
+}
+
+.side-logo {
+  width: 3.25rem;
+  height: 3.25rem;
+  flex: none;
+  object-fit: contain;
+  border-radius: 10px;
+  background: var(--note);
+}
+
+.side-links {
+  display: flex;
+  gap: .5rem;
+}
+
+.side-links a {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 10px;
+  background: var(--note);
+  color: var(--text);
+}
+
+.side-links a:hover { color: var(--link); }
+
+.side-links svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+.side-date {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.home-layout .post-list,
+.post-list.is-compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.home-layout .post-item,
+.post-list.is-compact .post-item { border-radius: 10px; }
+
+.home-layout .post-body,
+.post-list.is-compact .post-body { padding: .6rem .7rem .75rem; }
+
+.home-layout .post-item h2,
+.post-list.is-compact .post-item h2 {
+  font-size: .98rem;
+}
+
+.home-layout .post-item .summary,
+.post-list.is-compact .summary {
+  font-size: .86rem;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 1100px) {
+  .home-layout .post-list,
+  .post-list.is-compact { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 860px) {
+  .home-layout { grid-template-columns: 1fr; }
+  .home-side { position: static; order: -1; }
+  .home-layout .post-list,
+  .post-list.is-compact { grid-template-columns: 1fr; }
 }
 
 .content h2,

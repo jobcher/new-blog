@@ -42,3 +42,13 @@
   translation: Switch to dark
 - id: theme_to_light
   translation: Switch to light
+- id: today
+  translation: Today
+- id: about
+  translation: About
+- id: email
+  translation: Email
+- id: contact
+  translation: Contact
+- id: read_more
+  translation: Read more

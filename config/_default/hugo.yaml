@@ -6,6 +6,7 @@ pagination:
   path: page
 # Copyright, the {year} is the placeholder of this year.
 copyright: "Copyright © 2022-{year} All Rights Reserved."
+timeZone: Asia/Shanghai
 defaultContentLanguage: zh-hans
 defaultContentLanguageInSubdir: false # disable this to remove the default language code from URL, i.e. /en/docs -> /docs.
 enableRobotsTXT: true

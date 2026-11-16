@@ -1,0 +1,53 @@
+{{- $pages := .Pages -}}
+{{- if .IsHome -}}
+  {{- $pages = where site.RegularPages "Section" "in" (slice "blog" "new") -}}
+{{- else if .IsSection -}}
+  {{- $pages = .RegularPages -}}
+{{- end -}}
+{{- $pages = first 30 $pages -}}
+{{- $authorName := site.Params.author.name | default "jobcher" -}}
+{{- $authorEmail := site.Params.author.email -}}
+{{- $copyright := replace site.Copyright "{year}" (now.Format "2006") -}}
+{{- $lang := site.Language.Lang -}}
+{{- if eq $lang "zh-hans" }}{{ $lang = "zh-cn" }}{{ end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ site.Params.description | plainify }}</description>
+    <generator>Hugo</generator>
+    <language>{{ $lang }}</language>
+    {{- with $copyright }}
+    <copyright>{{ . }}</copyright>
+    {{- end }}
+    {{- with $authorEmail }}
+    <managingEditor>{{ . }} ({{ $authorName }})</managingEditor>
+    <webMaster>{{ . }} ({{ $authorName }})</webMaster>
+    {{- end }}
+    {{- with index $pages 0 }}
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    {{- end }}
+    {{- with .OutputFormats.Get "RSS" }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml"/>
+    {{- end }}
+    {{- range $pages }}
+    {{- $content := .Content -}}
+    {{- $content = replaceRE `(src|href)="/` (printf `${1}="%s` site.BaseURL) $content -}}
+    {{- $content = replaceRE `(src|href)='/` (printf `${1}='%s` site.BaseURL) $content -}}
+    {{- $content = replace $content "]]>" "]]]]><![CDATA[>" -}}
+    {{- $encoded := printf "<![CDATA[%s]]>" $content | safeHTML -}}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      {{- with $authorEmail }}
+      <author>{{ . }} ({{ $authorName }})</author>
+      {{- end }}
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <description>{{ $encoded }}</description>
+      <content:encoded>{{ $encoded }}</content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>
