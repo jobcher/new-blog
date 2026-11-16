@@ -1,11 +1,29 @@
 {{- if gt .Paginator.TotalPages 1 -}}
 <nav class="pagination" aria-label="{{ i18n "pagination" }}">
   {{- if .Paginator.HasPrev }}
-  <a href="{{ .Paginator.Prev.URL }}" rel="prev">{{ i18n "prev_page" }}</a>
+  <a class="page-btn" href="{{ .Paginator.Prev.URL }}" rel="prev">{{ i18n "prev_page" }}</a>
+  {{- else }}
+  <span class="page-btn is-disabled">{{ i18n "prev_page" }}</span>
   {{- end }}
-  <span>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</span>
+  {{- $current := .Paginator.PageNumber -}}
+  {{- $total := .Paginator.TotalPages -}}
+  {{- $prev := 0 -}}
+  {{- range .Paginator.Pagers -}}
+    {{- $n := .PageNumber -}}
+    {{- if or (eq $n 1) (eq $n $total) (and (ge $n (sub $current 2)) (le $n (add $current 2))) -}}
+      {{- if gt (sub $n $prev) 1 }}<span class="page-gap" aria-hidden="true">…</span>{{ end -}}
+      {{- if eq $n $current -}}
+      <span class="page-num is-current" aria-current="page">{{ $n }}</span>
+      {{- else -}}
+      <a class="page-num" href="{{ .URL }}">{{ $n }}</a>
+      {{- end -}}
+      {{- $prev = $n -}}
+    {{- end -}}
+  {{- end }}
   {{- if .Paginator.HasNext }}
-  <a href="{{ .Paginator.Next.URL }}" rel="next">{{ i18n "next_page" }}</a>
+  <a class="page-btn" href="{{ .Paginator.Next.URL }}" rel="next">{{ i18n "next_page" }}</a>
+  {{- else }}
+  <span class="page-btn is-disabled">{{ i18n "next_page" }}</span>
   {{- end }}
 </nav>
 {{- end -}}
