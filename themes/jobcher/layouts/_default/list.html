@@ -11,8 +11,8 @@
 {{- end }}
 {{- $paginator := .Paginate $pages -}}
 <div class="post-list{{ if eq .Section "new" }} is-compact{{ end }}">
-{{- range $paginator.Pages }}
-  {{- partial "post-item.html" . }}
+{{- range $index, $post := $paginator.Pages }}
+  {{- partial "post-item.html" (dict "page" $post "eager" (eq $index 0)) }}
 {{- end }}
 </div>
 {{- partial "pagination.html" . }}

@@ -12,3 +12,24 @@
 </dialog>
 {{- $js := resources.Get "js/main.js" | minify | fingerprint -}}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+<script>
+window.addEventListener("load", function () {
+  function add(src, attrs) {
+    var script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    if (attrs) {
+      Object.keys(attrs).forEach(function (key) { script.setAttribute(key, attrs[key]); });
+    }
+    document.body.appendChild(script);
+  }
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", "G-01J740DER5");
+  add("https://www.googletagmanager.com/gtag/js?id=G-01J740DER5");
+  add("https://umami.jobcher.com/script.js", { "data-website-id": "3d2d4c2a-c0d3-475c-a7ba-da5db582a101" });
+  add("https://www.clarity.ms/tag/jt8h3n2olz");
+  add("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3185871258903631", { crossorigin: "anonymous" });
+});
+</script>

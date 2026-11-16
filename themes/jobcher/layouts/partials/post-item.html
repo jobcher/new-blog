@@ -1,19 +1,38 @@
-{{- $link := .RelPermalink -}}
-{{- $img := trim (partial "thumb-src.html" .) " \n\r\t" -}}
+{{- $page := . -}}
+{{- $eager := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $page = .page -}}
+  {{- $eager = .eager -}}
+{{- end -}}
+{{- $link := $page.RelPermalink -}}
+{{- $img := trim (partial "thumb-src.html" $page) " \n\r\t" -}}
+{{- $width := 0 -}}
+{{- $height := 0 -}}
+{{- if and $img (hasPrefix $img "/") (not (hasPrefix $img "//")) -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $img) -}}
+    {{- $pic := . -}}
+    {{- if gt .Width 800 -}}
+      {{- $pic = .Resize "800x webp q75" -}}
+    {{- end -}}
+    {{- $img = $pic.RelPermalink -}}
+    {{- $width = $pic.Width -}}
+    {{- $height = $pic.Height -}}
+  {{- end -}}
+{{- end -}}
 <article class="post-item">
   {{- with $img }}
-  <a class="thumb" href="{{ $link }}" tabindex="-1" aria-hidden="true"><img src="{{ . }}" alt="" loading="lazy" decoding="async"></a>
+  <a class="thumb" href="{{ $link }}" tabindex="-1" aria-hidden="true"><img src="{{ . }}" alt=""{{ if $eager }} loading="eager" fetchpriority="high"{{ else }} loading="lazy" decoding="async"{{ end }}{{ with $width }} width="{{ . }}"{{ end }}{{ with $height }} height="{{ . }}"{{ end }}></a>
   {{- end }}
   <div class="post-body">
-    <h2><a href="{{ $link }}">{{ .Title }}</a></h2>
+    <h2><a href="{{ $link }}">{{ $page.Title }}</a></h2>
     <p class="meta">
-      {{- if not .Date.IsZero }}
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{- if not $page.Date.IsZero }}
+      <time datetime="{{ $page.Date.Format "2006-01-02" }}">{{ $page.Date.Format "2006-01-02" }}</time>
       {{- end }}
-      {{- range .GetTerms "categories" }}
+      {{- range $page.GetTerms "categories" }}
       <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
       {{- end }}
     </p>
-    <p class="summary">{{ .Summary | plainify | truncate 140 }}</p>
+    <p class="summary">{{ $page.Summary | plainify | truncate 140 }}</p>
   </div>
 </article>

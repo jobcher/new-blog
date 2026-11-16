@@ -7,8 +7,8 @@
 </header>
 {{- $paginator := .Paginate .Pages -}}
 <div class="post-list">
-{{- range $paginator.Pages }}
-  {{- partial "post-item.html" . }}
+{{- range $index, $post := $paginator.Pages }}
+  {{- partial "post-item.html" (dict "page" $post "eager" (eq $index 0)) }}
 {{- end }}
 </div>
 {{- partial "pagination.html" . }}
