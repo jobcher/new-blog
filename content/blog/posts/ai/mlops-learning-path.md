@@ -6,6 +6,9 @@ authors: "jobcher"
 tags: ["MLOps", "MLflow", "Kubernetes"]
 categories: ["AI"]
 series: ["人工智能系列"]
+featuredImage: "/images/mlops.png"
+featuredImagePreview: "/images/mlops.png"
+images: ["/images/mlops.png"]
 description: "从已有的 Linux、Docker、Kubernetes 和 CI/CD 出发，按阶段学习 MLOps：最小机器学习基础、可复现实验、训练流水线、在线服务、监控与回滚。"
 ---
 
