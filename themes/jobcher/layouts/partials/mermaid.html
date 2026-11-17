@@ -1,0 +1,37 @@
+<script>
+(function () {
+  var nodes = document.querySelectorAll(".mermaid");
+  if (!nodes.length) return;
+  var script = document.createElement("script");
+  script.src = "https://cdn.staticfile.org/mermaid/10.9.3/mermaid.min.js";
+  script.onload = function () {
+    var current = "";
+    function theme() {
+      return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "default";
+    }
+    function render() {
+      var next = theme();
+      if (next === current) return;
+      current = next;
+      window.mermaid.initialize({
+        startOnLoad: false,
+        securityLevel: "strict",
+        theme: next,
+        flowchart: { htmlLabels: true, useMaxWidth: true }
+      });
+      nodes.forEach(function (node) {
+        if (!node.dataset.source) node.dataset.source = node.textContent.trim();
+        node.removeAttribute("data-processed");
+        node.textContent = node.dataset.source;
+      });
+      window.mermaid.run({ nodes: nodes });
+    }
+    render();
+    new MutationObserver(render).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"]
+    });
+  };
+  document.body.appendChild(script);
+})();
+</script>

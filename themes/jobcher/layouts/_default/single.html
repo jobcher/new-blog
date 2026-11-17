@@ -37,6 +37,9 @@
   {{- if .Store.Get "hasKaTeX" }}
     {{- partial "katex.html" . }}
   {{- end }}
+  {{- if .Store.Get "hasMermaid" }}
+    {{- partial "mermaid.html" . }}
+  {{- end }}
   {{- partial "share.html" . }}
   <nav class="post-pager">
     {{- with .PrevInSection }}

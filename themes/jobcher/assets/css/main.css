@@ -387,6 +387,20 @@ button,
   border-radius: 8px;
 }
 
+.content pre.mermaid {
+  margin: 1.25rem 0;
+  padding: .25rem 0;
+  overflow-x: auto;
+  background: transparent;
+  border: 0;
+  text-align: center;
+}
+
+.content pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .content .highlight { position: relative; }
 .content .highlight pre {
   margin: 0;
