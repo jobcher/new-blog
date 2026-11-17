@@ -3,15 +3,16 @@ name: github_trend
 
 on:
   schedule:
-    # 每天，执行一次
-    - cron: "2 1 * * *"
+    # 每天上海时间 07:00（GitHub cron 使用 UTC，对应 23:00）
+    - cron: "0 23 * * *"
 
   workflow_dispatch:
 
 jobs:
   github_trend:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
+      TZ: Asia/Shanghai
       BAIDU_TRANSLATE_API_KEY: ${{ secrets.BAIDU_TRANSLATE_API_KEY }}
       BAIDU_TRANSLATE_API_ID: ${{ secrets.BAIDU_TRANSLATE_API_ID }}
       DB_HOST: ${{ secrets.DB_HOST }}
@@ -26,11 +27,11 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Set up Go 1.x
-        uses: actions/setup-go@v2
+        uses: actions/checkout@v5
+      - name: Set up Go
+        uses: actions/setup-go@v6
         with:
-          go-version: 1.19.1
+          go-version: "1.26"
       - name: Run Go program
         run: |
           go version
