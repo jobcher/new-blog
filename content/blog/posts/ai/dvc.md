@@ -6,9 +6,9 @@ authors: "jobcher"
 tags: ["DVC", "MLOps", "Git"]
 categories: ["AI"]
 series: ["人工智能系列"]
-featuredImage: "/images/dvc.svg"
-featuredImagePreview: "/images/dvc.svg"
-images: ["/images/dvc.svg"]
+featuredImage: "/images/dvc.png"
+featuredImagePreview: "/images/dvc.png"
+images: ["/images/dvc.png"]
 description: "DVC 用来版本化数据、模型和训练流水线。说明它和 Git 怎么分工、缓存与指针的原理、常用命令，以及一份从 CSV 到可复现训练的实例。"
 ---
 

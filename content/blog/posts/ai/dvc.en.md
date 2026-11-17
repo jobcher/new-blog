@@ -6,9 +6,9 @@ authors: "jobcher"
 tags: ["DVC", "MLOps", "Git"]
 categories: ["AI"]
 series: ["Artificial Intelligence"]
-featuredImage: "/images/dvc.svg"
-featuredImagePreview: "/images/dvc.svg"
-images: ["/images/dvc.svg"]
+featuredImage: "/images/dvc.png"
+featuredImagePreview: "/images/dvc.png"
+images: ["/images/dvc.png"]
 description: "DVC versions datasets, models, and training pipelines. How it splits work with Git, how the cache and pointer files work, the commands you will actually run, and a reproducible training example."
 ---
 
