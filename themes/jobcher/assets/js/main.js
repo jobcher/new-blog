@@ -79,6 +79,52 @@
     });
   }
 
+  var sideDate = document.querySelector(".side-date");
+  if (sideDate) {
+    var zone = "Asia/Shanghai";
+    var zh = (document.documentElement.lang || "").indexOf("zh") === 0;
+    var weekdays = {
+      Sunday: "星期日",
+      Monday: "星期一",
+      Tuesday: "星期二",
+      Wednesday: "星期三",
+      Thursday: "星期四",
+      Friday: "星期五",
+      Saturday: "星期六"
+    };
+    var paintDate = function () {
+      var now = new Date();
+      if (zh) {
+        var parts = new Intl.DateTimeFormat("en-US", {
+          timeZone: zone,
+          year: "numeric",
+          month: "numeric",
+          day: "numeric",
+          weekday: "long"
+        }).formatToParts(now);
+        var pick = function (type) {
+          for (var i = 0; i < parts.length; i++) {
+            if (parts[i].type === type) return parts[i].value;
+          }
+          return "";
+        };
+        sideDate.textContent = pick("year") + "年" + pick("month") + "月" + pick("day") + "日 " + (weekdays[pick("weekday")] || "");
+      } else {
+        sideDate.textContent = new Intl.DateTimeFormat("en-US", {
+          timeZone: zone,
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        }).format(now);
+      }
+    };
+    paintDate();
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) paintDate();
+    });
+  }
+
   var toTop = document.querySelector(".to-top");
   if (toTop) {
     var toggleTop = function () {
